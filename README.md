@@ -9,3 +9,11 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 #数据导入
 
 导入根目录下public\data文件数据，然后配置项.env文件即可
+
+
+#后台部分截图
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/1.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/2.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/3.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/4.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/5.jpg)
