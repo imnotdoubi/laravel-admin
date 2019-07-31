@@ -8,8 +8,4 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 
 #数据导入
 
-导入根目录下data\laradmin.sql 数据，然后配置项.env文件即可
-
-
-
-
+导入根目录下public\data文件数据，然后配置项.env文件即可
