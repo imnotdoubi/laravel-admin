@@ -14,8 +14,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
-
-
     $router->resources([
         // 'posts'                 => PostController::class,
         'articles'              => ArticleController::class,
@@ -24,6 +22,7 @@ Route::group([
         'news'                  => NewController::class,
         'asks'                  => AskController::class,
         'questions'             => QuestionController::class,
+        'malls'                 => MallController::class,
         'countrys'              => AreaController::class,
         'invests'               => InvestmentController::class,
 
@@ -34,5 +33,6 @@ Route::group([
     $router->post('news/release', 'NewController@release');
     $router->post('asks/release', 'AskController@release');
     $router->post('questions/release', 'QuestionController@release');
+    $router->post('malls/release', 'MallController@release');
 
 });
