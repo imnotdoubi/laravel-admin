@@ -92,7 +92,6 @@ class ArticleController extends AdminController
         // $grid->column('conver', __('封面图'));
         // $grid->column('created_date', __('时间'))->sortable();//设置可排序
 
-
          $grid->column('created_at', __('添加时间'));
 
          $grid->column('updated_at', __('修改时间'))->hide();//默认隐藏列
@@ -118,7 +117,6 @@ class ArticleController extends AdminController
         $grid->filter(function($filter){
             // 去掉默认的id过滤器
             $filter->disableIdFilter();
-
   
             $filter->column(1/3, function ($filter) {
                 $filter->like('title', '标题');
@@ -144,6 +142,7 @@ class ArticleController extends AdminController
   public function release(Request $request)
     {
       $status = $request->get('status');
+
       $ids = explode(',', $request->get('ids'));
 
       foreach ($ids as $v) {
@@ -205,18 +204,17 @@ class ArticleController extends AdminController
         });
 
         $form->select('parent_id','栏目名')->options(Categorie::selectOptions());
+
         $form->text('title', __('标题'))->required();
         // $form->number('parent_id', __('栏目名'));
         // 通过闭包设置options  ->canCheckAll();   为全选
         $form->checkbox('flag','属性')->options([1 => '推荐', 2 => '幻灯', '3' => '图片','4' => '头条','5' => '特荐'])->canCheckAll();
 
         $form->text('keyword', __('关键字'));
+
         $form->text('description', __('描述'));
         // $form->textarea('content', __('内容'));
-         $states = [
-                'on'  => ['value' => 1, 'text' => '打开', 'color' => 'success'],
-                'off' => ['value' => 0, 'text' => '关闭', 'color' => 'danger'],
-            ];
+
         $form->switch('status', __('状态'))->default('1');
        
         $form->date('created_date', __('时间'))->default(date('Y-m-d'));
@@ -229,11 +227,10 @@ class ArticleController extends AdminController
         // $form->multipleImage('conver','图片')->uniqueName()->removable();
 
         $form->ueditor('content', __('内容'));
+
         $form->number('hits', __('点击率'))->value(rand(100,500));
         //隐藏
         $form->hidden('author_id', __('添加人'))->value(Auth::guard('admin')->user()->id);
-
-   
 
         return $form;
     }

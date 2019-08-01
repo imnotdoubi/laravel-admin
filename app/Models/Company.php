@@ -22,9 +22,4 @@ class Company extends Model
     {
         return json_decode($imagesarr, true);
     }
-
-    public function invests()
-    {
-        return  $this->belongsTo(Investment::class,'size');
-    }
 }

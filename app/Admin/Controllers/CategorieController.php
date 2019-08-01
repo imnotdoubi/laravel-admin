@@ -42,7 +42,9 @@ class CategorieController extends AdminController
                 if($branch['mid'] == 2)
                     $midname =  "单页面";
                 else if($branch['mid'] == 3)
-                     $midname =  "品牌";
+                     $midname =  "项目";
+                else if($branch['mid'] == 4)
+                     $midname =  "问答"; 
                 else
                     $midname = "文章";
 
@@ -78,7 +80,9 @@ class CategorieController extends AdminController
             if($mid == 2)
                 return "单页面";
             else if($mid == 3)
-                return "品牌页面";
+                return "项目";
+            else if($mid == 3)
+                return "问答";
             else
                 return "文章";
         });
@@ -151,17 +155,14 @@ class CategorieController extends AdminController
             // });
 
             $form->select('parent_id','父栏目')->options(Categorie::selectOptions());
-
             $form->text('typename', __('栏目名'))->required();
             $form->text('typedir', __('栏目url'))->required();
-           
             $form->number('order', __('排序'))->default(1);
             $form->text('title', __('标题'))->required();;
             $form->text('keyword', __('关键词'));
             $form->text('dirposition', __('描述'));
-           
             // $form->number('mid', __('栏目类型'))->default(1);
-            $form->radio('mid', '栏目类型')->options(['1' => '普通文章', '2'=> '单页面', '3'=> '品牌类型'])->default('1');
+            $form->radio('mid', '栏目类型')->options(['1' => '普通文章', '2'=> '单页面', '3'=> '项目类型', '4'=> '问答'])->default('1');
             $states = [
                 'on'  => ['value' => 1, 'text' => '打开', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => '关闭', 'color' => 'danger'],
@@ -172,9 +173,7 @@ class CategorieController extends AdminController
         })->tab('单页面内容填写', function ($form) {
 
            // $form->textarea('contents', __('单页面内容'))->placeholder('栏目类型选单页面时在填写此项');
-
             $form->ueditor('content');
-
 
         });
 

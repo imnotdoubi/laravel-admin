@@ -14,9 +14,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
-	$router->post('articles/release', 'ArticleController@release');
-    $router->post('companys/release', 'CompanyController@release');
-    $router->post('news/release', 'NewController@release');
+
 
     $router->resources([
         // 'posts'                 => PostController::class,
@@ -24,9 +22,17 @@ Route::group([
         'categories'            => CategorieController::class,
         'companys'              => CompanyController::class,
         'news'                  => NewController::class,
+        'asks'                  => AskController::class,
+        'questions'             => QuestionController::class,
         'countrys'              => AreaController::class,
         'invests'               => InvestmentController::class,
 
     ]);
+
+    $router->post('articles/release', 'ArticleController@release');
+    $router->post('companys/release', 'CompanyController@release');
+    $router->post('news/release', 'NewController@release');
+    $router->post('asks/release', 'AskController@release');
+    $router->post('questions/release', 'QuestionController@release');
 
 });

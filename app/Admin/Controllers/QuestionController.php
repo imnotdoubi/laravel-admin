@@ -2,66 +2,58 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\News;
-use App\Models\Company;
-use Encore\Admin\Controllers\AdminController;
+use App\Models\Question;
+use App\Models\Ask;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
-use Encore\Admin\Show;
 use Illuminate\Support\Facades\Auth;
 use App\Admin\Extensions\Tools\ReleasePost;
+use Encore\Admin\Controllers\AdminController;
 use Illuminate\Http\Request;
 
-
-
-class NewController extends AdminController
+class QuestionController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = '项目资讯';
+    protected $title = '答案列表';
 
-    /**
-     * Make a grid builder.
-     *
-     * @return Grid
-     */
     protected function grid()
     {
-        $grid = new Grid(new News);
+       
+        $grid = new Grid(new Question);
         //隐藏查看按钮
         $grid->actions(function ($actions) {
             $actions->disableView();
-
         });
+        // 隐藏新增
+      //  $grid->disableCreation();
+        $grid->disableExport();
 
-        $grid->tools(function ($tools) {
+         $grid->tools(function ($tools) {
             $tools->batch(function (Grid\Tools\BatchActions $batch) {
                 $batch->add('通过审核', new ReleasePost(1));
                 $batch->add('拒绝审核', new ReleasePost(0));
+
             });
+
         });
-
-
-        $grid->quickSearch('title');
 
         $grid->column('id', __('Id'))->sortable();
 
-        $grid->column('comid', __('所属项目'))->display(function ($comid) {
-            $coms = Company::where('id',$comid)->first();
-            if($coms)
-                return $coms->combrand;
+        $grid->column('askid', __('问题'))->display(function ($askid) {
+            $asks = Ask::where('id',$askid)->first();
+            if($asks)
+                return $asks->title;
             else
                 return "无";
         });
 
-        $grid->column('title', __('标题'))->display(function ($title) {
-            return "<span style='color:blue'>$title</span>";
-        })->copyable();
-
-        $grid->column('hits', __('点击'));
+        $grid->column('content', __('回答内容'))->display(function ($title) {
+            return $title;
+        });
 
         $grid->column('status', __('状态'))->using(['1' => '显示', '0' => '隐藏']);
 
@@ -71,39 +63,28 @@ class NewController extends AdminController
 
         $grid->model()->orderBy('id', 'desc');
 
-        // 设置分页
-        $grid->paginate(25); 
-
         $grid->filter(function($filter){
             // 去掉默认的id过滤器
             $filter->disableIdFilter();
 
-            $filter->column(1/2, function ($filter) {
-                $filter->like('title', '标题');
-            });
-
-            $filter->column(1/2, function ($filter) {
-                $filter->between('created_at','时间')->datetime();
-           
-            });
+            $filter->like('content', '搜索内容');
 
         });
-
-    //$grid->expandFilter();//搜索默认展开
         return $grid;
     }
 
-  public function release(Request $request)
+    public function release(Request $request)
     {
       $status = $request->get('status');
       $ids = explode(',', $request->get('ids'));
 
       foreach ($ids as $v) {
-           $post = News::find($v);
+           $post = Question::find($v);
            $post->status = $status;
            $post->save();
       }
     }
+   
 
     /**
      * Make a form builder.
@@ -113,35 +94,29 @@ class NewController extends AdminController
     protected function form()
     {
 
-        $form = new Form(new News);
+        $form = new Form(new Question);
         //隐藏右上角查看 删除按钮
         $form->tools(function (Form\Tools $tools) {
             $tools->disableDelete();
             $tools->disableView();
         });
+        $form->select('askid','提问标题')->options(
+                 Ask::pluck('title', 'id')
+          );
 
-        $form->select('comid','所属项目')->options(
-            Company::orderBy('id','desc')->pluck('combrand', 'id')
-        );
-
-        $form->text('title', __('标题'))->required();
-
-        $form->text('keyword', __('关键字'));
-
-        $form->text('description', __('描述'));
+        $form->ueditor('content', __('内容'))->rules('min:3')->help('内容不能少于3个字符');
 
         $form->switch('status', __('状态'))->default('1');
-        //单图上传
-        $form->image('thumb', __('缩略图'))->uniqueName()->removable();
 
-        $form->ueditor('content', __('项目内容'));
+        $form->switch('hidden', __('是否匿名'))->default('0');
 
-        $form->number('hits', __('点击率'))->value(rand(100,500));
+        $form->number('zhichi', __('支持'))->value(rand(30,50));
+
+        $form->number('fandui', __('反对'))->value(rand(5,15));
         //隐藏
         $form->hidden('author_id', __('添加人'))->value(Auth::guard('admin')->user()->id);
 
         return $form;
     }
 
-  
 }

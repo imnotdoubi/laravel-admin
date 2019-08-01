@@ -183,10 +183,6 @@ class CompanyController extends AdminController
 
           $form->number('hits', __('点击率'))->value(rand(100,500));
 
-          $states = [
-                'on'  => ['value' => 1, 'text' => '打开', 'color' => 'success'],
-                'off' => ['value' => 0, 'text' => '关闭', 'color' => 'danger'],
-          ];
           $form->switch('status', __('状态'))->default('1');
 
           //隐藏
