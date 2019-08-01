@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Admin\Extensions\Tools\ReleasePost;
 use Illuminate\Http\Request;
 
+use Encore\Admin\Layout\Content;
+
 
 
 class ArticleController extends AdminController
@@ -234,6 +236,5 @@ class ArticleController extends AdminController
 
         return $form;
     }
-
   
 }

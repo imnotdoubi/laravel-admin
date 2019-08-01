@@ -15,7 +15,6 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('admin.home');
 
     $router->resources([
-        // 'posts'                 => PostController::class,
         'articles'              => ArticleController::class,
         'categories'            => CategorieController::class,
         'companys'              => CompanyController::class,
@@ -24,8 +23,8 @@ Route::group([
         'questions'             => QuestionController::class,
         'malls'                 => MallController::class,
         'countrys'              => AreaController::class,
-        'invests'               => InvestmentController::class,
-
+        'shenhe/articles'       => Review\AutoArticleController::class,
+        'shenhe/asks'           => Review\AutoAskController::class,
     ]);
 
     $router->post('articles/release', 'ArticleController@release');
@@ -34,5 +33,9 @@ Route::group([
     $router->post('asks/release', 'AskController@release');
     $router->post('questions/release', 'QuestionController@release');
     $router->post('malls/release', 'MallController@release');
+    $router->post('shenhe/articles/release', 'Review\AutoArticleController@release');
+    $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
+
+    // $router->get('shenhe/articles', 'ArticleController@aude_articles');
 
 });
