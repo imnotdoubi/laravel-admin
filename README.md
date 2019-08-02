@@ -1,6 +1,6 @@
 # laravel-admin（如果帮助了你，请给个Star）
 laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
-开箱即用，当前已发布商城、会员、项目、文章、项目资讯、问答、等模型<br>
+开箱即用，当前已发布商城、会员、项目、文章、项目资讯、问答、供应管理、等模型<br>
 
 #安装方式
 
@@ -20,3 +20,4 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 ![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/6.jpg)
 ![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/7.jpg)
 ![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/8.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/9.jpg)

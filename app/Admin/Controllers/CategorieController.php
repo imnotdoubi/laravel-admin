@@ -46,7 +46,9 @@ class CategorieController extends AdminController
                 else if($branch['mid'] == 4)
                      $midname =  "问答";
                 else if($branch['mid'] == 5)
-                     $midname =  "商城";      
+                     $midname =  "商城";
+                else if($branch['mid'] == 6)
+                     $midname =  "供应";           
                 else
                     $midname = "文章";
 
@@ -87,6 +89,8 @@ class CategorieController extends AdminController
                 return "问答";
             else if($mid == 5)
                 return "商城";
+            else if($mid == 6)
+                return "供应";
             else
                 return "文章";
         });
@@ -166,7 +170,7 @@ class CategorieController extends AdminController
             $form->text('keyword', __('关键词'));
             $form->text('dirposition', __('描述'));
             // $form->number('mid', __('栏目类型'))->default(1);
-            $form->radio('mid', '栏目类型')->options(['1' => '普通文章', '2'=> '单页面', '3'=> '项目类型', '4'=> '问答', '5'=> '商城'])->default('1');
+            $form->radio('mid', '栏目类型')->options(['1' => '普通文章', '2'=> '单页面', '3'=> '项目类型', '4'=> '问答', '5'=> '商城', '6'=> '供应'])->default('1');
             $states = [
                 'on'  => ['value' => 1, 'text' => '打开', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => '关闭', 'color' => 'danger'],

@@ -23,6 +23,7 @@ Route::group([
         'questions'             => QuestionController::class,
         'malls'                 => MallController::class,
         'countrys'              => AreaController::class,
+        'sells'                 => SellController::class,
         'shenhe/articles'       => Review\AutoArticleController::class,
         'shenhe/asks'           => Review\AutoAskController::class,
     ]);
@@ -33,6 +34,7 @@ Route::group([
     $router->post('asks/release', 'AskController@release');
     $router->post('questions/release', 'QuestionController@release');
     $router->post('malls/release', 'MallController@release');
+    $router->post('sells/release', 'SellController@release');
     $router->post('shenhe/articles/release', 'Review\AutoArticleController@release');
     $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
 

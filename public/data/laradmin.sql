@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-01 10:40:13
+-- 生成日期： 2019-08-02 05:46:05
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -52,19 +52,25 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (5, 2, 5, '权限管理', 'fa-ban', 'auth/permissions', NULL, NULL, NULL),
 (6, 2, 6, '菜单管理', 'fa-bars', 'auth/menu', NULL, NULL, NULL),
 (7, 2, 7, '操作管理', 'fa-history', 'auth/logs', NULL, NULL, NULL),
-(10, 0, 9, '资讯管理', 'fa-book', 'articles', '*', '2019-07-05 07:26:45', '2019-08-01 06:04:53'),
+(10, 0, 9, '资讯管理', 'fa-book', '/', '*', '2019-07-05 07:26:45', '2019-08-01 09:00:44'),
 (11, 0, 8, '栏目管理', 'fa-database', 'categories', '*', '2019-07-11 09:11:49', '2019-08-01 06:04:53'),
-(12, 0, 10, '创业项目', 'fa-group', '/', '*', '2019-07-30 01:46:33', '2019-08-01 06:04:53'),
-(13, 14, 19, '省份城市', 'fa-map-marker', '/countrys', '*', '2019-07-31 02:44:43', '2019-08-01 08:25:24'),
-(14, 0, 18, '辅助功能', 'fa-align-center', '', '', '2019-07-31 03:33:07', '2019-08-01 08:25:24'),
-(15, 14, 20, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-08-01 08:25:24'),
-(16, 12, 11, '项目列表', 'fa-list', 'companys', '*', '2019-07-31 08:39:46', '2019-08-01 06:04:53'),
-(17, 12, 12, '项目资讯', 'fa-dedent', 'news', '*', '2019-07-31 08:40:52', '2019-08-01 06:04:53'),
-(18, 0, 15, '问答管理', 'fa-map', '/', '*', '2019-08-01 02:13:03', '2019-08-01 08:25:24'),
-(19, 18, 16, '问题列表', 'fa-align-justify', 'asks', '*', '2019-08-01 02:13:57', '2019-08-01 08:25:24'),
-(20, 18, 17, '答案列表', 'fa-align-justify', 'questions', '*', '2019-08-01 02:15:59', '2019-08-01 08:25:24'),
-(21, 0, 13, '商城管理', 'fa-desktop', '/', '*', '2019-08-01 07:30:09', '2019-08-01 08:25:24'),
-(22, 21, 14, '商品列表', 'fa-bars', 'malls', '*', '2019-08-01 07:31:05', '2019-08-01 08:25:41');
+(12, 0, 12, '创业项目', 'fa-group', '/', '*', '2019-07-30 01:46:33', '2019-08-02 03:32:50'),
+(13, 14, 24, '省份城市', 'fa-map-marker', '/countrys', '*', '2019-07-31 02:44:43', '2019-08-02 03:32:50'),
+(14, 0, 23, '辅助功能', 'fa-align-center', '', '', '2019-07-31 03:33:07', '2019-08-02 03:32:50'),
+(15, 14, 25, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-08-02 03:32:50'),
+(16, 12, 13, '项目列表', 'fa-align-right', 'companys', '*', '2019-07-31 08:39:46', '2019-08-02 03:32:50'),
+(17, 12, 14, '项目资讯', 'fa-dedent', 'news', '*', '2019-07-31 08:40:52', '2019-08-02 03:32:50'),
+(18, 0, 19, '问答管理', 'fa-map', '/', '*', '2019-08-01 02:13:03', '2019-08-02 03:32:50'),
+(19, 18, 20, '问题列表', 'fa-align-right', 'asks', '*', '2019-08-01 02:13:57', '2019-08-02 03:32:50'),
+(20, 18, 21, '答案列表', 'fa-align-justify', 'questions', '*', '2019-08-01 02:15:59', '2019-08-02 03:32:50'),
+(21, 0, 15, '商城管理', 'fa-desktop', '/', '*', '2019-08-01 07:30:09', '2019-08-02 03:32:50'),
+(22, 21, 16, '商品列表', 'fa-align-right', 'malls', '*', '2019-08-01 07:31:05', '2019-08-02 03:32:50'),
+(23, 10, 10, '资讯列表', 'fa-align-right', 'articles', '*', '2019-08-01 09:01:06', '2019-08-02 03:32:50'),
+(24, 10, 11, '审核资讯', 'fa-align-right', 'shenhe/articles', '*', '2019-08-01 09:06:49', '2019-08-02 03:32:50'),
+(25, 18, 22, '审核提问', 'fa-align-right', 'shenhe/asks', '*', '2019-08-01 10:07:54', '2019-08-02 03:32:50'),
+(26, 0, 17, '供应管理', 'fa-bus', '/', '*', '2019-08-02 03:27:25', '2019-08-02 03:32:50'),
+(27, 26, 18, '供应列表', 'fa-align-right', 'sells', '*', '2019-08-02 03:27:45', '2019-08-02 03:32:50'),
+(30, 29, 0, 'o', 'fa-bars', '/', NULL, '2019-08-02 03:31:24', '2019-08-02 03:31:24');
 
 -- --------------------------------------------------------
 
@@ -788,7 +794,181 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (694, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"__search__\":\"\\u7d27\\u6025\"}', '2019-08-01 08:35:27', '2019-08-01 08:35:27'),
 (695, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:35:30', '2019-08-01 08:35:30'),
 (696, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:36:28', '2019-08-01 08:36:28'),
-(697, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_columns_\":\"amount,brand,created_at,id,parent_id,price,status,title,updated_at\",\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:36:58', '2019-08-01 08:36:58');
+(697, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_columns_\":\"amount,brand,created_at,id,parent_id,price,status,title,updated_at\",\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:36:58', '2019-08-01 08:36:58'),
+(698, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:59:25', '2019-08-01 08:59:25'),
+(699, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 08:59:27', '2019-08-01 08:59:27'),
+(700, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:00:26', '2019-08-01 09:00:26'),
+(701, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:00:28', '2019-08-01 09:00:28'),
+(702, 1, 'admin/auth/menu/10/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:00:34', '2019-08-01 09:00:34'),
+(703, 1, 'admin/auth/menu/10', 'PUT', '127.0.0.1', '{\"parent_id\":\"0\",\"title\":\"\\u8d44\\u8baf\\u7ba1\\u7406\",\"icon\":\"fa-book\",\"uri\":\"\\/\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-01 09:00:44', '2019-08-01 09:00:44'),
+(704, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:00:44', '2019-08-01 09:00:44'),
+(705, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"10\",\"title\":\"\\u8d44\\u8baf\\u5217\\u8868\",\"icon\":\"fa-bars\",\"uri\":\"articles\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:01:06', '2019-08-01 09:01:06'),
+(706, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:01:06', '2019-08-01 09:01:06'),
+(707, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:01:09', '2019-08-01 09:01:09'),
+(708, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:17', '2019-08-01 09:01:17'),
+(709, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:22', '2019-08-01 09:01:22'),
+(710, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:30', '2019-08-01 09:01:30'),
+(711, 1, 'admin/auth/menu/10/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:34', '2019-08-01 09:01:34'),
+(712, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:38', '2019-08-01 09:01:38'),
+(713, 1, 'admin/auth/menu/23/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:01:41', '2019-08-01 09:01:41'),
+(714, 1, 'admin/auth/menu/23', 'PUT', '127.0.0.1', '{\"parent_id\":\"10\",\"title\":\"\\u8d44\\u8baf\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"articles\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-01 09:01:54', '2019-08-01 09:01:54'),
+(715, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:01:55', '2019-08-01 09:01:55'),
+(716, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:01:57', '2019-08-01 09:01:57'),
+(717, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:01', '2019-08-01 09:02:01'),
+(718, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:15', '2019-08-01 09:02:15'),
+(719, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:16', '2019-08-01 09:02:16'),
+(720, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:18', '2019-08-01 09:02:18'),
+(721, 1, 'admin/auth/menu/16/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:29', '2019-08-01 09:02:29'),
+(722, 1, 'admin/auth/menu/16', 'PUT', '127.0.0.1', '{\"parent_id\":\"12\",\"title\":\"\\u9879\\u76ee\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"companys\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-01 09:02:38', '2019-08-01 09:02:38'),
+(723, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:02:38', '2019-08-01 09:02:38'),
+(724, 1, 'admin/auth/menu/22/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:43', '2019-08-01 09:02:43'),
+(725, 1, 'admin/auth/menu/22', 'PUT', '127.0.0.1', '{\"parent_id\":\"21\",\"title\":\"\\u5546\\u54c1\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"malls\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-01 09:02:47', '2019-08-01 09:02:47'),
+(726, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:02:47', '2019-08-01 09:02:47'),
+(727, 1, 'admin/auth/menu/19/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:02:51', '2019-08-01 09:02:51'),
+(728, 1, 'admin/auth/menu/19', 'PUT', '127.0.0.1', '{\"parent_id\":\"18\",\"title\":\"\\u95ee\\u9898\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"asks\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-01 09:02:55', '2019-08-01 09:02:55'),
+(729, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:02:56', '2019-08-01 09:02:56'),
+(730, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"10\",\"title\":\"\\u5ba1\\u6838\\u8d44\\u8baf\",\"icon\":\"fa-align-right\",\"uri\":\"shenhe\\/articles\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:06:49', '2019-08-01 09:06:49'),
+(731, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:06:49', '2019-08-01 09:06:49'),
+(732, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:15:40', '2019-08-01 09:15:40'),
+(733, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:15:43', '2019-08-01 09:15:43'),
+(734, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:16:05', '2019-08-01 09:16:05'),
+(735, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:17:29', '2019-08-01 09:17:29'),
+(736, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:20:46', '2019-08-01 09:20:46'),
+(737, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:21:00', '2019-08-01 09:21:00'),
+(738, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:21:07', '2019-08-01 09:21:07'),
+(739, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:22:01', '2019-08-01 09:22:01'),
+(740, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:23:29', '2019-08-01 09:23:29'),
+(741, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:31:33', '2019-08-01 09:31:33'),
+(742, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:33:39', '2019-08-01 09:33:39'),
+(743, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:33:56', '2019-08-01 09:33:56'),
+(744, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:35:07', '2019-08-01 09:35:07'),
+(745, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:35:54', '2019-08-01 09:35:54'),
+(746, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 09:38:27', '2019-08-01 09:38:27'),
+(747, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:38:32', '2019-08-01 09:38:32'),
+(748, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:38:35', '2019-08-01 09:38:35'),
+(749, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-01 09:38:35', '2019-08-01 09:38:35'),
+(750, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-01 09:50:22', '2019-08-01 09:50:22'),
+(751, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:50:59', '2019-08-01 09:50:59'),
+(752, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:51:18', '2019-08-01 09:51:18'),
+(753, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:51:27', '2019-08-01 09:51:27'),
+(754, 1, 'admin/articles/release', 'POST', '127.0.0.1', '{\"ids\":\"1,2\",\"status\":\"0\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:51:38', '2019-08-01 09:51:38'),
+(755, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:51:38', '2019-08-01 09:51:38'),
+(756, 1, 'admin/news', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:51:44', '2019-08-01 09:51:44'),
+(757, 1, 'admin/news', 'GET', '127.0.0.1', '[]', '2019-08-01 09:51:46', '2019-08-01 09:51:46'),
+(758, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:51:52', '2019-08-01 09:51:52'),
+(759, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:52:06', '2019-08-01 09:52:06'),
+(760, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:53:10', '2019-08-01 09:53:10'),
+(761, 1, 'admin/shenhe/articles/release', 'POST', '127.0.0.1', '{\"ids\":\"1\",\"status\":\"1\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:53:16', '2019-08-01 09:53:16'),
+(762, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 09:53:17', '2019-08-01 09:53:17'),
+(763, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:58:13', '2019-08-01 09:58:13'),
+(764, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:59:13', '2019-08-01 09:59:13'),
+(765, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:59:33', '2019-08-01 09:59:33'),
+(766, 1, 'admin/shenhe/articles/2', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:59:43', '2019-08-01 09:59:43'),
+(767, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:59:46', '2019-08-01 09:59:46'),
+(768, 1, 'admin/shenhe/articles/2', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 09:59:48', '2019-08-01 09:59:48'),
+(769, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 09:59:51', '2019-08-01 09:59:51'),
+(770, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:00:01', '2019-08-01 10:00:01'),
+(771, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:00:30', '2019-08-01 10:00:30'),
+(772, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:01:00', '2019-08-01 10:01:00'),
+(773, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:04', '2019-08-01 10:01:04'),
+(774, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:05', '2019-08-01 10:01:05'),
+(775, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:06', '2019-08-01 10:01:06'),
+(776, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:07', '2019-08-01 10:01:07'),
+(777, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:10', '2019-08-01 10:01:10'),
+(778, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:12', '2019-08-01 10:01:12'),
+(779, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:14', '2019-08-01 10:01:14'),
+(780, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:16', '2019-08-01 10:01:16'),
+(781, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:01:40', '2019-08-01 10:01:40'),
+(782, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:01:46', '2019-08-01 10:01:46'),
+(783, 1, 'admin/shenhe/articles/release', 'POST', '127.0.0.1', '{\"ids\":\"2\",\"status\":\"1\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:01:51', '2019-08-01 10:01:51'),
+(784, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:01:51', '2019-08-01 10:01:51'),
+(785, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:02:17', '2019-08-01 10:02:17'),
+(786, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:02:25', '2019-08-01 10:02:25'),
+(787, 1, 'admin/articles/release', 'POST', '127.0.0.1', '{\"ids\":\"2\",\"status\":\"0\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:02:31', '2019-08-01 10:02:31'),
+(788, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:02:32', '2019-08-01 10:02:32'),
+(789, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:02:35', '2019-08-01 10:02:35'),
+(790, 1, 'admin/shenhe/articles/2', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:02:37', '2019-08-01 10:02:37'),
+(791, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:02:39', '2019-08-01 10:02:39'),
+(792, 1, 'admin/shenhe/articles/2', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:02:46', '2019-08-01 10:02:46'),
+(793, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '[]', '2019-08-01 10:02:58', '2019-08-01 10:02:58'),
+(794, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"title\":\"\\u8857\",\"created_at\":{\"start\":null,\"end\":null},\"parent_id\":null,\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:03:13', '2019-08-01 10:03:13'),
+(795, 1, 'admin/shenhe/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"title\":\"\\u901f\\u5ea6\",\"created_at\":{\"start\":null,\"end\":null},\"parent_id\":null}', '2019-08-01 10:03:17', '2019-08-01 10:03:17'),
+(796, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:07:09', '2019-08-01 10:07:09'),
+(797, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:07:13', '2019-08-01 10:07:13'),
+(798, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"18\",\"title\":\"\\u5ba1\\u6838\\u63d0\\u95ee\",\"icon\":\"fa-align-right\",\"uri\":\"shenhe\\/asks\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:07:53', '2019-08-01 10:07:53'),
+(799, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 10:07:54', '2019-08-01 10:07:54'),
+(800, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-01 10:07:57', '2019-08-01 10:07:57'),
+(801, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '[]', '2019-08-01 10:08:22', '2019-08-01 10:08:22'),
+(802, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '[]', '2019-08-01 10:08:48', '2019-08-01 10:08:48'),
+(803, 1, 'admin/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:08:55', '2019-08-01 10:08:55'),
+(804, 1, 'admin/asks/release', 'POST', '127.0.0.1', '{\"ids\":\"3\",\"status\":\"1\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:09:02', '2019-08-01 10:09:02'),
+(805, 1, 'admin/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:09:02', '2019-08-01 10:09:02'),
+(806, 1, 'admin/asks/release', 'POST', '127.0.0.1', '{\"ids\":\"3\",\"status\":\"0\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:09:06', '2019-08-01 10:09:06'),
+(807, 1, 'admin/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:09:06', '2019-08-01 10:09:06'),
+(808, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:09:09', '2019-08-01 10:09:09'),
+(809, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '[]', '2019-08-01 10:09:31', '2019-08-01 10:09:31'),
+(810, 1, 'admin/shenhe/asks/release', 'POST', '127.0.0.1', '{\"ids\":\"3\",\"status\":\"1\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:09:35', '2019-08-01 10:09:35'),
+(811, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:09:35', '2019-08-01 10:09:35'),
+(812, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '[]', '2019-08-01 10:10:13', '2019-08-01 10:10:13'),
+(813, 1, 'admin/shenhe/asks/release', 'POST', '127.0.0.1', '{\"ids\":\"3\",\"status\":\"1\",\"_token\":\"FZ3c4TvHtO7VLYxd5aeNmkWNtdAOb8PYJqVnSGbv\"}', '2019-08-01 10:10:18', '2019-08-01 10:10:18'),
+(814, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:10:18', '2019-08-01 10:10:18'),
+(815, 1, 'admin/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-01 10:10:22', '2019-08-01 10:10:22'),
+(816, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 01:25:19', '2019-08-02 01:25:19'),
+(817, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 02:53:42', '2019-08-02 02:53:42'),
+(818, 1, 'admin/companys', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 02:53:42', '2019-08-02 02:53:42'),
+(819, 1, 'admin/companys', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 02:53:47', '2019-08-02 02:53:47'),
+(820, 1, 'admin/companys/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 02:53:49', '2019-08-02 02:53:49'),
+(821, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:25:51', '2019-08-02 03:25:51'),
+(822, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"title\":\"\\u4f9b\\u5e94\\u7ba1\\u7406\",\"icon\":\"fa-bus\",\"uri\":\"\\/\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:27:25', '2019-08-02 03:27:25'),
+(823, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:27:25', '2019-08-02 03:27:25'),
+(824, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"26\",\"title\":\"\\u4f9b\\u5e94\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"sells\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:27:45', '2019-08-02 03:27:45'),
+(825, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:27:45', '2019-08-02 03:27:45'),
+(826, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"title\":\"\\u529f\\u80fd\\u6a21\\u5757\",\"icon\":\"fa-briefcase\",\"uri\":\"\\/\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:28:32', '2019-08-02 03:28:32'),
+(827, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:28:33', '2019-08-02 03:28:33'),
+(828, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:30:07', '2019-08-02 03:30:07'),
+(829, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"28\",\"title\":\"11\",\"icon\":\"fa-bars\",\"uri\":\"\\/\",\"roles\":[null],\"permission\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:30:31', '2019-08-02 03:30:31'),
+(830, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:30:31', '2019-08-02 03:30:31'),
+(831, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"29\",\"title\":\"o\",\"icon\":\"fa-bars\",\"uri\":\"\\/\",\"roles\":[null],\"permission\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:31:24', '2019-08-02 03:31:24'),
+(832, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:31:24', '2019-08-02 03:31:24'),
+(833, 1, 'admin/auth/menu/26/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:31:40', '2019-08-02 03:31:40'),
+(834, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:31:54', '2019-08-02 03:31:54'),
+(835, 1, 'admin/auth/menu/28', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:32:02', '2019-08-02 03:32:02'),
+(836, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:32:02', '2019-08-02 03:32:02'),
+(837, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7}]},{\\\"id\\\":11},{\\\"id\\\":10,\\\"children\\\":[{\\\"id\\\":23},{\\\"id\\\":24}]},{\\\"id\\\":12,\\\"children\\\":[{\\\"id\\\":16},{\\\"id\\\":17}]},{\\\"id\\\":21,\\\"children\\\":[{\\\"id\\\":22}]},{\\\"id\\\":26,\\\"children\\\":[{\\\"id\\\":27}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":19},{\\\"id\\\":20},{\\\"id\\\":25}]},{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":13},{\\\"id\\\":15}]}]\"}', '2019-08-02 03:32:49', '2019-08-02 03:32:49'),
+(838, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:32:50', '2019-08-02 03:32:50'),
+(839, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 03:32:54', '2019-08-02 03:32:54'),
+(840, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-08-02 03:33:23', '2019-08-02 03:33:23'),
+(841, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-08-02 03:33:41', '2019-08-02 03:33:41'),
+(842, 1, 'admin/sells/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:33:45', '2019-08-02 03:33:45'),
+(843, 1, 'admin/sells/1/edit', 'GET', '127.0.0.1', '[]', '2019-08-02 03:34:59', '2019-08-02 03:34:59'),
+(844, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:35:08', '2019-08-02 03:35:08'),
+(845, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:35:11', '2019-08-02 03:35:11'),
+(846, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u6c7d\\u8f66\",\"typedir\":\"car\",\"order\":\"1\",\"title\":\"\\u6c7d\\u8f66\",\"keyword\":\"\\u6c7d\\u8f66\",\"dirposition\":\"\\u6c7d\\u8f66\",\"mid\":\"6\",\"status\":\"on\",\"content\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-02 03:35:40', '2019-08-02 03:35:40'),
+(847, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-02 03:35:40', '2019-08-02 03:35:40'),
+(848, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:35:46', '2019-08-02 03:35:46'),
+(849, 1, 'admin/sells/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:35:49', '2019-08-02 03:35:49'),
+(850, 1, 'admin/sells', 'POST', '127.0.0.1', '{\"typeid\":\"3\",\"parent_id\":\"12\",\"title\":\"\\u4e8c\\u624b\\u6c7d\\u8f66\\u4f9b\\u5e94\",\"areaid\":\"1\",\"brand\":\"\\u5965\\u8fea\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"1\",\"price\":\"100.00\",\"amount\":\"5\",\"mobile\":\"18266664444\",\"wx\":null,\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5965\\u8fea\\u516c\\u53f8\",\"hits\":\"500\",\"author_id\":\"1\",\"email\":null,\"n1\":null,\"v1\":null,\"n2\":null,\"v2\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/sells\"}', '2019-08-02 03:37:14', '2019-08-02 03:37:14'),
+(851, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-08-02 03:37:15', '2019-08-02 03:37:15'),
+(852, 1, 'admin/sells', 'POST', '127.0.0.1', '{\"typeid\":\"3\",\"parent_id\":\"12\",\"title\":\"\\u4e8c\\u624b\\u6c7d\\u8f66\\u4f9b\\u5e94\",\"areaid\":\"1\",\"brand\":\"\\u5965\\u8fea\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"1\",\"price\":\"100.00\",\"amount\":\"5\",\"mobile\":\"18266664444\",\"wx\":null,\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5965\\u8fea\\u516c\\u53f8\",\"hits\":\"500\",\"author_id\":\"1\",\"email\":\"123@qq.com\",\"n1\":\"\\u578b\\u53f7\",\"v1\":\"\\u5965\\u8feaA8\",\"n2\":null,\"v2\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:38:17', '2019-08-02 03:38:17'),
+(853, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-08-02 03:38:17', '2019-08-02 03:38:17'),
+(854, 1, 'admin/sells', 'POST', '127.0.0.1', '{\"typeid\":\"3\",\"parent_id\":\"12\",\"title\":\"\\u4e8c\\u624b\\u6c7d\\u8f66\\u4f9b\\u5e94\",\"areaid\":\"1\",\"brand\":\"\\u5965\\u8fea\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"1\",\"price\":\"100.00\",\"amount\":\"5\",\"telephone\":\"15688887777\",\"wx\":null,\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5965\\u8fea\\u516c\\u53f8\",\"hits\":\"500\",\"author_id\":\"1\",\"email\":\"123@qq.com\",\"n1\":\"\\u578b\\u53f7\",\"v1\":\"\\u5965\\u8feaA8\",\"n2\":null,\"v2\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:39:10', '2019-08-02 03:39:10'),
+(855, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-08-02 03:39:10', '2019-08-02 03:39:10'),
+(856, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:39:14', '2019-08-02 03:39:14'),
+(857, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:39:18', '2019-08-02 03:39:18'),
+(858, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:39:25', '2019-08-02 03:39:25'),
+(859, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:09', '2019-08-02 03:40:09'),
+(860, 1, 'admin/sells/release', 'POST', '127.0.0.1', '{\"ids\":\"1,2\",\"status\":\"1\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:40:21', '2019-08-02 03:40:21'),
+(861, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:22', '2019-08-02 03:40:22'),
+(862, 1, 'admin/sells/release', 'POST', '127.0.0.1', '{\"ids\":\"1\",\"status\":\"0\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:40:26', '2019-08-02 03:40:26'),
+(863, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:26', '2019-08-02 03:40:26'),
+(864, 1, 'admin/sells/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:31', '2019-08-02 03:40:31'),
+(865, 1, 'admin/sells/1', 'PUT', '127.0.0.1', '{\"parent_id\":null,\"title\":\"\\u4f9b\\u5e94\\u6d4b\\u8bd5\",\"areaid\":\"1\",\"brand\":\"\\u4f9b\\u5e94\\u6d4b\\u8bd5\",\"content\":\"<p>&nbsp; &nbsp; &nbsp; 10\\r\\n &nbsp; &nbsp;<\\/p>\",\"status\":\"off\",\"level\":\"0\",\"minamount\":\"10\",\"price\":\"1.00\",\"amount\":\"100\",\"telephone\":null,\"wx\":null,\"address\":null,\"company\":\"DESTOON B2B\\u7f51\\u7ad9\\u7ba1\\u7406\\u7cfb\\u7edf\",\"hits\":\"100\",\"author_id\":null,\"email\":null,\"n1\":\"1\",\"v1\":null,\"n2\":null,\"v2\":null,\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/sells\"}', '2019-08-02 03:40:35', '2019-08-02 03:40:35'),
+(866, 1, 'admin/sells/1/edit', 'GET', '127.0.0.1', '[]', '2019-08-02 03:40:35', '2019-08-02 03:40:35'),
+(867, 1, 'admin/sells/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:39', '2019-08-02 03:40:39'),
+(868, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:43', '2019-08-02 03:40:43'),
+(869, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-08-02 03:40:49', '2019-08-02 03:40:49'),
+(870, 1, 'admin/sells/1', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:40:52', '2019-08-02 03:40:52'),
+(871, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:52', '2019-08-02 03:40:52');
 
 -- --------------------------------------------------------
 
@@ -870,7 +1050,12 @@ INSERT INTO `admin_role_menu` (`role_id`, `menu_id`, `created_at`, `updated_at`)
 (1, 19, NULL, NULL),
 (1, 20, NULL, NULL),
 (1, 21, NULL, NULL),
-(1, 22, NULL, NULL);
+(1, 22, NULL, NULL),
+(1, 23, NULL, NULL),
+(1, 24, NULL, NULL),
+(1, 25, NULL, NULL),
+(1, 26, NULL, NULL),
+(1, 27, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -4659,8 +4844,8 @@ CREATE TABLE `wbsdb_articles` (
 --
 
 INSERT INTO `wbsdb_articles` (`id`, `title`, `flag`, `parent_id`, `keyword`, `description`, `content`, `hits`, `favs`, `status`, `conver`, `author_id`, `created_date`, `created_at`, `updated_at`) VALUES
-(1, '街吧奶茶加盟', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 10:54:01', '2019-07-29 18:01:36'),
-(2, '街吧奶茶加盟2', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 11:54:19', '2019-07-29 18:01:32'),
+(1, '街吧奶茶加盟', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 10:54:01', '2019-08-01 17:53:16'),
+(2, '街吧奶茶加盟2', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 0, NULL, 1, '2019-07-29', '2019-07-29 11:54:19', '2019-08-01 18:02:31'),
 (3, '街吧奶茶加盟', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 13:11:09', '2019-07-29 18:01:32');
 
 -- --------------------------------------------------------
@@ -4692,7 +4877,7 @@ CREATE TABLE `wbsdb_asks` (
 
 INSERT INTO `wbsdb_asks` (`id`, `parent_id`, `level`, `title`, `thumb`, `hits`, `comments`, `content`, `quesid`, `author_id`, `hidden`, `status`, `created_at`, `updated_at`) VALUES
 (2, 10, 1, '公交车出行快不快', 'images/628babe2e9d428d6188dff2f7fd6adcb.jpg', 165, 0, '<p>斯蒂芬萨芬斯蒂芬<br/></p>', 4, 1, 0, 1, '2019-08-01 13:24:50', '2019-08-01 15:04:07'),
-(3, 9, 1, '电信客服电话是多少', '', 307, 0, '<p>如题回答<br/></p>', NULL, 1, 0, 1, '2019-08-01 14:31:14', '2019-08-01 14:31:14');
+(3, 9, 1, '电信客服电话是多少', '', 307, 0, '<p>如题回答<br/></p>', NULL, 1, 0, 1, '2019-08-01 14:31:14', '2019-08-01 18:10:18');
 
 -- --------------------------------------------------------
 
@@ -4732,7 +4917,8 @@ INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir
 (8, 6, 1, '美发', 'meifa', '美发', '美发', '美发', NULL, 3, 1, 0, '2019-07-30 01:44:47', '2019-07-30 01:44:47'),
 (9, 0, 1, '生活服务', 'shfw', '生活服务', '生活服务', '生活服务', NULL, 4, 1, 0, '2019-08-01 02:23:47', '2019-08-01 02:23:47'),
 (10, 9, 1, '交通出行', 'jtcx', '交通出行', '交通出行', '交通出行', NULL, 4, 1, 0, '2019-08-01 02:24:29', '2019-08-01 02:24:29'),
-(11, 0, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-01 08:24:02');
+(11, 0, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-01 08:24:02'),
+(12, 0, 1, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-02 03:35:40');
 
 -- --------------------------------------------------------
 
@@ -4929,6 +5115,53 @@ INSERT INTO `wbsdb_questions` (`id`, `askid`, `content`, `author_id`, `fandui`, 
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `wbsdb_sells`
+--
+
+CREATE TABLE `wbsdb_sells` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `parent_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `typeid` smallint(2) UNSIGNED DEFAULT '0' COMMENT '信息类型',
+  `areaid` int(10) UNSIGNED DEFAULT '0',
+  `level` tinyint(1) UNSIGNED DEFAULT '0',
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `introduce` varchar(255) DEFAULT '',
+  `n1` varchar(100) DEFAULT NULL,
+  `n2` varchar(100) DEFAULT NULL,
+  `v1` varchar(100) DEFAULT NULL,
+  `v2` varchar(100) DEFAULT NULL,
+  `brand` varchar(100) DEFAULT '' COMMENT '产品品牌',
+  `content` mediumtext COMMENT '供应说明',
+  `price` decimal(10,2) UNSIGNED DEFAULT '0.00',
+  `minamount` float UNSIGNED DEFAULT '0' COMMENT '最小起订量',
+  `amount` float UNSIGNED DEFAULT '0' COMMENT '供货总量',
+  `keyword` varchar(255) DEFAULT '',
+  `hits` int(10) UNSIGNED DEFAULT '10',
+  `thumb` varchar(255) DEFAULT '' COMMENT '图片集',
+  `company` varchar(100) DEFAULT '',
+  `telephone` varchar(50) DEFAULT '' COMMENT '电话',
+  `address` varchar(255) DEFAULT '' COMMENT '地址',
+  `email` varchar(50) DEFAULT '',
+  `qq` varchar(20) DEFAULT '',
+  `wx` varchar(50) DEFAULT '',
+  `totime` int(10) UNSIGNED DEFAULT '0' COMMENT '过期时间',
+  `totimeid` bigint(4) DEFAULT '1' COMMENT '过期时间设置',
+  `status` tinyint(1) DEFAULT '0',
+  `author_id` bigint(10) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='供应';
+
+--
+-- 转存表中的数据 `wbsdb_sells`
+--
+
+INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `title`, `introduce`, `n1`, `n2`, `v1`, `v2`, `brand`, `content`, `price`, `minamount`, `amount`, `keyword`, `hits`, `thumb`, `company`, `telephone`, `address`, `email`, `qq`, `wx`, `totime`, `totimeid`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
+(2, 12, 3, 1, 1, '二手汽车供应', '', '型号', NULL, '奥迪A8', NULL, '奥迪', '<p>阿萨德发生地方<br/></p>', '100.00', 1, 5, '', 500, '[\"images\\/e0709092ed332350d2ab3adf8957992a.jpg\"]', '奥迪公司', '15688887777', '北京', '123@qq.com', '', NULL, 0, 1, 1, 1, '2019-08-02 03:39:10', '2019-08-02 03:39:10');
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `wbsdb_users`
 --
 
@@ -5086,6 +5319,14 @@ ALTER TABLE `wbsdb_questions`
   ADD KEY `qid` (`askid`);
 
 --
+-- 表的索引 `wbsdb_sells`
+--
+ALTER TABLE `wbsdb_sells`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `catid` (`parent_id`),
+  ADD KEY `areaid` (`areaid`);
+
+--
 -- 表的索引 `wbsdb_users`
 --
 ALTER TABLE `wbsdb_users`
@@ -5100,13 +5341,13 @@ ALTER TABLE `wbsdb_users`
 -- 使用表AUTO_INCREMENT `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=698;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=872;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -5148,7 +5389,7 @@ ALTER TABLE `wbsdb_asks`
 -- 使用表AUTO_INCREMENT `wbsdb_categories`
 --
 ALTER TABLE `wbsdb_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_companys`
@@ -5185,6 +5426,12 @@ ALTER TABLE `wbsdb_news`
 --
 ALTER TABLE `wbsdb_questions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- 使用表AUTO_INCREMENT `wbsdb_sells`
+--
+ALTER TABLE `wbsdb_sells`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_users`
