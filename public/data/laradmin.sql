@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-05 04:27:32
+-- 生成日期： 2019-08-05 05:24:55
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -55,9 +55,9 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (10, 0, 9, '资讯管理', 'fa-book', '/', '*', '2019-07-05 07:26:45', '2019-08-01 09:00:44'),
 (11, 0, 8, '栏目管理', 'fa-database', 'categories', '*', '2019-07-11 09:11:49', '2019-08-01 06:04:53'),
 (12, 0, 12, '创业项目', 'fa-group', '/', '*', '2019-07-30 01:46:33', '2019-08-02 03:32:50'),
-(13, 14, 24, '省份城市', 'fa-map-marker', '/countrys', '*', '2019-07-31 02:44:43', '2019-08-02 03:32:50'),
-(14, 0, 23, '辅助功能', 'fa-align-center', '', '', '2019-07-31 03:33:07', '2019-08-02 03:32:50'),
-(15, 14, 25, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-08-02 03:32:50'),
+(13, 14, 26, '省份城市', 'fa-map-marker', '/countrys', '*', '2019-07-31 02:44:43', '2019-08-05 03:15:18'),
+(14, 0, 25, '辅助功能', 'fa-align-center', '', '', '2019-07-31 03:33:07', '2019-08-05 03:15:18'),
+(15, 14, 27, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-08-05 03:15:18'),
 (16, 12, 13, '项目列表', 'fa-align-right', 'companys', '*', '2019-07-31 08:39:46', '2019-08-02 03:32:50'),
 (17, 12, 14, '项目资讯', 'fa-dedent', 'news', '*', '2019-07-31 08:40:52', '2019-08-02 03:32:50'),
 (18, 0, 19, '问答管理', 'fa-map', '/', '*', '2019-08-01 02:13:03', '2019-08-02 03:32:50'),
@@ -71,7 +71,9 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (26, 0, 17, '供应管理', 'fa-bus', '/', '*', '2019-08-02 03:27:25', '2019-08-02 03:32:50'),
 (27, 26, 18, '供应列表', 'fa-align-right', 'sells', '*', '2019-08-02 03:27:45', '2019-08-02 03:32:50'),
 (30, 29, 0, 'o', 'fa-bars', '/', NULL, '2019-08-02 03:31:24', '2019-08-02 03:31:24'),
-(31, 14, 0, '网站设置', 'fa-anchor', 'forms/settings', '*', '2019-08-02 09:10:36', '2019-08-02 09:38:59');
+(31, 14, 28, '网站设置', 'fa-anchor', 'forms/settings', '*', '2019-08-02 09:10:36', '2019-08-05 03:15:18'),
+(32, 0, 23, '图库管理', 'fa-area-chart', '/', '*', '2019-08-05 03:14:40', '2019-08-05 03:15:18'),
+(33, 32, 24, '图库列表', 'fa-align-right', 'photos', '*', '2019-08-05 03:15:00', '2019-08-05 03:15:18');
 
 -- --------------------------------------------------------
 
@@ -1115,7 +1117,46 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (1013, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:24:17', '2019-08-05 02:24:17'),
 (1014, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:24', '2019-08-05 02:24:24'),
 (1015, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:24:30', '2019-08-05 02:24:30'),
-(1016, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:55', '2019-08-05 02:24:55');
+(1016, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:55', '2019-08-05 02:24:55'),
+(1017, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:14:07', '2019-08-05 03:14:07'),
+(1018, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"title\":\"\\u56fe\\u5e93\\u7ba1\\u7406\",\"icon\":\"fa-area-chart\",\"uri\":\"\\/\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 03:14:39', '2019-08-05 03:14:39'),
+(1019, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-05 03:14:40', '2019-08-05 03:14:40'),
+(1020, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"32\",\"title\":\"\\u56fe\\u5e93\\u5217\\u8868\",\"icon\":\"fa-align-right\",\"uri\":\"photos\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 03:15:00', '2019-08-05 03:15:00'),
+(1021, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-05 03:15:00', '2019-08-05 03:15:00'),
+(1022, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7}]},{\\\"id\\\":11},{\\\"id\\\":10,\\\"children\\\":[{\\\"id\\\":23},{\\\"id\\\":24}]},{\\\"id\\\":12,\\\"children\\\":[{\\\"id\\\":16},{\\\"id\\\":17}]},{\\\"id\\\":21,\\\"children\\\":[{\\\"id\\\":22}]},{\\\"id\\\":26,\\\"children\\\":[{\\\"id\\\":27}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":19},{\\\"id\\\":20},{\\\"id\\\":25}]},{\\\"id\\\":32,\\\"children\\\":[{\\\"id\\\":33}]},{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":13},{\\\"id\\\":15},{\\\"id\\\":31}]}]\"}', '2019-08-05 03:15:18', '2019-08-05 03:15:18'),
+(1023, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:15:18', '2019-08-05 03:15:18'),
+(1024, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-05 03:15:20', '2019-08-05 03:15:20'),
+(1025, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:15:23', '2019-08-05 03:15:23'),
+(1026, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-05 03:15:23', '2019-08-05 03:15:23'),
+(1027, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-05 03:15:36', '2019-08-05 03:15:36'),
+(1028, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:15:40', '2019-08-05 03:15:40'),
+(1029, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-08-05 03:16:11', '2019-08-05 03:16:11'),
+(1030, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-05 03:16:44', '2019-08-05 03:16:44'),
+(1031, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:16:53', '2019-08-05 03:16:53'),
+(1032, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:17:07', '2019-08-05 03:17:07'),
+(1033, 1, 'admin/photos/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:17:10', '2019-08-05 03:17:10'),
+(1034, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:17:15', '2019-08-05 03:17:15'),
+(1035, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:17:18', '2019-08-05 03:17:18'),
+(1036, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:17:20', '2019-08-05 03:17:20'),
+(1037, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u7cbe\\u7f8e\\u56fe\\u7247\",\"typedir\":\"jmtp\",\"order\":\"1\",\"title\":\"\\u7cbe\\u7f8e\\u56fe\\u7247\",\"keyword\":\"\\u7cbe\\u7f8e\\u56fe\\u7247\",\"dirposition\":\"\\u7cbe\\u7f8e\\u56fe\\u7247\",\"mid\":\"7\",\"status\":\"on\",\"content\":null,\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-05 03:20:00', '2019-08-05 03:20:00'),
+(1038, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-05 03:20:00', '2019-08-05 03:20:00'),
+(1039, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:20:04', '2019-08-05 03:20:04'),
+(1040, 1, 'admin/photos/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:20:05', '2019-08-05 03:20:05'),
+(1041, 1, 'admin/photos', 'POST', '127.0.0.1', '{\"parent_id\":\"13\",\"title\":\"\\u6d4b\\u8bd5\\u56fe\\u72471\",\"introduce\":\"\\u6d4b\\u8bd5\\u56fe\\u72471\\u6d4b\\u8bd5\\u56fe\\u72471\",\"status\":\"on\",\"hits\":\"443\",\"keyword\":null,\"description\":null,\"author_id\":\"1\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/photos\"}', '2019-08-05 03:20:40', '2019-08-05 03:20:40'),
+(1042, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-08-05 03:20:41', '2019-08-05 03:20:41'),
+(1043, 1, 'admin/photos/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:20:44', '2019-08-05 03:20:44'),
+(1044, 1, 'admin/photos/1', 'PUT', '127.0.0.1', '{\"parent_id\":\"13\",\"title\":\"\\u7f8e\\u5973\\u56fe\\u7247\\u54ea\\u91cc\\u627e\",\"introduce\":\"\\u7f8e\\u5973\\u56fe\\u7247\\u54ea\\u91cc\\u627e\",\"status\":\"3\",\"hits\":\"0\",\"keyword\":\"\\u7f8e\\u5973\\u56fe\\u7247\\u54ea\\u91cc\\u627e,\\u7f8e\\u5973\",\"description\":null,\"author_id\":\"0\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/photos\"}', '2019-08-05 03:20:50', '2019-08-05 03:20:50'),
+(1045, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-08-05 03:20:50', '2019-08-05 03:20:50'),
+(1046, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-08-05 03:21:00', '2019-08-05 03:21:00'),
+(1047, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-08-05 03:21:32', '2019-08-05 03:21:32'),
+(1048, 1, 'admin/photos/release', 'POST', '127.0.0.1', '{\"ids\":\"1\",\"status\":\"0\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 03:21:39', '2019-08-05 03:21:39'),
+(1049, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:21:39', '2019-08-05 03:21:39'),
+(1050, 1, 'admin/photos/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:21:47', '2019-08-05 03:21:47'),
+(1051, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:21:52', '2019-08-05 03:21:52'),
+(1052, 1, 'admin/photos/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:21:53', '2019-08-05 03:21:53'),
+(1053, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:21:56', '2019-08-05 03:21:56'),
+(1054, 1, 'admin/photos/1', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 03:22:22', '2019-08-05 03:22:22'),
+(1055, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 03:22:22', '2019-08-05 03:22:22');
 
 -- --------------------------------------------------------
 
@@ -1203,7 +1244,9 @@ INSERT INTO `admin_role_menu` (`role_id`, `menu_id`, `created_at`, `updated_at`)
 (1, 25, NULL, NULL),
 (1, 26, NULL, NULL),
 (1, 27, NULL, NULL),
-(1, 31, NULL, NULL);
+(1, 31, NULL, NULL),
+(1, 32, NULL, NULL),
+(1, 33, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -5066,7 +5109,8 @@ INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir
 (9, 0, 1, '生活服务', 'shfw', '生活服务', '生活服务', '生活服务', NULL, 4, 1, 0, '2019-08-01 02:23:47', '2019-08-01 02:23:47'),
 (10, 9, 1, '交通出行', 'jtcx', '交通出行', '交通出行', '交通出行', NULL, 4, 1, 0, '2019-08-01 02:24:29', '2019-08-01 02:24:29'),
 (11, 0, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-01 08:24:02'),
-(12, 0, 1, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-02 03:35:40');
+(12, 0, 1, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-02 03:35:40'),
+(13, 0, 1, '精美图片', 'jmtp', '精美图片', '精美图片', '精美图片', NULL, 7, 1, 0, '2019-08-05 03:20:00', '2019-08-05 03:20:00');
 
 -- --------------------------------------------------------
 
@@ -5230,6 +5274,35 @@ CREATE TABLE `wbsdb_password_resets` (
   `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `wbsdb_photos`
+--
+
+CREATE TABLE `wbsdb_photos` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `parent_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `thumb` varchar(255) NOT NULL DEFAULT '',
+  `conver` varchar(255) DEFAULT '' COMMENT '图集',
+  `introduce` varchar(255) DEFAULT '' COMMENT '简介',
+  `keyword` varchar(255) DEFAULT '' COMMENT '关键词',
+  `description` varchar(255) DEFAULT '' COMMENT '描述',
+  `hits` int(10) UNSIGNED DEFAULT '30',
+  `status` tinyint(1) DEFAULT '0',
+  `author_id` bigint(20) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='图库';
+
+--
+-- 转存表中的数据 `wbsdb_photos`
+--
+
+INSERT INTO `wbsdb_photos` (`id`, `parent_id`, `title`, `thumb`, `conver`, `introduce`, `keyword`, `description`, `hits`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
+(2, 13, '测试图片1', 'images/755281af66f39aca22096e0adc0e05d1.jpg', '[\"images\\/9143b8f559793e7e14fc6980ad74f6fc.jpg\",\"images\\/dc20ee45a50b75632be98c6ad2cbea91.png\"]', '测试图片1测试图片1', NULL, NULL, 443, 1, 1, '2019-08-05 03:20:41', '2019-08-05 03:20:41');
 
 -- --------------------------------------------------------
 
@@ -5486,6 +5559,14 @@ ALTER TABLE `wbsdb_password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- 表的索引 `wbsdb_photos`
+--
+ALTER TABLE `wbsdb_photos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `catid` (`parent_id`),
+  ADD KEY `username` (`author_id`);
+
+--
 -- 表的索引 `wbsdb_questions`
 --
 ALTER TABLE `wbsdb_questions`
@@ -5515,13 +5596,13 @@ ALTER TABLE `wbsdb_users`
 -- 使用表AUTO_INCREMENT `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1017;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1056;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -5563,7 +5644,7 @@ ALTER TABLE `wbsdb_asks`
 -- 使用表AUTO_INCREMENT `wbsdb_categories`
 --
 ALTER TABLE `wbsdb_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_companys`
@@ -5594,6 +5675,12 @@ ALTER TABLE `wbsdb_migrations`
 --
 ALTER TABLE `wbsdb_news`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- 使用表AUTO_INCREMENT `wbsdb_photos`
+--
+ALTER TABLE `wbsdb_photos`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_questions`

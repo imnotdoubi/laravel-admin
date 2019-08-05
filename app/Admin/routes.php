@@ -24,6 +24,7 @@ Route::group([
         'malls'                 => MallController::class,
         'countrys'              => AreaController::class,
         'sells'                 => SellController::class,
+        'photos'                => PhotoController::class,
         'shenhe/articles'       => Review\AutoArticleController::class,
         'shenhe/asks'           => Review\AutoAskController::class,
     ]);
@@ -37,6 +38,7 @@ Route::group([
     $router->post('sells/release', 'SellController@release');
     $router->post('shenhe/articles/release', 'Review\AutoArticleController@release');
     $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
+    $router->post('photos/release', 'PhotoController@release');
 
     $router->get('forms/settings', 'SettingController@settings');
      $router->get('_handle_form_', 'SettingController@settings');
