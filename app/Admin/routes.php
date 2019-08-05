@@ -38,6 +38,11 @@ Route::group([
     $router->post('shenhe/articles/release', 'Review\AutoArticleController@release');
     $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
 
+    $router->get('forms/settings', 'SettingController@settings');
+     $router->get('_handle_form_', 'SettingController@settings');
+
+    
+
     // $router->get('shenhe/articles', 'ArticleController@aude_articles');
 
 });

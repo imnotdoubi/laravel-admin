@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-02 05:46:05
+-- 生成日期： 2019-08-05 04:27:32
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -70,7 +70,8 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (25, 18, 22, '审核提问', 'fa-align-right', 'shenhe/asks', '*', '2019-08-01 10:07:54', '2019-08-02 03:32:50'),
 (26, 0, 17, '供应管理', 'fa-bus', '/', '*', '2019-08-02 03:27:25', '2019-08-02 03:32:50'),
 (27, 26, 18, '供应列表', 'fa-align-right', 'sells', '*', '2019-08-02 03:27:45', '2019-08-02 03:32:50'),
-(30, 29, 0, 'o', 'fa-bars', '/', NULL, '2019-08-02 03:31:24', '2019-08-02 03:31:24');
+(30, 29, 0, 'o', 'fa-bars', '/', NULL, '2019-08-02 03:31:24', '2019-08-02 03:31:24'),
+(31, 14, 0, '网站设置', 'fa-anchor', 'forms/settings', '*', '2019-08-02 09:10:36', '2019-08-02 09:38:59');
 
 -- --------------------------------------------------------
 
@@ -968,7 +969,153 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (868, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:43', '2019-08-02 03:40:43'),
 (869, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-08-02 03:40:49', '2019-08-02 03:40:49'),
 (870, 1, 'admin/sells/1', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"xAjoQvc1gfbM8pAFx1D43eph2VoOmJcWeUFsOvFA\"}', '2019-08-02 03:40:52', '2019-08-02 03:40:52'),
-(871, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:52', '2019-08-02 03:40:52');
+(871, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 03:40:52', '2019-08-02 03:40:52'),
+(872, 1, 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 07:40:31', '2019-08-02 07:40:31'),
+(873, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 07:40:35', '2019-08-02 07:40:35'),
+(874, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 07:40:36', '2019-08-02 07:40:36'),
+(875, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 07:40:38', '2019-08-02 07:40:38'),
+(876, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 08:13:03', '2019-08-02 08:13:03'),
+(877, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 08:13:13', '2019-08-02 08:13:13'),
+(878, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 08:13:30', '2019-08-02 08:13:30'),
+(879, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:09:48', '2019-08-02 09:09:48'),
+(880, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:09:51', '2019-08-02 09:09:51'),
+(881, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"14\",\"title\":\"\\u7f51\\u7ad9\\u8bbe\\u7f6e\",\"icon\":\"fa-anchor\",\"uri\":\"settings\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:10:36', '2019-08-02 09:10:36'),
+(882, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 09:10:36', '2019-08-02 09:10:36'),
+(883, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 09:10:40', '2019-08-02 09:10:40'),
+(884, 1, 'admin/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:10:43', '2019-08-02 09:10:43');
+INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `input`, `created_at`, `updated_at`) VALUES
+(885, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"b2b\\u7f51\\u7ad9\",\"keyword\":\"b2b\\u7f51\\u7ad9\",\"description\":\"b2b\\u7f51\\u7ad9\",\"copyright\":null,\"icp\":\"(c)2008-2018 DESTOON B2B SYSTEM All Rights Reserved\",\"statistic\":\"<script>\\r\\nvar _hmt = _hmt || [];\\r\\n(function() {\\r\\n  var hm = document.createElement(\\\"script\\\");\\r\\n  hm.src = \\\"https:\\/\\/hm.baidu.com\\/hm.js?27aa06dd64daa4ee7d70b43c4be8c489\\\";\\r\\n  var s = document.getElementsByTagName(\\\"script\\\")[0]; \\r\\n  s.parentNode.insertBefore(hm, s);\\r\\n})();\\r\\n<\\/script>\",\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:12:35', '2019-08-02 09:12:35'),
+(886, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:12:36', '2019-08-02 09:12:36'),
+(887, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:12:42', '2019-08-02 09:12:42'),
+(888, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:18:19', '2019-08-02 09:18:19'),
+(889, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98983\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:18:25', '2019-08-02 09:18:25'),
+(890, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:18:25', '2019-08-02 09:18:25'),
+(891, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98984\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:21:01', '2019-08-02 09:21:01'),
+(892, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:05', '2019-08-02 09:21:05'),
+(893, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:07', '2019-08-02 09:21:07'),
+(894, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:09', '2019-08-02 09:21:09'),
+(895, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98984\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:21:15', '2019-08-02 09:21:15'),
+(896, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:31', '2019-08-02 09:21:31'),
+(897, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:32', '2019-08-02 09:21:32'),
+(898, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98984\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:21:34', '2019-08-02 09:21:34'),
+(899, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:21:35', '2019-08-02 09:21:35'),
+(900, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:22:04', '2019-08-02 09:22:04'),
+(901, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:22:04', '2019-08-02 09:22:04'),
+(902, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98983\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:22:31', '2019-08-02 09:22:31'),
+(903, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98983\",\"description\":\"\\u7ad9\\u70b9\\u63cf\\u8ff0\",\"keyword\":\"\\u7ad9\\u70b9\\u5173\\u952e\\u8bcd\",\"biaoyu\":\"\\u7ad9\\u70b9\\u6807\\u8bed\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:22:34', '2019-08-02 09:22:34'),
+(904, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:24:22', '2019-08-02 09:24:22'),
+(905, 1, 'admin/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:24:23', '2019-08-02 09:24:23'),
+(906, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:24:24', '2019-08-02 09:24:24'),
+(907, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898\",\"description\":null,\"keyword\":null,\"biaoyu\":null,\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:24:27', '2019-08-02 09:24:27'),
+(908, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:24:34', '2019-08-02 09:24:34'),
+(909, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:24:35', '2019-08-02 09:24:35'),
+(910, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-02 09:32:23', '2019-08-02 09:32:23'),
+(911, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:35:11', '2019-08-02 09:35:11'),
+(912, 1, 'admin/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:37:55', '2019-08-02 09:37:55'),
+(913, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:38:53', '2019-08-02 09:38:53'),
+(914, 1, 'admin/auth/menu/31/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:38:56', '2019-08-02 09:38:56'),
+(915, 1, 'admin/auth/menu/31', 'PUT', '127.0.0.1', '{\"parent_id\":\"14\",\"title\":\"\\u7f51\\u7ad9\\u8bbe\\u7f6e\",\"icon\":\"fa-anchor\",\"uri\":\"forms\\/settings\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/auth\\/menu\"}', '2019-08-02 09:38:59', '2019-08-02 09:38:59'),
+(916, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 09:38:59', '2019-08-02 09:38:59'),
+(917, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-08-02 09:39:00', '2019-08-02 09:39:00'),
+(918, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:39:03', '2019-08-02 09:39:03'),
+(919, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"website_enable\":\"off\",\"website_title\":\"2\",\"website_slogan\":null,\"website_desc\":null,\"website_keywords\":null,\"website_copyright\":null,\"website_icp\":null,\"website_statistics\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:39:07', '2019-08-02 09:39:07'),
+(920, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:39:36', '2019-08-02 09:39:36'),
+(921, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"website_enable\":\"off\",\"website_title\":null,\"website_slogan\":null,\"website_desc\":null,\"website_keywords\":null,\"website_copyright\":null,\"website_icp\":null,\"website_statistics\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:39:42', '2019-08-02 09:39:42'),
+(922, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:39:49', '2019-08-02 09:39:49'),
+(923, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:39:51', '2019-08-02 09:39:51'),
+(924, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"website_enable\":\"on\",\"website_title\":null,\"website_slogan\":null,\"website_desc\":null,\"website_keywords\":null,\"website_copyright\":null,\"website_icp\":null,\"website_statistics\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:40:53', '2019-08-02 09:40:53'),
+(925, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:40:57', '2019-08-02 09:40:57'),
+(926, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:45:02', '2019-08-02 09:45:02'),
+(927, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"5-10\\u4e07\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:45:08', '2019-08-02 09:45:08'),
+(928, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:45:35', '2019-08-02 09:45:35'),
+(929, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"66\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:45:40', '2019-08-02 09:45:40'),
+(930, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:45:41', '2019-08-02 09:45:41'),
+(931, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:47:05', '2019-08-02 09:47:05'),
+(932, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:47:25', '2019-08-02 09:47:25'),
+(933, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:47:35', '2019-08-02 09:47:35'),
+(934, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:47:48', '2019-08-02 09:47:48'),
+(935, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"44\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:47:51', '2019-08-02 09:47:51'),
+(936, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:47:51', '2019-08-02 09:47:51'),
+(937, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:48:01', '2019-08-02 09:48:01'),
+(938, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"3\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:48:04', '2019-08-02 09:48:04'),
+(939, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:48:04', '2019-08-02 09:48:04'),
+(940, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"4\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:48:57', '2019-08-02 09:48:57'),
+(941, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:48:57', '2019-08-02 09:48:57'),
+(942, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"8\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:49:00', '2019-08-02 09:49:00'),
+(943, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:49:01', '2019-08-02 09:49:01'),
+(944, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:49:44', '2019-08-02 09:49:44'),
+(945, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '[]', '2019-08-02 09:49:49', '2019-08-02 09:49:49'),
+(946, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:49:51', '2019-08-02 09:49:51'),
+(947, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:49:52', '2019-08-02 09:49:52'),
+(948, 1, 'admin/_handle_form_', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:49:53', '2019-08-02 09:49:53'),
+(949, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:49:56', '2019-08-02 09:49:56'),
+(950, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:51:38', '2019-08-02 09:51:38'),
+(951, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:51:43', '2019-08-02 09:51:43'),
+(952, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:53:46', '2019-08-02 09:53:46'),
+(953, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:54:38', '2019-08-02 09:54:38'),
+(954, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:54:40', '2019-08-02 09:54:40'),
+(955, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:54:42', '2019-08-02 09:54:42'),
+(956, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:54:45', '2019-08-02 09:54:45'),
+(957, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98986\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:54:48', '2019-08-02 09:54:48'),
+(958, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:54:49', '2019-08-02 09:54:49'),
+(959, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:55:55', '2019-08-02 09:55:55'),
+(960, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:55:58', '2019-08-02 09:55:58'),
+(961, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898344\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:56:00', '2019-08-02 09:56:00'),
+(962, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:56:01', '2019-08-02 09:56:01'),
+(963, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:56:54', '2019-08-02 09:56:54'),
+(964, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898377\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:56:57', '2019-08-02 09:56:57'),
+(965, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:56:57', '2019-08-02 09:56:57'),
+(966, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:57:00', '2019-08-02 09:57:00'),
+(967, 1, 'admin/shenhe/asks', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:57:02', '2019-08-02 09:57:02'),
+(968, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:57:04', '2019-08-02 09:57:04'),
+(969, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:57:08', '2019-08-02 09:57:08'),
+(970, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 09:57:12', '2019-08-02 09:57:12'),
+(971, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898379\",\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 09:57:15', '2019-08-02 09:57:15'),
+(972, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 09:57:16', '2019-08-02 09:57:16'),
+(973, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:00:54', '2019-08-02 10:00:54'),
+(974, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 10:00:59', '2019-08-02 10:00:59'),
+(975, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u98983797\",\"slogan\":\"4\",\"description\":null,\"keyword\":null,\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 10:01:03', '2019-08-02 10:01:03'),
+(976, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:01:04', '2019-08-02 10:01:04'),
+(977, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:01:37', '2019-08-02 10:01:37'),
+(978, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 10:01:44', '2019-08-02 10:01:44'),
+(979, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898379\\u7edf\\u4e00\",\"slogan\":\"4\",\"description\":null,\"keyword\":null,\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 10:01:50', '2019-08-02 10:01:50'),
+(980, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:01:50', '2019-08-02 10:01:50'),
+(981, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:01:52', '2019-08-02 10:01:52'),
+(982, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:02:53', '2019-08-02 10:02:53'),
+(983, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 10:02:59', '2019-08-02 10:02:59'),
+(984, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u7ad9\\u70b9\\u6807\\u9898379\\u7edf\\u4e00\\u5168\\u7f51\",\"slogan\":\"4\",\"description\":\"\\u8272\\u80c6\\u5982\\u5929\",\"keyword\":null,\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3d0VcCpnu3SBFkXfF7eTtNzMV4yyKYaS6MJHPQuW\"}', '2019-08-02 10:03:07', '2019-08-02 10:03:07'),
+(985, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-02 10:03:08', '2019-08-02 10:03:08'),
+(986, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-02 10:03:14', '2019-08-02 10:03:14'),
+(987, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-05 01:39:12', '2019-08-05 01:39:12'),
+(988, 1, 'admin/countrys', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 01:39:26', '2019-08-05 01:39:26'),
+(989, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 01:39:28', '2019-08-05 01:39:28'),
+(990, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:17:57', '2019-08-05 02:17:57'),
+(991, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:18:51', '2019-08-05 02:18:51'),
+(992, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:18:51', '2019-08-05 02:18:51'),
+(993, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:18:53', '2019-08-05 02:18:53'),
+(994, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:18:57', '2019-08-05 02:18:57'),
+(995, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:18:58', '2019-08-05 02:18:58'),
+(996, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:19:02', '2019-08-05 02:19:02'),
+(997, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:19:05', '2019-08-05 02:19:05'),
+(998, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"off\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:19:20', '2019-08-05 02:19:20'),
+(999, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:19:20', '2019-08-05 02:19:20'),
+(1000, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:19:27', '2019-08-05 02:19:27'),
+(1001, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:19:27', '2019-08-05 02:19:27'),
+(1002, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:21:20', '2019-08-05 02:21:20'),
+(1003, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:22:15', '2019-08-05 02:22:15'),
+(1004, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:22:20', '2019-08-05 02:22:20'),
+(1005, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:22:26', '2019-08-05 02:22:26'),
+(1006, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:22:26', '2019-08-05 02:22:26'),
+(1007, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:23:14', '2019-08-05 02:23:14'),
+(1008, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:23:32', '2019-08-05 02:23:32'),
+(1009, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:23:35', '2019-08-05 02:23:35'),
+(1010, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"enable\":\"on\",\"title\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"slogan\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u6211\\u4e0d\\u662f\\u9017\\u903c\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"WX7WrS8eWANOxSQ5YaPmbAUBLpC5D7J7mAvcUojq\"}', '2019-08-05 02:23:38', '2019-08-05 02:23:38'),
+(1011, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:23:38', '2019-08-05 02:23:38'),
+(1012, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:14', '2019-08-05 02:24:14'),
+(1013, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:24:17', '2019-08-05 02:24:17'),
+(1014, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:24', '2019-08-05 02:24:24'),
+(1015, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-05 02:24:30', '2019-08-05 02:24:30'),
+(1016, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-05 02:24:55', '2019-08-05 02:24:55');
 
 -- --------------------------------------------------------
 
@@ -1055,7 +1202,8 @@ INSERT INTO `admin_role_menu` (`role_id`, `menu_id`, `created_at`, `updated_at`)
 (1, 24, NULL, NULL),
 (1, 25, NULL, NULL),
 (1, 26, NULL, NULL),
-(1, 27, NULL, NULL);
+(1, 27, NULL, NULL),
+(1, 31, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -5162,6 +5310,32 @@ INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `titl
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `wbsdb_settings`
+--
+
+CREATE TABLE `wbsdb_settings` (
+  `id` bigint(2) NOT NULL,
+  `enable` varchar(4) DEFAULT NULL,
+  `title` varchar(256) DEFAULT NULL COMMENT '标题',
+  `keyword` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `slogan` varchar(255) DEFAULT NULL COMMENT '站点标语',
+  `copyright` varchar(255) DEFAULT '' COMMENT '版权',
+  `icp` varchar(255) DEFAULT NULL COMMENT '备案号',
+  `statistic` mediumtext COMMENT '网站统计代码',
+  `logo` varchar(255) DEFAULT NULL COMMENT 'logo图'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='网站设置';
+
+--
+-- 转存表中的数据 `wbsdb_settings`
+--
+
+INSERT INTO `wbsdb_settings` (`id`, `enable`, `title`, `keyword`, `description`, `slogan`, `copyright`, `icp`, `statistic`, `logo`) VALUES
+(1, 'on', '我不是逗逼', '我不是逗逼', 'https://github.com/imnotdoubi/laravel-admin', '我不是逗逼', NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `wbsdb_users`
 --
 
@@ -5341,13 +5515,13 @@ ALTER TABLE `wbsdb_users`
 -- 使用表AUTO_INCREMENT `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=872;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1017;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
