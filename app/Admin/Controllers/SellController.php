@@ -144,7 +144,7 @@ class SellController extends AdminController
           $form->text('title', __('信息标题'))->required();
 
           $form->select('areaid','地区')->options(
-              Area::where('parent_id',0)->pluck('title', 'id')
+              Area::where('parent_id',0)->orderBy('id','asc')->pluck('title', 'id')
           );
 
           $form->text('brand', __('商品品牌'));

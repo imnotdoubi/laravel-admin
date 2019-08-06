@@ -147,7 +147,14 @@ class CompanyController extends AdminController
 
           $form->text('type', __('公司类型'))->placeholder('企业单位、个体经营、其它');
 
-          $form->select('areaid','地区')->options(Area::selectOptions());
+          // $form->select('areaid','地区')->options(Area::selectOptions());
+          $form->select('province','省份')->options(
+              Area::where('parent_id',0)->orderBy('id','asc')->pluck('title', 'id')
+          )->load('city', '/admin/api/city');
+
+          $form->select('city','城市')->load('district', '/admin/api/district');
+
+          $form->select('district','区县');
 
           $form->select('size','投资金额')->options(
                  Investment::orderBy('id')->pluck('title', 'id')

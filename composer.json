@@ -11,6 +11,7 @@
         "fideloper/proxy": "~3.3",
         "fzaninotto/faker": "^1.8",
         "jxlwqq/wang-editor2": "^1.0",
+        "laravel-admin-ext/china-distpicker": "^1.4",
         "laravel-admin-ext/summernote": "^1.0",
         "laravel-admin-ext/wang-editor": "^1.1",
         "laravel/framework": "5.5.*",

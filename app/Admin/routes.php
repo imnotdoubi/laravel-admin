@@ -40,8 +40,11 @@ Route::group([
     $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
     $router->post('photos/release', 'PhotoController@release');
 
+    $router->get('api/city', 'World\ApiController@cities');
+    $router->get('api/district', 'World\ApiController@districts');
+
     $router->get('forms/settings', 'SettingController@settings');
-     $router->get('_handle_form_', 'SettingController@settings');
+    $router->get('_handle_form_', 'SettingController@settings');
 
     
 

@@ -205,7 +205,10 @@ class ArticleController extends AdminController
             $tools->disableView();
         });
 
-        $form->select('parent_id','栏目名')->options(Categorie::selectOptions());
+        // $form->select('parent_id','栏目名')->options(Categorie::selectOptions());
+         $form->select('parent_id','栏目名')->options(
+            Categorie::where('mid',1)->pluck('typename', 'id')
+         )->required();
 
         $form->text('title', __('标题'))->required();
         // $form->number('parent_id', __('栏目名'));
