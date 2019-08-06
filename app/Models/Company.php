@@ -2,6 +2,7 @@
 
 namespace App\Models;
 use App\Models\Investment;
+use App\Models\CompanyData;
 use Encore\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,5 +22,11 @@ class Company extends Model
     public function getImagesarrAttribute($imagesarr)
     {
         return json_decode($imagesarr, true);
+    }
+
+    public function companydata()
+    {
+        return $this->belongsTo(CompanyData::class,'id','id');
+
     }
 }

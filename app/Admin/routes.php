@@ -18,6 +18,7 @@ Route::group([
         'articles'              => ArticleController::class,
         'categories'            => CategorieController::class,
         'companys'              => CompanyController::class,
+        'companydatas'          => CompanyDataController::class,
         'news'                  => NewController::class,
         'asks'                  => AskController::class,
         'questions'             => QuestionController::class,
@@ -30,7 +31,9 @@ Route::group([
     ]);
 
     $router->post('articles/release', 'ArticleController@release');
-    $router->post('companys/release', 'CompanyController@release');
+    // $router->post('companys/release', 'CompanyController@release');
+    $router->post('companydatas/release', 'CompanyDataController@release');
+
     $router->post('news/release', 'NewController@release');
     $router->post('asks/release', 'AskController@release');
     $router->post('questions/release', 'QuestionController@release');
