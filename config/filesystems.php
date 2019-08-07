@@ -47,11 +47,18 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-
+        //原版
+        // 'public' => [
+        //     'driver' => 'local',
+        //     'root' => storage_path('app/public'),
+        //     'url' => env('APP_URL').'/storage',
+        //     'visibility' => 'public',
+        // ],
+        //修改后的图片绝对上传地址
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'root' => 'G:/xmapp/htdocs/test/laravel-admin/public/upload',
+            'url' => env('APP_URL').'/upload/',
             'visibility' => 'public',
         ],
 
