@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//第三方github登陆
+Route::get('oauth/github', 'SocialController@githubLogin');
+Route::get('oauth/github/callback', 'SocialController@githubCallback');
+

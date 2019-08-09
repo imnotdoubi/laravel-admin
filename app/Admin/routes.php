@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\Router;
 
+
 Admin::routes();
 
 
@@ -11,6 +12,9 @@ Route::group([
     'middleware'    => config('admin.route.middleware'),
 ], function (Router $router) {
 
+//验证码登录
+    // $router->get('auth/login', 'AuthController@getLogin');
+    // $router->post('auth/login', 'AuthController@postLogin');
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 

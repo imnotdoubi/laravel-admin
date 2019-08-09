@@ -19,6 +19,7 @@
         "laravel/tinker": "~1.0",
         "mews/captcha": "^2.2",
         "overtrue/laravel-lang": "~3.0",
+        "overtrue/laravel-socialite": "~2.0",
         "stevenyangecho/laravel-u-editor": "~1.4"
     },
     "require-dev": {
@@ -66,7 +67,7 @@
     "repositories": {
         "packagist": {
             "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
+            "url": "https://mirrors.aliyun.com/composer/"
         }
     }
 }

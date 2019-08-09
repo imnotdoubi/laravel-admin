@@ -1,0 +1,29 @@
+{
+    "name": "overtrue/laravel-socialite",
+    "description": "Social OAuth authentication for Laravel 5.",
+    "require": {
+        "overtrue/socialite": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Overtrue\\LaravelSocialite\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "overtrue",
+            "email": "anzhengchao@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Overtrue\\LaravelSocialite\\ServiceProvider"
+            ],
+            "aliases": {
+                "Socialite": "Overtrue\\LaravelSocialite\\Socialite"
+            }
+        }
+    }
+}

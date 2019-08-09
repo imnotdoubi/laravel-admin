@@ -1,0 +1,34 @@
+{
+    "name": "jxlwqq/wang-editor2",
+    "description": "wang-editor2 for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/jxlwqq/wangEditor2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jxlwqq",
+            "email": "jxlwqq@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jxlwqq\\WangEditor2\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jxlwqq\\WangEditor2\\WangEditor2ServiceProvider"
+            ]
+
+        }
+    }
+}

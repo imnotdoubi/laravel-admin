@@ -34,5 +34,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'github' => [
+        'client_id'     => 'fe694db52138d3165272',
+        'client_secret' => '5cc31d15e8367c1717d34e46244238592d95e7a1',
+        'redirect'      => 'http://www.lar-admin.test/oauth/github/callback',
+    ],
 
 ];
