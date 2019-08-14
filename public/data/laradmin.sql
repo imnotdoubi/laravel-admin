@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-09 05:22:27
+-- 生成日期： 2019-08-14 12:11:35
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -2110,7 +2110,68 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (2002, 11, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-09 02:20:02', '2019-08-09 02:20:02'),
 (2003, 11, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-09 02:20:05', '2019-08-09 02:20:05'),
 (2004, 11, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-09 02:20:20', '2019-08-09 02:20:20'),
-(2005, 12, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-09 02:20:48', '2019-08-09 02:20:48');
+(2005, 12, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-09 02:20:48', '2019-08-09 02:20:48'),
+(2006, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-14 07:30:12', '2019-08-14 07:30:12'),
+(2007, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:30:20', '2019-08-14 07:30:20'),
+(2008, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:30:25', '2019-08-14 07:30:25'),
+(2009, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:30:29', '2019-08-14 07:30:29'),
+(2010, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:38', '2019-08-14 07:31:38'),
+(2011, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:42', '2019-08-14 07:31:42'),
+(2012, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:42', '2019-08-14 07:31:42'),
+(2013, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:43', '2019-08-14 07:31:43'),
+(2014, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:46', '2019-08-14 07:31:46'),
+(2015, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:49', '2019-08-14 07:31:49'),
+(2016, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:31:53', '2019-08-14 07:31:53'),
+(2017, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 07:35:54', '2019-08-14 07:35:54'),
+(2018, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:31:30', '2019-08-14 08:31:30'),
+(2019, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:31:34', '2019-08-14 08:31:34'),
+(2020, 1, 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:44:06', '2019-08-14 08:44:06'),
+(2021, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:44:07', '2019-08-14 08:44:07'),
+(2022, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:44:08', '2019-08-14 08:44:08'),
+(2023, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:44:56', '2019-08-14 08:44:56'),
+(2024, 1, 'admin/articles/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:45:07', '2019-08-14 08:45:07'),
+(2025, 1, 'admin/articles/3', 'PUT', '127.0.0.1', '{\"parent_id\":\"1\",\"title\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"flag\":[\"2\",\"3\",null],\"keyword\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"description\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"status\":\"on\",\"created_date\":\"2019-07-29\",\"content\":\"<p>dafsd\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"hits\":\"193\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 08:48:07', '2019-08-14 08:48:07'),
+(2026, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 08:48:07', '2019-08-14 08:48:07'),
+(2027, 1, 'admin/articles/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:09', '2019-08-14 08:48:09'),
+(2028, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:12', '2019-08-14 08:48:12'),
+(2029, 1, 'admin/articles/4/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:13', '2019-08-14 08:48:13'),
+(2030, 1, 'admin/articles/4', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u6d4b\\u8bd5\\u6d4b\\u8bd5444\",\"flag\":[\"3\",null],\"keyword\":null,\"description\":null,\"status\":\"on\",\"created_date\":\"2019-08-06\",\"content\":\"<p>\\u6d4b\\u8bd5\\u6d4b\\u8bd5444<\\/p><p>asdf <br\\/><\\/p><p><img src=\\\"\\/upload\\/image\\/20190806\\/1565080574.jpg\\\" title=\\\"1565080574.jpg\\\" alt=\\\"111111.jpg\\\"\\/><\\/p><p>sadf<img src=\\\"\\/upload\\/image\\/20190806\\/1565080592.png\\\" title=\\\"1565080592.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/><\\/p>\",\"hits\":\"284\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 08:48:21', '2019-08-14 08:48:21'),
+(2031, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 08:48:21', '2019-08-14 08:48:21'),
+(2032, 1, 'admin/articles/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:23', '2019-08-14 08:48:23'),
+(2033, 1, 'admin/articles/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df2\",\"flag\":[\"2\",null],\"keyword\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"description\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"status\":\"off\",\"created_date\":\"2019-07-29\",\"content\":\"<p>dafsd\\u901f\\u5ea6\\u53d1<br\\/><\\/p>\",\"hits\":\"193\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 08:48:29', '2019-08-14 08:48:29'),
+(2034, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 08:48:29', '2019-08-14 08:48:29'),
+(2035, 1, 'admin/articles/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:31', '2019-08-14 08:48:31'),
+(2036, 1, 'admin/articles/1', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"flag\":[null],\"keyword\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"description\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"status\":\"on\",\"created_date\":\"2019-07-29\",\"content\":\"<p>dafsd<br\\/><\\/p>\",\"hits\":\"193\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 08:48:38', '2019-08-14 08:48:38'),
+(2037, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 08:48:38', '2019-08-14 08:48:38'),
+(2038, 1, 'admin/articles/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:42', '2019-08-14 08:48:42'),
+(2039, 1, 'admin/articles/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df2\",\"flag\":[\"2\",null],\"keyword\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"description\":\"\\u8857\\u5427\\u5976\\u8336\\u52a0\\u76df\",\"status\":\"on\",\"created_date\":\"2019-07-29\",\"content\":\"<p>dafsd\\u901f\\u5ea6\\u53d1<br\\/><\\/p>\",\"hits\":\"193\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 08:48:46', '2019-08-14 08:48:46'),
+(2040, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 08:48:47', '2019-08-14 08:48:47'),
+(2041, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:54', '2019-08-14 08:48:54'),
+(2042, 1, 'admin/companydatas/5/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:48:56', '2019-08-14 08:48:56'),
+(2043, 1, 'admin/companydatas/5', 'PUT', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"purl\":\"zsdst\",\"comname\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u58023\",\"type\":\"\\u4e2a\\u4f53\",\"province\":\"5\",\"city\":null,\"district\":null,\"size\":\"4\",\"mode\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"capital\":\"100\",\"regyear\":\"2010\",\"business\":\"\\u5feb\\u9910\\u5348\\u9910\",\"vip\":\"1\",\"introduce\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"telephone\":\"029 1111 4444\",\"fax\":\"02155556666\",\"mail\":\"123@qq.com\",\"address\":\"\\u5317\\u4eac\",\"homepage\":\"http:\\/\\/www.baidu.com\",\"title\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"keyword\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"description\":\"\\u5f20\\u6c0f\\u5927\\u98df\\u5802\",\"hits\":\"287\",\"status\":\"off\",\"author_id\":\"1\"},\"content\":\"<p>\\u65f6\\u4ee3\\u5927\\u53a6<\\/p><p>\\u6492\\u65e6\\u6cd5<img src=\\\"\\/upload\\/image\\/20190806\\/1565079559.jpg\\\" title=\\\"1565079559.jpg\\\" alt=\\\"111111.jpg\\\"\\/><\\/p><p><br\\/><\\/p><p>sdf<img src=\\\"\\/upload\\/image\\/20190806\\/1565080532.png\\\" title=\\\"1565080532.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/>sdf ty<br\\/><\\/p>\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-14 08:49:11', '2019-08-14 08:49:11'),
+(2044, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-14 08:49:12', '2019-08-14 08:49:12'),
+(2045, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 08:49:27', '2019-08-14 08:49:27'),
+(2046, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"4\"}', '2019-08-14 08:50:18', '2019-08-14 08:50:18'),
+(2047, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"49\"}', '2019-08-14 08:50:19', '2019-08-14 08:50:19'),
+(2048, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"6\",\"combrand\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"purl\":\"mrmf\",\"comname\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"type\":null,\"province\":\"4\",\"city\":\"49\",\"district\":\"673\",\"size\":\"5\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":null,\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":\"\\u5317\\u4eac\",\"homepage\":null,\"title\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"keyword\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"description\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"hits\":\"214\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u987a\\u4e30<br\\/><\\/p>\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-14 08:50:31', '2019-08-14 08:50:31'),
+(2049, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-14 08:50:31', '2019-08-14 08:50:31'),
+(2050, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 09:35:43', '2019-08-14 09:35:43'),
+(2051, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 09:35:45', '2019-08-14 09:35:45'),
+(2052, 1, 'admin/articles', 'POST', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u6d4b\\u8bd5\\u6307\\u5357111\",\"flag\":[null],\"keyword\":null,\"description\":null,\"status\":\"on\",\"created_date\":\"2019-08-14\",\"content\":\"<p>\\u6d4b\\u8bd5\\u6307\\u5357111<\\/p>\",\"hits\":\"387\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 09:36:11', '2019-08-14 09:36:11'),
+(2053, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 09:36:12', '2019-08-14 09:36:12'),
+(2054, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 09:36:14', '2019-08-14 09:36:14'),
+(2055, 1, 'admin/articles', 'POST', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u6d4b\\u8bd5\\u6307\\u5357222\",\"flag\":[null],\"keyword\":null,\"description\":null,\"status\":\"on\",\"created_date\":\"2019-08-14\",\"content\":\"<p>\\u6d4b\\u8bd5\\u6307\\u5357222<\\/p>\",\"hits\":\"149\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 09:36:34', '2019-08-14 09:36:34'),
+(2056, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 09:36:34', '2019-08-14 09:36:34'),
+(2057, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 09:37:01', '2019-08-14 09:37:01');
+INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `input`, `created_at`, `updated_at`) VALUES
+(2058, 1, 'admin/articles', 'POST', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u6d4b\\u8bd5\\u6307\\u5357333\",\"flag\":[null],\"keyword\":null,\"description\":null,\"status\":\"on\",\"created_date\":\"2019-08-14\",\"content\":\"<p>\\u6d4b\\u8bd5\\u6307\\u5357333<\\/p>\",\"hits\":\"436\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 09:37:16', '2019-08-14 09:37:16'),
+(2059, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 09:37:17', '2019-08-14 09:37:17'),
+(2060, 1, 'admin/articles/7/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 09:44:32', '2019-08-14 09:44:32'),
+(2061, 1, 'admin/articles/7', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"title\":\"\\u6d4b\\u8bd5\\u6307\\u5357333\",\"flag\":[null],\"keyword\":null,\"description\":null,\"status\":\"on\",\"created_date\":\"2019-08-14\",\"content\":\"<p>\\u6d4b\\u8bd5\\u6307\\u5357333sdf <br\\/><\\/p><p><img src=\\\"\\/upload\\/image\\/20190814\\/1565775896.jpg\\\" title=\\\"1565775896.jpg\\\" alt=\\\"15530630635768.jpg\\\"\\/>af<\\/p>\",\"hits\":\"436\",\"author_id\":\"1\",\"_token\":\"r9sXSAzqoJFe1RtjEWtNBjObbuufDCRDuRU7LgiR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/articles\"}', '2019-08-14 09:45:00', '2019-08-14 09:45:00'),
+(2062, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 09:45:00', '2019-08-14 09:45:00'),
+(2063, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:05:59', '2019-08-14 10:05:59'),
+(2064, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:06:00', '2019-08-14 10:06:00'),
+(2065, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:06:06', '2019-08-14 10:06:06');
 
 -- --------------------------------------------------------
 
@@ -6077,10 +6138,13 @@ CREATE TABLE `wbsdb_articles` (
 --
 
 INSERT INTO `wbsdb_articles` (`id`, `title`, `flag`, `parent_id`, `keyword`, `description`, `content`, `hits`, `favs`, `status`, `conver`, `author_id`, `created_date`, `created_at`, `updated_at`) VALUES
-(1, '街吧奶茶加盟', NULL, 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 10:54:01', '2019-08-01 17:53:16'),
-(2, '街吧奶茶加盟2', '2', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd速度发<br/></p>', 193, 0, 0, NULL, 1, '2019-07-29', '2019-07-29 11:54:19', '2019-08-06 16:23:13'),
-(3, '街吧奶茶加盟', '2,3', 1, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd斯蒂芬<br/></p>', 193, 0, 1, NULL, 1, '2019-07-29', '2019-07-29 13:11:09', '2019-08-06 16:25:31'),
-(4, '测试测试444', '3', 3, NULL, NULL, '<p>测试测试444</p><p>asdf <br/></p><p><img src=\"/upload/image/20190806/1565080574.jpg\" title=\"1565080574.jpg\" alt=\"111111.jpg\"/></p><p>sadf<img src=\"/upload/image/20190806/1565080592.png\" title=\"1565080592.png\" alt=\"QQ截图20190228101344.png\"/></p>', 284, 0, 1, 'images/6149b748e3d82e32c4c94dfb50010b90.png', 1, '2019-08-06', '2019-08-06 16:25:57', '2019-08-06 16:36:42');
+(1, '街吧奶茶加盟', '', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, 'images/5fa83c54c10e6ca1444077824115377c.jpg', 1, '2019-07-29', '2019-07-29 10:54:01', '2019-08-14 16:48:38'),
+(2, '街吧奶茶加盟2', '2', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd速度发<br/></p>', 193, 0, 1, 'images/189ee1f82f292109e85758b4717aca7a.jpg', 1, '2019-07-29', '2019-07-29 11:54:19', '2019-08-14 16:48:47'),
+(3, '街吧奶茶加盟', '2,3', 1, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd斯蒂芬<br/></p>', 193, 0, 1, 'images/1d8e5ceea47cae36315a9ed36ed94a4e.jpg', 1, '2019-07-29', '2019-07-29 13:11:09', '2019-08-14 16:48:07'),
+(4, '测试测试444', '3', 3, NULL, NULL, '<p>测试测试444</p><p>asdf <br/></p><p><img src=\"/upload/image/20190806/1565080574.jpg\" title=\"1565080574.jpg\" alt=\"111111.jpg\"/></p><p>sadf<img src=\"/upload/image/20190806/1565080592.png\" title=\"1565080592.png\" alt=\"QQ截图20190228101344.png\"/></p>', 284, 0, 1, 'images/adcd7cd9ea2808d57a33fec96b055378.jpg', 1, '2019-08-06', '2019-08-06 16:25:57', '2019-08-14 16:48:21'),
+(5, '测试指南111', '', 3, NULL, NULL, '<p>测试指南111</p>', 387, 0, 1, 'images/30112ed7fef48033d49c6305b65e57ff.jpg', 1, '2019-08-14', '2019-08-14 17:36:11', '2019-08-14 17:36:11'),
+(6, '测试指南222', '', 3, NULL, NULL, '<p>测试指南222</p>', 149, 0, 1, 'images/07d4c93ff2052bb638145030cd797a9c.jpg', 1, '2019-08-14', '2019-08-14 17:36:34', '2019-08-14 17:36:34'),
+(7, '测试指南333', '', 3, NULL, NULL, '<p>测试指南333sdf <br/></p><p><img src=\"/upload/image/20190814/1565775896.jpg\" title=\"1565775896.jpg\" alt=\"15530630635768.jpg\"/>af</p>', 436, 0, 1, 'images/29394031edc9e15fe9927d280e06c503.jpg', 1, '2019-08-14', '2019-08-14 17:37:17', '2019-08-14 17:45:00');
 
 -- --------------------------------------------------------
 
@@ -6202,7 +6266,8 @@ CREATE TABLE `wbsdb_companys` (
 --
 
 INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `status`, `vip`, `type`, `catid`, `province`, `city`, `district`, `mode`, `capital`, `size`, `regyear`, `business`, `telephone`, `fax`, `mail`, `address`, `imagesarr`, `homepage`, `thumb`, `introduce`, `hits`, `title`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`) VALUES
-(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 0, 1, '个体', 7, 5, NULL, NULL, '张氏大食堂', 100, '4', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/d76df27ff27875d3b0f5163410b662d9.png', '张氏大食堂', 287, '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-06 16:19:25');
+(7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 6, 4, 49, 673, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, '北京', '', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-08-14 16:50:31'),
+(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 0, 1, '个体', 7, 5, NULL, NULL, '张氏大食堂', 100, '4', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-14 16:49:12');
 
 -- --------------------------------------------------------
 
@@ -6220,6 +6285,7 @@ CREATE TABLE `wbsdb_company_datas` (
 --
 
 INSERT INTO `wbsdb_company_datas` (`id`, `content`) VALUES
+(7, '<p>阿萨德发顺丰<br/></p>'),
 (5, '<p>时代大厦</p><p>撒旦法<img src=\"/upload/image/20190806/1565079559.jpg\" title=\"1565079559.jpg\" alt=\"111111.jpg\"/></p><p><br/></p><p>sdf<img src=\"/upload/image/20190806/1565080532.png\" title=\"1565080532.png\" alt=\"QQ截图20190228101344.png\"/>sdf ty<br/></p>');
 
 -- --------------------------------------------------------
@@ -6337,6 +6403,33 @@ CREATE TABLE `wbsdb_password_resets` (
   `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `wbsdb_phonemanages`
+--
+
+CREATE TABLE `wbsdb_phonemanages` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `phoneno` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `ip` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `note` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `host` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 转存表中的数据 `wbsdb_phonemanages`
+--
+
+INSERT INTO `wbsdb_phonemanages` (`id`, `phoneno`, `name`, `address`, `ip`, `note`, `host`, `created_at`, `updated_at`) VALUES
+(7, '13466668888', '6逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:03:45', '2019-08-14 10:03:45'),
+(8, '13466668887', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:32', '2019-08-14 10:04:32'),
+(9, '13466668886', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:45', '2019-08-14 10:04:45');
 
 -- --------------------------------------------------------
 
@@ -6648,6 +6741,12 @@ ALTER TABLE `wbsdb_password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- 表的索引 `wbsdb_phonemanages`
+--
+ALTER TABLE `wbsdb_phonemanages`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- 表的索引 `wbsdb_photos`
 --
 ALTER TABLE `wbsdb_photos`
@@ -6691,7 +6790,7 @@ ALTER TABLE `admin_menu`
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2006;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2066;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -6733,7 +6832,7 @@ ALTER TABLE `wbsdb_areas`
 -- 使用表AUTO_INCREMENT `wbsdb_articles`
 --
 ALTER TABLE `wbsdb_articles`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_asks`
@@ -6751,13 +6850,13 @@ ALTER TABLE `wbsdb_categories`
 -- 使用表AUTO_INCREMENT `wbsdb_companys`
 --
 ALTER TABLE `wbsdb_companys`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_company_datas`
 --
 ALTER TABLE `wbsdb_company_datas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_investments`
@@ -6782,6 +6881,12 @@ ALTER TABLE `wbsdb_migrations`
 --
 ALTER TABLE `wbsdb_news`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- 使用表AUTO_INCREMENT `wbsdb_phonemanages`
+--
+ALTER TABLE `wbsdb_phonemanages`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_photos`
