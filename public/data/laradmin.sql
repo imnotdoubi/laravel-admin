@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-14 12:11:35
+-- 生成日期： 2019-08-16 10:43:47
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -2171,7 +2171,55 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (2062, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2019-08-14 09:45:00', '2019-08-14 09:45:00'),
 (2063, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:05:59', '2019-08-14 10:05:59'),
 (2064, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:06:00', '2019-08-14 10:06:00'),
-(2065, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:06:06', '2019-08-14 10:06:06');
+(2065, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-14 10:06:06', '2019-08-14 10:06:06'),
+(2066, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:44:06', '2019-08-15 01:44:06'),
+(2067, 1, 'admin/companydatas/release', 'POST', '127.0.0.1', '{\"ids\":\"5,7\",\"status\":\"1\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\"}', '2019-08-15 01:46:00', '2019-08-15 01:46:00'),
+(2068, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:46:00', '2019-08-15 01:46:00'),
+(2069, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:47:04', '2019-08-15 01:47:04'),
+(2070, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:52:03', '2019-08-15 01:52:03'),
+(2071, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"6\"}', '2019-08-15 01:53:32', '2019-08-15 01:53:32'),
+(2072, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"74\"}', '2019-08-15 01:53:32', '2019-08-15 01:53:32'),
+(2073, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\",\"purl\":\"ddbbf\",\"comname\":\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\",\"type\":\"\\u4e2a\\u4f53\",\"province\":\"6\",\"city\":\"74\",\"district\":\"918\",\"size\":\"6\",\"mode\":\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\",\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":null,\"keyword\":null,\"description\":null,\"hits\":\"107\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u54c1\\u724c\\uff0c\\u662f\\u96b6\\u5c5e\\u4e8e\\u8fbd\\u5b81\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u6709\\u9650\\u516c\\u53f8\\u65d7\\u4e0b\\u3002 \\r\\n\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u5728\\u6211\\u56fd\\u6210\\u529f\\u8fd0\\u8425\\u591a\\u5e74\\uff0c\\u662f\\u6df1\\u53d7\\u6d88\\u8d39\\u8005\\u6b22\\u8fce\\u7684\\u54c1\\u724c\\uff0c\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u52a0\\u76df\\u7ecf\\u8425\\u4e0d\\u6101\\u6ca1\\u751f\\u610f\\u53ef\\u505a\\uff0c\\u662f\\u4e00\\u4e2a\\u9760\\u8c31\\u7684\\u6295\\u8d44\\u54c1\\u724c\\u3002\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u603b\\u90e8\\u63d0\\u4f9b\\u5b8c\\u5584\\u7684\\u52a0\\u76df\\u57f9\\u8bad\\u4f53\\u7cfb\\uff0c\\u4e13\\u4e1a\\u56e2\\u961f\\u6276\\u6301\\u521b\\u4e1a\\uff0c\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u4fdd\\u8bc1\\u5ba2\\u6237\\u80fd\\u638c\\u63e1\\u5f00\\u5e97\\u8fd0\\u8425\\u7684\\u7efc\\u5408\\u6280\\u5de7\\uff0c\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\u52a0\\u76df\\u6bdb\\u5229\\u9ad8\\uff0c\\u6536\\u76ca\\u597d\\u3002<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"\\/upload\\/image\\/20190815\\/1565834044.png\\\" title=\\\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\\" alt=\\\"\\u5927\\u4e1c\\u5317\\u70e4\\u8089\\u62cc\\u996d\\\" width=\\\"600\\\" height=\\\"400\\\"\\/><\\/p><p>\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-15 01:54:11', '2019-08-15 01:54:11'),
+(2074, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:54:11', '2019-08-15 01:54:11'),
+(2075, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:54:14', '2019-08-15 01:54:14'),
+(2076, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"3\"}', '2019-08-15 01:54:49', '2019-08-15 01:54:49'),
+(2077, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"37\"}', '2019-08-15 01:54:49', '2019-08-15 01:54:49'),
+(2078, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"38\"}', '2019-08-15 01:54:51', '2019-08-15 01:54:51'),
+(2079, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u6d41\\u5f0a\\u7684\\u732a\\u811a\\u996d\",\"purl\":\"lbdzjf\",\"comname\":\"\\u6d41\\u5f0a\\u7684\\u732a\\u811a\\u996d\",\"type\":null,\"province\":\"3\",\"city\":\"38\",\"district\":\"508\",\"size\":\"3\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u6d41\\u5f0a\\u7684\\u732a\\u811a\\u996d\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":null,\"keyword\":null,\"description\":null,\"hits\":\"417\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u6d41\\u5f0a\\u7684\\u732a\\u811a\\u996d\\u662f\\u901a\\u8fc7\\u9ad8\\u5ea6\\u8fc7\\u6ee4\\uff0c\\u9664\\u53bb\\u591a\\u4f59\\u6cb9\\u8102\\uff0c\\u5403\\u591a\\u5c11\\u4e5f\\u4e0d\\u4f1a\\u6cb9\\u817b\\uff0c\\u732a\\u811a\\u7684\\u914d\\u65b9\\u4ee5\\u53ca\\u5236\\u4f5c\\u7684\\u7cbe\\u5fc3\\u7cbe\\u51c6\\u5ea6\\u4e5f\\u662f\\u51e0\\u5341\\u5e74\\u6765\\u6478\\u7d22\\u7684\\u7ed3\\u679c\\uff0c\\u5173\\u952e\\u7684\\u662f\\u672c\\u732a\\u811a\\u6574\\u4e2a\\u5236\\u4f5c\\u8fc7\\u7a0b\\u5230\\u51fa\\u7089\\uff0c\\u6ca1\\u6709\\u63ba\\u534a\\u70b9\\u5bf9\\u4eba\\u4f53\\u6709\\u5bb3\\u7684\\u8fa3\\u6912\\u7cbe\\u3001\\u9632\\u8150\\u5242\\u7b49\\uff0c\\u4e00\\u5f8b\\u8ba9\\u60a8\\u653e\\u5fc3\\u98df\\u7528\\u3002\\u70e4\\u6280\\u72ec\\u6b65\\u5929\\u4e0b\\uff0c\\u7f8e\\u5473\\u65e0\\u4e0e\\u4f26\\u6bd4\\uff0c\\u70e4\\u732a\\u8e44\\u4e00\\u63a8\\u51fa\\uff0c\\u4fbf\\u5feb\\u901f\\u98ce\\u9761\\u5168\\u56fd\\uff0c\\u53d7\\u5230\\u4e86\\u5e7f\\u5927\\u6d88\\u8d39\\u8005\\u7684\\u5f3a\\u70c8\\u8ffd\\u6367\\uff0c\\u4e0d\\u7ba1\\u7537\\u5973\\u8001\\u5c11\\uff0c\\u767e\\u59d3\\u540d\\u6d41\\uff0c\\u7231\\u5403\\u8005\\u7edc\\u7ece\\u4e0d\\u7edd\\uff0c\\u5e38\\u5e38\\u51fa\\u73b0\\u6392\\u961f\\u62a2\\u8d2d\\u7684\\u706b\\u7206\\u573a\\u9762\\u4ee4\\u4eba\\u60ca\\u53f9!<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"\\/upload\\/image\\/20190815\\/1565834110.png\\\"\\/><\\/p><p><strong>\\u79d8\\u4f20\\u914d\\u65b9\\uff0c\\u53e3\\u5473\\u591a\\u6837<\\/strong><\\/p><p>\\u6d41\\u5f0a\\u7684\\u732a\\u811a\\u996d\\u79d8\\u4f20\\u914d\\u65b9\\uff0c\\u9075\\u5faa\\u5065\\u5eb7\\u996e\\u98df\\u7406\\u5ff5\\uff0c\\u66f4\\u52a0\\u5730<\\/p><p><br\\/><\\/p>\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-15 01:55:13', '2019-08-15 01:55:13'),
+(2080, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:55:13', '2019-08-15 01:55:13'),
+(2081, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:55:15', '2019-08-15 01:55:15'),
+(2082, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-08-15 01:55:44', '2019-08-15 01:55:44'),
+(2083, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"61\"}', '2019-08-15 01:55:45', '2019-08-15 01:55:45'),
+(2084, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"72\\u8857\\u6392\\u9aa8\\u996d\",\"purl\":\"paiguf\",\"comname\":\"72\\u8857\\u6392\\u9aa8\\u996d\",\"type\":null,\"province\":\"5\",\"city\":\"61\",\"district\":\"801\",\"size\":\"7\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"72\\u8857\\u6392\\u9aa8\\u996d\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":\"72\\u8857\\u6392\\u9aa8\\u996d\",\"keyword\":null,\"description\":null,\"hits\":\"444\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u4e03\\u5341\\u4e8c\\u8857\\u6392\\u9aa8\\u996d\\u96b6\\u5c5e\\u4e8e\\u5e7f\\u5dde\\u4e03\\u5341\\u4e8c\\u8857\\u9910\\u996e\\u8fde\\u9501\\u53d1\\u5c55\\u6709\\u9650\\u516c\\u53f8\\uff0c\\u5e7f\\u5dde\\u4e03\\u5341\\u4e8c\\u8857\\u9910\\u996e\\u8fde\\u9501\\u53d1\\u5c55\\u6709\\u9650\\u516c\\u53f82008\\u5e74\\u5728\\u5e7f\\u5dde\\u521b\\u7acb\\u4ee5\\u6765\\uff0c\\u5df2\\u7ecf\\u5728\\u73e0\\u6c5f\\u4e09\\u89d2\\u5730\\u533a\\u5f00\\u8bbe\\u7684\\u76f4\\u8425\\u5e97\\u6709\\u5341\\u591a\\u5bb6\\uff0c\\u4e00\\u8dc3\\u6210\\u4e3a\\u534e\\u5357\\u5730\\u533a\\u9886\\u5148\\u7684\\u4e2d\\u5f0f\\u5feb\\u9910\\u54c1\\u724c\\uff0c\\u5e76\\u5148\\u540e\\u83b7\\u5f97\\u4e862009\\u5e74\\u5546\\u4e1a\\u8054\\u5408\\u4f1a\\u201c\\u6700\\u5177\\u6295\\u8d44\\u6f5c\\u529b\\u54c1\\u724c\\u201d\\u30022010\\u5e74\\u5e7f\\u4e1c\\u7b2c\\u4e00\\u5546\\u4e1a\\u7f51\\u63a8\\u8350\\u201c\\u7f8a\\u57ce\\u5341\\u5927\\u7f8e\\u98df\\u201d\\uff0c\\u8fd8\\u8fde\\u7eed\\u83b7\\u5f972011\\u5e74\\u30012012\\u5e74\\u201c\\u5e7f\\u5dde\\u996e\\u98df\\u5929\\u738b\\u4eba\\u6c14\\u7f8e\\u98df\\u5956\\u201d\\uff0c\\u4f5c\\u4e3a\\u4e2d\\u5f0f\\u5feb\\u9910\\u7684\\u9886\\u5148\\u54c1\\u724c\\uff0c72\\u8857\\u4e5f\\u662f\\u76ee\\u524d\\u589e\\u957f\\u901f\\u5ea6\\u6700\\u5feb\\u7684\\u4e2d\\u5f0f\\u8fde\\u9501\\u9910\\u996e\\u5feb\\u9910\\u54c1\\u724c\\u3002<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"\\/upload\\/image\\/20190815\\/1565834166.jpg\\\"\\/><\\/p><p>\\u4e2d\\u56fd20\\u5927\\u6587\\u5316\\u7b26\\u53f7\\u91cc<\\/p><p><br\\/><\\/p>\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-15 01:56:07', '2019-08-15 01:56:07'),
+(2085, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:56:07', '2019-08-15 01:56:07'),
+(2086, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:56:10', '2019-08-15 01:56:10'),
+(2087, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"13\"}', '2019-08-15 01:56:31', '2019-08-15 01:56:31'),
+(2088, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"158\"}', '2019-08-15 01:56:31', '2019-08-15 01:56:31'),
+(2089, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"purl\":\"mgl\",\"comname\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"type\":null,\"province\":\"13\",\"city\":\"158\",\"district\":\"1628\",\"size\":\"4\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":null,\"keyword\":null,\"description\":null,\"hits\":\"223\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u6709\\u76ca\\u5065\\u5eb7\\u7684\\u5404\\u79cd\\u5236\\u4f5c\\u98df\\u6750\\uff0c\\u6807\\u51c6\\u5316\\u7684\\u5236\\u4f5c\\u65b9\\u5f0f\\uff0c\\u5e76\\u878d\\u5408\\u4e2d\\u9910\\u4e0e\\u897f\\u9910\\u591a\\u79cd\\u7f8e\\u98df\\u7684\\u5473\\u578b\\u6210\\u529f\\u7814\\u53d1\\u51fa\\u7ecf\\u5178\\u7684\\u9ed1\\u80e1\\u6912\\u7cfb\\u5217\\u3001\\u94c1\\u677f\\u5496\\u55b1\\u7cfb\\u5217\\u3001\\u94c1\\u677f\\u62cc\\u996d\\u7cfb\\u5217\\u3001\\u7b49\\u51e0\\u5341\\u79cd\\u94c1\\u677f\\u70e7\\u996d\\uff0c\\u66f4\\u72ec\\u5bb6\\u7814\\u53d1\\u610f\\u5927\\u5229\\u9762\\u7cfb\\u5217\\u3001\\u9c9c\\u6c64\\u7cfb\\u5217\\u3001\\u4f11\\u95f2\\u5c0f\\u5403\\u7cfb\\u5217\\u3001\\u6c34\\u679c\\u6c99\\u62c9\\u7cfb\\u5217\\u7b49\\u591a\\u4e2a\\u7cfb\\u5217\\u7684\\u7f8e\\u98df\\u7f8e\\u5473\\u3002<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"\\/upload\\/image\\/20190815\\/1565834208.jpg\\\"\\/><\\/p><p><strong>\\u65e0\\u5927\\u53a8\\uff1a<\\/strong>\\u8bf7\\u53a8\\u5e08\\u7684\\u8bdd\\uff0c\\u4e0d\\u8bf4\\u5de5\\u8d44\\u9ad8<\\/p><p><br\\/><\\/p>\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-15 01:56:49', '2019-08-15 01:56:49'),
+(2090, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:56:50', '2019-08-15 01:56:50'),
+(2091, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 01:56:54', '2019-08-15 01:56:54'),
+(2092, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"22\"}', '2019-08-15 01:57:24', '2019-08-15 01:57:24'),
+(2093, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"307\"}', '2019-08-15 01:57:24', '2019-08-15 01:57:24'),
+(2094, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u5409\\u7c73\\u5c4b\\u5feb\\u9910\",\"purl\":\"jmwkc\",\"comname\":\"\\u5409\\u7c73\\u5c4b\\u5feb\\u9910\",\"type\":null,\"province\":\"22\",\"city\":\"307\",\"district\":\"2657\",\"size\":\"5\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u5409\\u7c73\\u5c4b\\u5feb\\u9910\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":null,\"keyword\":null,\"description\":null,\"hits\":\"279\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\uff0c\\u62e5\\u6709400\\u591a\\u540d\\u7cbe\\u82f1\\u7ba1\\u7406\\u56e2\\u961f\\uff0c\\u5206\\u8bbe\\u751f\\u4ea7\\u4e2d\\u5fc3\\uff0c\\u7269\\u6d41\\u4e2d\\u5fc3\\uff0c\\u8425\\u9500\\u4e2d\\u5fc3\\uff0c\\u4ea7\\u54c1\\u7814\\u53d1\\u90e8\\uff0c\\u54c1\\u724c\\u7ba1\\u7406\\u90e8\\uff0c\\u57f9\\u8bad\\u57fa\\u5730\\u7b49\\u90e8\\u95e8\\u30022015\\u5e743\\u670813\\u65e5\\u4e0b\\u53482\\u70b9\\uff0c\\u9f0e\\u76db\\u4f20\\u5947\\u9910\\u996e\\u7ba1\\u7406\\u6709\\u9650\\u516c\\u53f8\\u5728\\u4e0a\\u6d77\\u80a1\\u6743\\u6258\\u7ba1\\u4ea4\\u6613\\u4e2d\\u5fc3\\u6b63\\u5f0f\\u4e0a\\u5e02\\u6302\\u724c(\\u4f01\\u4e1a\\u7b80\\u79f0\\uff1a\\u9f0e\\u76db\\u4f20\\u5947\\uff0c\\u4f01\\u4e1a\\u4ee3\\u7801\\uff1a204270)\\u3002\\u4e0a\\u6d77\\u80a1\\u6743\\u6258\\u7ba1\\u4ea4\\u6613\\u4e2d\\u5fc3\\u9886\\u5bfc\\u4ee5\\u53ca\\u516c\\u53f8\\u9886\\u5bfc\\u51fa\\u5e2d\\u5e76\\u53d1\\u8868\\u91cd\\u8981\\u8bb2\\u8bdd\\uff0c\\u4e0e\\u5404\\u4f01\\u4e1a\\u9886\\u5bfc\\u5171\\u540c\\u89c1\\u8bc1\\u4e86\\u8fd9\\u5177\\u6709\\u5386\\u53f2\\u610f\\u4e49\\u7684\\u4e00\\u523b\\u3002<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"https:\\/\\/www.51xxsp.com\\/storage\\/uploads\\/image\\/2019\\/08\\/08\\/a91aeb7d00ec1453d8b7272672722d1a.png\\\" title=\\\"\\u5409\\u7c73\\u5c4b\\u5feb\\u9910\\\" alt=\\\"\\u5409\\u7c73\\u5c4b\\u5feb\\u9910\\\" width=\\\"500\\\" height=\\\"350\\\"\\/><\\/p><p><strong>\\u4e00\\u5e97\\u9876\\u5341\\u5e97\\u7684\\u8fd0\\u4f5c\\u6a21\\u5f0f\\uff1a<\\/strong><\\/p><p>\\u4ea4\\u53c9\\u7ecf\\u8425\\uff0c\\u591a\\u70b9\\u76c8\\u5229\\uff0c\\u8fd8\\u53ef\\u6839\\u636e\\u5f53\\u5730\\u996e<\\/p><p><br\\/><\\/p>\",\"_token\":\"Fwt8Dr2QHGH2OEmw7bY5augGEzFIXEatblSY086X\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-15 01:57:46', '2019-08-15 01:57:46'),
+(2095, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 01:57:46', '2019-08-15 01:57:46'),
+(2096, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-15 02:04:15', '2019-08-15 02:04:15'),
+(2097, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-15 02:16:43', '2019-08-15 02:16:43'),
+(2098, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-16 02:08:32', '2019-08-16 02:08:32'),
+(2099, 1, 'admin/companydatas/11/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:08:37', '2019-08-16 02:08:37'),
+(2100, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:08:44', '2019-08-16 02:08:44'),
+(2101, 1, 'admin/companydatas/11/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:08:47', '2019-08-16 02:08:47'),
+(2102, 1, 'admin/companydatas/11', 'PUT', '127.0.0.1', '{\"company\":{\"catid\":\"7\",\"combrand\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"purl\":\"mgl\",\"comname\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"type\":null,\"province\":\"13\",\"city\":null,\"district\":null,\"size\":\"3\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u7c73\\u9ad8\\u6797\\u94c1\\u677f\\u996d\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":null,\"keyword\":null,\"description\":null,\"hits\":\"223\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u6709\\u76ca\\u5065\\u5eb7\\u7684\\u5404\\u79cd\\u5236\\u4f5c\\u98df\\u6750\\uff0c\\u6807\\u51c6\\u5316\\u7684\\u5236\\u4f5c\\u65b9\\u5f0f\\uff0c\\u5e76\\u878d\\u5408\\u4e2d\\u9910\\u4e0e\\u897f\\u9910\\u591a\\u79cd\\u7f8e\\u98df\\u7684\\u5473\\u578b\\u6210\\u529f\\u7814\\u53d1\\u51fa\\u7ecf\\u5178\\u7684\\u9ed1\\u80e1\\u6912\\u7cfb\\u5217\\u3001\\u94c1\\u677f\\u5496\\u55b1\\u7cfb\\u5217\\u3001\\u94c1\\u677f\\u62cc\\u996d\\u7cfb\\u5217\\u3001\\u7b49\\u51e0\\u5341\\u79cd\\u94c1\\u677f\\u70e7\\u996d\\uff0c\\u66f4\\u72ec\\u5bb6\\u7814\\u53d1\\u610f\\u5927\\u5229\\u9762\\u7cfb\\u5217\\u3001\\u9c9c\\u6c64\\u7cfb\\u5217\\u3001\\u4f11\\u95f2\\u5c0f\\u5403\\u7cfb\\u5217\\u3001\\u6c34\\u679c\\u6c99\\u62c9\\u7cfb\\u5217\\u7b49\\u591a\\u4e2a\\u7cfb\\u5217\\u7684\\u7f8e\\u98df\\u7f8e\\u5473\\u3002<\\/p><p style=\\\"text-align: center;\\\"><img src=\\\"\\/upload\\/image\\/20190815\\/1565834208.jpg\\\"\\/><\\/p><p><strong>\\u65e0\\u5927\\u53a8\\uff1a<\\/strong>\\u8bf7\\u53a8\\u5e08\\u7684\\u8bdd\\uff0c\\u4e0d\\u8bf4\\u5de5\\u8d44\\u9ad8<\\/p><p><br\\/><\\/p>\",\"_token\":\"sAoT9ksd7wG06VquLERCri1Wb3FiAc9iOBwiNlqC\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-16 02:09:21', '2019-08-16 02:09:21'),
+(2103, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-16 02:09:22', '2019-08-16 02:09:22'),
+(2104, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:32:25', '2019-08-16 02:32:25'),
+(2105, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:32:30', '2019-08-16 02:32:30'),
+(2106, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"5\",\"typename\":\"\\u5c0f\\u5403\",\"typedir\":\"xiaochi\",\"order\":\"1\",\"title\":\"\\u5c0f\\u5403\",\"keyword\":\"\\u5c0f\\u5403\",\"dirposition\":\"\\u5c0f\\u5403\",\"mid\":\"3\",\"status\":\"on\",\"content\":null,\"_token\":\"sAoT9ksd7wG06VquLERCri1Wb3FiAc9iOBwiNlqC\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-16 02:32:49', '2019-08-16 02:32:49'),
+(2107, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-16 02:32:49', '2019-08-16 02:32:49'),
+(2108, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:33:04', '2019-08-16 02:33:04'),
+(2109, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-16 02:33:05', '2019-08-16 02:33:05'),
+(2110, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"4\"}', '2019-08-16 02:33:46', '2019-08-16 02:33:46'),
+(2111, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"49\"}', '2019-08-16 02:33:47', '2019-08-16 02:33:47'),
+(2112, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"14\",\"combrand\":\"\\u81ed\\u8c46\\u8150\",\"purl\":\"choudoufu\",\"comname\":\"\\u81ed\\u8c46\\u8150\",\"type\":\"\\u4f01\\u4e1a\",\"province\":\"4\",\"city\":\"49\",\"district\":\"671\",\"size\":\"5\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u81ed\\u8c46\\u8150\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":\"\\u81ed\\u8c46\\u8150\",\"keyword\":\"\\u81ed\\u8c46\\u8150\",\"description\":\"\\u81ed\\u8c46\\u8150\",\"hits\":\"400\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u81ed\\u8c46\\u8150\\u81ed\\u8c46\\u8150<\\/p><p><br\\/><\\/p><p><br\\/><\\/p><p><img src=\\\"\\/upload\\/image\\/20190816\\/1565922853.jpg\\\" title=\\\"1565922853.jpg\\\" alt=\\\"15530630635768.jpg\\\"\\/><\\/p><p><br\\/><\\/p><p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"_token\":\"sAoT9ksd7wG06VquLERCri1Wb3FiAc9iOBwiNlqC\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-16 02:34:18', '2019-08-16 02:34:18'),
+(2113, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-16 02:34:19', '2019-08-16 02:34:19');
 
 -- --------------------------------------------------------
 
@@ -6217,7 +6265,8 @@ INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir
 (10, 9, 1, '交通出行', 'jtcx', '交通出行', '交通出行', '交通出行', NULL, 4, 1, 0, '2019-08-01 02:24:29', '2019-08-01 02:24:29'),
 (11, 0, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-01 08:24:02'),
 (12, 0, 1, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-02 03:35:40'),
-(13, 0, 1, '精美图片', 'jmtp', '精美图片', '精美图片', '精美图片', NULL, 7, 1, 0, '2019-08-05 03:20:00', '2019-08-05 03:20:00');
+(13, 0, 1, '精美图片', 'jmtp', '精美图片', '精美图片', '精美图片', NULL, 7, 1, 0, '2019-08-05 03:20:00', '2019-08-05 03:20:00'),
+(14, 5, 1, '小吃', 'xiaochi', '小吃', '小吃', '小吃', NULL, 3, 1, 0, '2019-08-16 02:32:49', '2019-08-16 02:32:49');
 
 -- --------------------------------------------------------
 
@@ -6266,8 +6315,14 @@ CREATE TABLE `wbsdb_companys` (
 --
 
 INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `status`, `vip`, `type`, `catid`, `province`, `city`, `district`, `mode`, `capital`, `size`, `regyear`, `business`, `telephone`, `fax`, `mail`, `address`, `imagesarr`, `homepage`, `thumb`, `introduce`, `hits`, `title`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`) VALUES
-(7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 6, 4, 49, 673, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, '北京', '', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-08-14 16:50:31'),
-(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 0, 1, '个体', 7, 5, NULL, NULL, '张氏大食堂', 100, '4', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-14 16:49:12');
+(7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 6, 4, 49, 673, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, '北京', '', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-08-14 16:50:31'),
+(8, '大东北烤肉拌饭', 'ddbbf', '大东北烤肉拌饭', 0, 1, 1, '个体', 7, 6, 74, 918, '大东北烤肉拌饭', 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/d5a6be28f7b1b84d652b6f9a9aa5764b.jpg', '大东北烤肉拌饭', 107, NULL, NULL, NULL, NULL, 1, '2019-08-15 09:54:11', '2019-08-15 09:54:11'),
+(9, '流弊的猪脚饭', 'lbdzjf', '流弊的猪脚饭', 0, 1, 1, NULL, 7, 3, 38, 508, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1683ea58ebeec52fd3a2fe32bf71f92f.png', '流弊的猪脚饭', 417, NULL, NULL, NULL, NULL, 1, '2019-08-15 09:55:13', '2019-08-15 09:55:13'),
+(10, '72街排骨饭', 'paiguf', '72街排骨饭', 0, 1, 1, NULL, 7, 5, 61, 801, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1a6e3a283df68bed8764523b5121a63a.png', '72街排骨饭', 444, '72街排骨饭', NULL, NULL, NULL, 1, '2019-08-15 09:56:07', '2019-08-15 09:56:07'),
+(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 1, 1, '个体', 7, 5, NULL, NULL, '张氏大食堂', 100, '3', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-15 09:46:00'),
+(11, '米高林铁板饭', 'mgl', '米高林铁板饭', 0, 1, 1, NULL, 7, 13, NULL, NULL, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/9798c0410648c8dffd172e9ba87f59f4.jpg', '米高林铁板饭', 223, NULL, NULL, NULL, NULL, 1, '2019-08-15 09:56:49', '2019-08-16 10:09:22'),
+(12, '吉米屋快餐', 'jmwkc', '吉米屋快餐', 0, 1, 1, NULL, 7, 22, 307, 2657, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/420c03843044abe51e4a8f223846b9bd.png', '吉米屋快餐', 279, NULL, NULL, NULL, NULL, 1, '2019-08-15 09:57:46', '2019-08-15 09:57:46'),
+(13, '臭豆腐', 'choudoufu', '臭豆腐', 0, 1, 1, '企业', 14, 4, 49, 671, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/5eae7eea3aaef49cacdc3680da5f206a.png', '臭豆腐', 400, '臭豆腐', '臭豆腐', '臭豆腐', NULL, 1, '2019-08-16 10:34:18', '2019-08-16 10:34:18');
 
 -- --------------------------------------------------------
 
@@ -6286,7 +6341,13 @@ CREATE TABLE `wbsdb_company_datas` (
 
 INSERT INTO `wbsdb_company_datas` (`id`, `content`) VALUES
 (7, '<p>阿萨德发顺丰<br/></p>'),
-(5, '<p>时代大厦</p><p>撒旦法<img src=\"/upload/image/20190806/1565079559.jpg\" title=\"1565079559.jpg\" alt=\"111111.jpg\"/></p><p><br/></p><p>sdf<img src=\"/upload/image/20190806/1565080532.png\" title=\"1565080532.png\" alt=\"QQ截图20190228101344.png\"/>sdf ty<br/></p>');
+(5, '<p>时代大厦</p><p>撒旦法<img src=\"/upload/image/20190806/1565079559.jpg\" title=\"1565079559.jpg\" alt=\"111111.jpg\"/></p><p><br/></p><p>sdf<img src=\"/upload/image/20190806/1565080532.png\" title=\"1565080532.png\" alt=\"QQ截图20190228101344.png\"/>sdf ty<br/></p>'),
+(8, '<p>大东北烤肉拌饭品牌，是隶属于辽宁大东北烤肉拌饭有限公司旗下。 \r\n大东北烤肉拌饭在我国成功运营多年，是深受消费者欢迎的品牌，大东北烤肉拌饭加盟经营不愁没生意可做，是一个靠谱的投资品牌。大东北烤肉拌饭总部提供完善的加盟培训体系，专业团队扶持创业，大东北烤肉拌饭保证客户能掌握开店运营的综合技巧，大东北烤肉拌饭加盟毛利高，收益好。</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834044.png\" title=\"大东北烤肉拌饭\" alt=\"大东北烤肉拌饭\" width=\"600\" height=\"400\"/></p><p>斯蒂芬<br/></p>'),
+(9, '<p>流弊的猪脚饭是通过高度过滤，除去多余油脂，吃多少也不会油腻，猪脚的配方以及制作的精心精准度也是几十年来摸索的结果，关键的是本猪脚整个制作过程到出炉，没有掺半点对人体有害的辣椒精、防腐剂等，一律让您放心食用。烤技独步天下，美味无与伦比，烤猪蹄一推出，便快速风靡全国，受到了广大消费者的强烈追捧，不管男女老少，百姓名流，爱吃者络绎不绝，常常出现排队抢购的火爆场面令人惊叹!</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834110.png\"/></p><p><strong>秘传配方，口味多样</strong></p><p>流弊的猪脚饭秘传配方，遵循健康饮食理念，更加地</p><p><br/></p>'),
+(10, '<p>七十二街排骨饭隶属于广州七十二街餐饮连锁发展有限公司，广州七十二街餐饮连锁发展有限公司2008年在广州创立以来，已经在珠江三角地区开设的直营店有十多家，一跃成为华南地区领先的中式快餐品牌，并先后获得了2009年商业联合会“最具投资潜力品牌”。2010年广东第一商业网推荐“羊城十大美食”，还连续获得2011年、2012年“广州饮食天王人气美食奖”，作为中式快餐的领先品牌，72街也是目前增长速度最快的中式连锁餐饮快餐品牌。</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834166.jpg\"/></p><p>中国20大文化符号里</p><p><br/></p>'),
+(11, '<p>有益健康的各种制作食材，标准化的制作方式，并融合中餐与西餐多种美食的味型成功研发出经典的黑胡椒系列、铁板咖喱系列、铁板拌饭系列、等几十种铁板烧饭，更独家研发意大利面系列、鲜汤系列、休闲小吃系列、水果沙拉系列等多个系列的美食美味。</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834208.jpg\"/></p><p><strong>无大厨：</strong>请厨师的话，不说工资高</p><p><br/></p>'),
+(12, '<p>，拥有400多名精英管理团队，分设生产中心，物流中心，营销中心，产品研发部，品牌管理部，培训基地等部门。2015年3月13日下午2点，鼎盛传奇餐饮管理有限公司在上海股权托管交易中心正式上市挂牌(企业简称：鼎盛传奇，企业代码：204270)。上海股权托管交易中心领导以及公司领导出席并发表重要讲话，与各企业领导共同见证了这具有历史意义的一刻。</p><p style=\"text-align: center;\"><img src=\"https://www.51xxsp.com/storage/uploads/image/2019/08/08/a91aeb7d00ec1453d8b7272672722d1a.png\" title=\"吉米屋快餐\" alt=\"吉米屋快餐\" width=\"500\" height=\"350\"/></p><p><strong>一店顶十店的运作模式：</strong></p><p>交叉经营，多点盈利，还可根据当地饮</p><p><br/></p>'),
+(13, '<p>臭豆腐臭豆腐</p><p><br/></p><p><br/></p><p><img src=\"/upload/image/20190816/1565922853.jpg\" title=\"1565922853.jpg\" alt=\"15530630635768.jpg\"/></p><p><br/></p><p>阿萨德发生地方<br/></p>');
 
 -- --------------------------------------------------------
 
@@ -6429,7 +6490,8 @@ CREATE TABLE `wbsdb_phonemanages` (
 INSERT INTO `wbsdb_phonemanages` (`id`, `phoneno`, `name`, `address`, `ip`, `note`, `host`, `created_at`, `updated_at`) VALUES
 (7, '13466668888', '6逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:03:45', '2019-08-14 10:03:45'),
 (8, '13466668887', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:32', '2019-08-14 10:04:32'),
-(9, '13466668886', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:45', '2019-08-14 10:04:45');
+(9, '13466668886', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:45', '2019-08-14 10:04:45'),
+(10, '1346666885', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-15 01:28:23', '2019-08-15 01:28:23');
 
 -- --------------------------------------------------------
 
@@ -6790,7 +6852,7 @@ ALTER TABLE `admin_menu`
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2066;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2114;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -6844,19 +6906,19 @@ ALTER TABLE `wbsdb_asks`
 -- 使用表AUTO_INCREMENT `wbsdb_categories`
 --
 ALTER TABLE `wbsdb_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_companys`
 --
 ALTER TABLE `wbsdb_companys`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_company_datas`
 --
 ALTER TABLE `wbsdb_company_datas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_investments`
@@ -6886,7 +6948,7 @@ ALTER TABLE `wbsdb_news`
 -- 使用表AUTO_INCREMENT `wbsdb_phonemanages`
 --
 ALTER TABLE `wbsdb_phonemanages`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_photos`
