@@ -356,7 +356,7 @@ class PostController extends Controller
         $account =    Wuser::where('oid', $data['openId'])->first();
 
 
-		if( !$account->id )
+		if( empty($account->id) )
         {
             $account = Wuser::create([
                 'avatar'    => $data['avatarUrl'],
