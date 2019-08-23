@@ -3,6 +3,8 @@
     "description": "Update helper",
     "type": "composer-plugin",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Kyle",
@@ -11,16 +13,21 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "composer-plugin-api": "^1.1.0"
+        "composer-plugin-api": "^1.1.0 || ^2.0.0"
     },
     "require-dev": {
-        "composer/composer": "^2.0.x-dev",
+        "composer/composer": "2.0.x-dev || ^2.0.0-dev",
         "phpunit/phpunit": ">=4.8.35 <6.0",
         "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "UpdateHelper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UpdateHelper\\Tests\\": "tests/UpdateHelper/"
         }
     },
     "scripts": {

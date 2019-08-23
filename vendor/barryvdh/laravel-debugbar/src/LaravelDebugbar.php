@@ -7,6 +7,7 @@ use Barryvdh\Debugbar\DataCollector\FilesCollector;
 use Barryvdh\Debugbar\DataCollector\GateCollector;
 use Barryvdh\Debugbar\DataCollector\LaravelCollector;
 use Barryvdh\Debugbar\DataCollector\LogsCollector;
+use Barryvdh\Debugbar\DataCollector\ModelsCollector;
 use Barryvdh\Debugbar\DataCollector\MultiAuthCollector;
 use Barryvdh\Debugbar\DataCollector\QueryCollector;
 use Barryvdh\Debugbar\DataCollector\SessionCollector;
@@ -404,6 +405,15 @@ class LaravelDebugbar extends DebugBar
             }
         }
 
+        if ($this->shouldCollect('models', false)) {
+            try {
+                $modelsCollector = $this->app->make('Barryvdh\Debugbar\DataCollector\ModelsCollector');
+                $this->addCollector($modelsCollector);
+            } catch (\Exception $e){
+                // No Models collector
+            }
+        }
+
         if ($this->shouldCollect('mail', true) && class_exists('Illuminate\Mail\MailServiceProvider')) {
             try {
                 $mailer = $this->app['mailer']->getSwiftMailer();
@@ -441,7 +451,7 @@ class LaravelDebugbar extends DebugBar
 
         if ($this->shouldCollect('auth', false)) {
             try {
-                $guards = array_keys($this->app['config']->get('auth.guards', []));
+                $guards = $this->app['config']->get('auth.guards', []);
                 $authCollector = new MultiAuthCollector($app['auth'], $guards);
 
                 $authCollector->setShowName(

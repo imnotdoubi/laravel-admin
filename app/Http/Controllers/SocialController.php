@@ -38,7 +38,8 @@ class SocialController extends Controller
                 'name'      => $user->username,
                 'oid'       => $user->id,
                 'password'  => bcrypt('imnotdoubi'.$user->token),
-                'token'     => $user->token
+                'token'     => $user->token,
+                'autoflg'   => 1
             ]);
 
             Roleuser::create([

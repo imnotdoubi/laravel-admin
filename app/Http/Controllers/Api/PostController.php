@@ -14,6 +14,13 @@ use App\Models\Investment;
 
 use App\Helpers\Common;
 
+// use GuzzleHttp\Client;
+use App\Models\Wuser;
+
+use EasyWeChat\Factory;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+
 class PostController extends Controller
 {
     //
@@ -261,5 +268,152 @@ class PostController extends Controller
 	        'listxm' 	=> $items
 	    ];
 	    return response()->json($data);
+	}
+
+	public function onLogin(Request $request)
+	{
+
+		$appid			='wx2db5012af575bf98';
+		$secret			='2be5f1ffd3245ebea9ed0345ca24a53d';
+		$code 			= $request->code;
+
+		$wechat_config = [
+            'app_id'    => $appid,
+            'secret'    => $secret
+        ];
+
+        $app = Factory::miniProgram($wechat_config);
+
+        $session = $app->auth->session($code);
+
+        // $account =    Wuser::where('token', $session['session_key'])->first();
+
+
+        // if( empty($account) ){
+        	if( $session['session_key'] ){
+	        	$datas = [
+			        'code' 	=> 777777,
+			        'token' => $session['session_key']
+		    	];
+	        }
+   //      }else{
+   //      	$times1	= time();  
+
+   //      	$times2 = strtotime($account->created_at); 
+
+			// $dqtimes= ceil(($times1 - $times2)); 
+
+
+			// if( $dqtimes > 60 * 1 )
+			// 	$datas = ['code' => 777776,'token' => $session['session_key']];
+			// else
+			// 	$datas = ['code' => 777778,'token' => $session['session_key']];
+			
+   //      }
+
+
+		return response()->json($datas);
+
+	}
+
+	public function register(Request $request)
+	{
+
+		$appid			='wx2db5012af575bf98';
+		$secret			='2be5f1ffd3245ebea9ed0345ca24a53d';
+		$code 			= $request->code;
+		$encryptedData 	= $request->encryptedData;
+        $iv 			= $request->iv;
+
+		$wechat_config = [
+            'app_id'    => $appid,
+            'secret'    => $secret
+        ];
+
+        $app = Factory::miniProgram($wechat_config);
+
+        $session = $app->auth->session($code);
+
+        if(isset($session['errcode'])) {
+            switch ($session['errcode']) {
+                case 40163:
+                    // 这里需要注意的是 code 只能换取一次
+                    return 'code 无效';
+                    break;
+
+                default:
+                    return '请求频繁';
+                    break;
+            }
+        }
+
+        $data = $app->encryptor->decryptData($session['session_key'],$iv,$encryptedData);
+
+        if(!isset($data['openId'])) {
+            return '获取 openid 错误';
+        }
+
+        $account =    Wuser::where('oid', $data['openId'])->first();
+
+
+		if( !$account->id )
+        {
+            $account = Wuser::create([
+                'avatar'    => $data['avatarUrl'],
+                'username'  => $data['nickName'],
+                'name'      => $data['nickName'],
+                'oid'       => $data['openId'],
+                'password'  => bcrypt('imnotdoubi'.$data['openId']),
+                'autoflg'   => 3,
+                'token'     => $session['session_key'],
+            ]);
+        }else{
+        	$updated_at = date('Y-m-d H:i:s');
+        	Wuser::where('oid', $account->oid)->update(['token' => $session['session_key'],'updated_at' => $updated_at]);
+        }
+
+		$datas = [
+	        'nickname' 	=> 	$data['nickName'],
+	        'avatar' 	=> 	$data['avatarUrl'],
+	        'token'		=>	$session['session_key'],
+	        'oid'		=>	$data['openId']
+	    ];
+
+	    return response()->json($datas);
+
+	}
+
+	public function checktoken(Request $request)
+	{
+
+		$token 	= $request->token;
+		$oid 	= $request->oid;
+
+        $udatas = Wuser::where('oid', $oid)->first();
+
+        if(empty($udatas->id))
+        	$datas = ['code' => 777776,'token'=>$token];
+        else{
+        	if($udatas->token == $token){
+        		$times1	= time();  
+				$times2 = strtotime($udatas->updated_at); 
+				// $times2 = strtotime("2019-08-23 10:39:18"); 
+				$dqtimes= ceil(($times1 - $times2)); 
+
+				if( $dqtimes > 60 * 1)
+					$datas = ['code' => 777776,'token'=>$token];
+				else
+					$datas = ['code' => 777779];
+				
+        	}else{
+        		$updated_at = date('Y-m-d H:i:s');
+        		Wuser::where('oid', $oid)->update(['token' => $token,'updated_at' => $updated_at]);
+        		$datas = ['code' => 777775,'token'=>$token];
+        	}
+
+        }
+
+		return response()->json($datas);
+
 	}
 }

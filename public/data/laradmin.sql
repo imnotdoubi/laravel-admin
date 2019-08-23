@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-16 10:43:47
+-- 生成日期： 2019-08-23 11:06:06
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -2219,7 +2219,26 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (2110, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"4\"}', '2019-08-16 02:33:46', '2019-08-16 02:33:46'),
 (2111, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"49\"}', '2019-08-16 02:33:47', '2019-08-16 02:33:47'),
 (2112, 1, 'admin/companydatas', 'POST', '127.0.0.1', '{\"company\":{\"catid\":\"14\",\"combrand\":\"\\u81ed\\u8c46\\u8150\",\"purl\":\"choudoufu\",\"comname\":\"\\u81ed\\u8c46\\u8150\",\"type\":\"\\u4f01\\u4e1a\",\"province\":\"4\",\"city\":\"49\",\"district\":\"671\",\"size\":\"5\",\"mode\":null,\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":\"\\u81ed\\u8c46\\u8150\",\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":null,\"homepage\":null,\"title\":\"\\u81ed\\u8c46\\u8150\",\"keyword\":\"\\u81ed\\u8c46\\u8150\",\"description\":\"\\u81ed\\u8c46\\u8150\",\"hits\":\"400\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u81ed\\u8c46\\u8150\\u81ed\\u8c46\\u8150<\\/p><p><br\\/><\\/p><p><br\\/><\\/p><p><img src=\\\"\\/upload\\/image\\/20190816\\/1565922853.jpg\\\" title=\\\"1565922853.jpg\\\" alt=\\\"15530630635768.jpg\\\"\\/><\\/p><p><br\\/><\\/p><p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"_token\":\"sAoT9ksd7wG06VquLERCri1Wb3FiAc9iOBwiNlqC\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas\"}', '2019-08-16 02:34:18', '2019-08-16 02:34:18'),
-(2113, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-16 02:34:19', '2019-08-16 02:34:19');
+(2113, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-16 02:34:19', '2019-08-16 02:34:19'),
+(2114, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-19 06:06:43', '2019-08-19 06:06:43'),
+(2115, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:06:48', '2019-08-19 06:06:48'),
+(2116, 1, 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:15:24', '2019-08-19 06:15:24'),
+(2117, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:15:26', '2019-08-19 06:15:26'),
+(2118, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:15:32', '2019-08-19 06:15:32'),
+(2119, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:16:04', '2019-08-19 06:16:04'),
+(2120, 1, 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:17:36', '2019-08-19 06:17:36'),
+(2121, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-19 06:18:07', '2019-08-19 06:18:07'),
+(2122, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-20 06:21:26', '2019-08-20 06:21:26'),
+(2123, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-21 01:49:05', '2019-08-21 01:49:05'),
+(2124, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-22 03:02:44', '2019-08-22 03:02:44'),
+(2125, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-22 03:26:57', '2019-08-22 03:26:57'),
+(2126, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-22 07:25:14', '2019-08-22 07:25:14'),
+(2127, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-22 07:33:40', '2019-08-22 07:33:40'),
+(2128, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-22 08:58:11', '2019-08-22 08:58:11'),
+(2129, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-23 01:10:55', '2019-08-23 01:10:55'),
+(2130, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-23 02:28:11', '2019-08-23 02:28:11'),
+(2131, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-23 02:35:31', '2019-08-23 02:35:31'),
+(2132, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-23 05:28:40', '2019-08-23 05:28:40');
 
 -- --------------------------------------------------------
 
@@ -2391,12 +2410,12 @@ INSERT INTO `admin_role_users` (`role_id`, `user_id`, `created_at`, `updated_at`
 
 CREATE TABLE `admin_users` (
   `id` int(10) UNSIGNED NOT NULL,
-  `oid` bigint(20) DEFAULT NULL COMMENT '第三方id',
+  `oid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方id',
   `username` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(190) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `avatar` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `avatar` mediumtext COLLATE utf8mb4_unicode_ci,
   `autoflg` bigint(4) DEFAULT '0' COMMENT '1：github,2：qq，3：wx',
   `token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方token',
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2411,9 +2430,7 @@ CREATE TABLE `admin_users` (
 INSERT INTO `admin_users` (`id`, `oid`, `username`, `password`, `name`, `email`, `avatar`, `autoflg`, `token`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, NULL, 'admin', '$2y$10$o.1mLzwO88hHt9ZP1zWbNOWqtahG5ijElpaR4NRHMq54LIZ69MkE.', 'Administrator', NULL, NULL, 0, NULL, 'kETjXMlU2DjeJMPyj5gc6fS8FNxKQVOZSrvNPgAQlvpaLxQhAZl0dGSwbtnT', '2019-07-04 01:45:44', '2019-07-04 01:45:44'),
 (2, NULL, 'zhangsan', '$2y$10$l037xu4z67OWGPaiafMkCeYdx35CYHRlTi7muYGTBdEoRxeSHfa12', 'zhangsan', NULL, NULL, 0, NULL, NULL, '2019-07-05 02:41:01', '2019-08-08 06:53:43'),
-(3, NULL, 'lisi', '$2y$10$0KurfMMxqBjAEwYWJEzUC.K4V3K7OaGsb7WdMo1kvRV1aZ79XLun2', 'lisi', NULL, NULL, 0, NULL, 'hQ3fspiQ87c24ZSBdsRZ5VASE02o8x6Dp59ercrdTCLYIJHtBu7hY7SrIhgQ', '2019-08-08 07:30:05', '2019-08-08 07:30:05'),
-(11, 52742382, 'heppydatasP', '$2y$10$oKFkdXF/SMXq5EnJOzl2NelzDOzSYOuUk61x5W1CQZOJlXTfc1972', 'heppydatasP', '2853525072@qq.com', NULL, 0, '70988d210865dd6348f60a23c00995e08f33dc68', 'TCTX7f1dxu9TwjCM8adxQNrgBlxY7uaLds16lQ36dvLBrwL7NNSpkfvdq07D', '2019-08-09 02:01:16', '2019-08-09 02:01:16'),
-(12, 25898347, 'imnotdoubi', '$2y$10$3UqOg7kMIGP0C4oR2Radi.iHVcXn/0SpFqxy5ZKcVysdDal9ObVc6', 'imnotdoubi', 'xin_shi715@126.com', NULL, 0, '020e0eac39d0a4210e1ff295d3e402ea7573584e', 'qXNFrtP0ofdJ7DAEXBkzNtvRkPEhDvxaP9uzTlETEaDVvkoZpAnrgLQLScvq', '2019-08-09 02:04:15', '2019-08-09 02:04:15');
+(3, NULL, 'lisi', '$2y$10$0KurfMMxqBjAEwYWJEzUC.K4V3K7OaGsb7WdMo1kvRV1aZ79XLun2', 'lisi', NULL, NULL, 0, NULL, 'hQ3fspiQ87c24ZSBdsRZ5VASE02o8x6Dp59ercrdTCLYIJHtBu7hY7SrIhgQ', '2019-08-08 07:30:05', '2019-08-08 07:30:05');
 
 -- --------------------------------------------------------
 
@@ -6491,7 +6508,8 @@ INSERT INTO `wbsdb_phonemanages` (`id`, `phoneno`, `name`, `address`, `ip`, `not
 (7, '13466668888', '6逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:03:45', '2019-08-14 10:03:45'),
 (8, '13466668887', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:32', '2019-08-14 10:04:32'),
 (9, '13466668886', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-14 10:04:45', '2019-08-14 10:04:45'),
-(10, '1346666885', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-15 01:28:23', '2019-08-15 01:28:23');
+(10, '1346666885', '逗逼', '', '127.0.0.1', '测试内容', 'www.lar-admin.test', '2019-08-15 01:28:23', '2019-08-15 01:28:23'),
+(11, '1356666', '李四', '', '127.0.0.1', '云海天', 'www.lar-admin.test', '2019-08-19 05:36:38', '2019-08-19 05:36:38');
 
 -- --------------------------------------------------------
 
@@ -6632,9 +6650,14 @@ INSERT INTO `wbsdb_settings` (`id`, `enable`, `title`, `keyword`, `description`,
 
 CREATE TABLE `wbsdb_users` (
   `id` int(10) UNSIGNED NOT NULL,
+  `oid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方id',
+  `username` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(190) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `avatar` mediumtext COLLATE utf8mb4_unicode_ci,
+  `autoflg` bigint(4) DEFAULT '0' COMMENT '1：github,2：qq，3：wx',
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方token',
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -6836,7 +6859,7 @@ ALTER TABLE `wbsdb_sells`
 --
 ALTER TABLE `wbsdb_users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`);
+  ADD UNIQUE KEY `admin_users_username_unique` (`username`);
 
 --
 -- 在导出的表使用AUTO_INCREMENT
@@ -6852,7 +6875,7 @@ ALTER TABLE `admin_menu`
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2114;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2133;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -6948,7 +6971,7 @@ ALTER TABLE `wbsdb_news`
 -- 使用表AUTO_INCREMENT `wbsdb_phonemanages`
 --
 ALTER TABLE `wbsdb_phonemanages`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_photos`
@@ -6972,7 +6995,7 @@ ALTER TABLE `wbsdb_sells`
 -- 使用表AUTO_INCREMENT `wbsdb_users`
 --
 ALTER TABLE `wbsdb_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
