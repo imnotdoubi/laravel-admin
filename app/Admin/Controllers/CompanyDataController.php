@@ -24,7 +24,7 @@ class CompanyDataController extends AdminController
      *
      * @var string
      */
-    protected $title = '创业列表';
+    protected $title = '项目列表';
 
     /**
      * Make a grid builder.
@@ -131,11 +131,17 @@ class CompanyDataController extends AdminController
 
         $form->tab('公司资料', function ($form) {
 
-          $form->select('company.catid','父栏目')->options(Categorie::selectOptions());
+          // $form->select('company.catid','父栏目')->options(Categorie::where('mid',3)->selectOptions());
+
+          $form->select('company.parent_id','父栏目')->options(
+            Categorie::where('mid',3)->where('parent_id',4)->orderBy('id','asc')->pluck('typename', 'id')
+          )->load('company.catid', '/admin/api/child');
+
+          $form->select('company.catid','子栏目');
 
           $form->text('company.combrand', __('品牌名'))->required();
 
-          $form->text('company.purl', __('品牌url'))->required();
+          $form->text('company.purl', __('品牌名英文'))->required()->placeholder('只能为字母组合');
 
           $form->text('company.comname', __('公司名'))->required();
 
@@ -159,6 +165,14 @@ class CompanyDataController extends AdminController
           );
 
           $form->text('company.mode', __('经营模式'));
+
+          $form->text('company.renqun', __('适合人群'))->placeholder('自由创业、其它');
+
+          $form->number('company.mdnum', __('门店数'))->value(rand(100,300));
+
+          $form->number('company.yxnum', __('意向加盟'))->value(rand(1000,2000));
+
+          $form->number('company.sqnum', __('申请加盟'))->value(rand(500,800));
 
           $form->number('company.capital', __('注册资本(万)'))->value(100);
 
