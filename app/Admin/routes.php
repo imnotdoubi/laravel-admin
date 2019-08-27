@@ -47,6 +47,7 @@ Route::group([
     $router->post('shenhe/asks/release', 'Review\AutoAskController@release');
     $router->post('photos/release', 'PhotoController@release');
 
+    $router->get('api/child', 'World\ApiController@childs');
     $router->get('api/city', 'World\ApiController@cities');
     $router->get('api/district', 'World\ApiController@districts');
 
