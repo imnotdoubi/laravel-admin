@@ -146,33 +146,33 @@ class Pcommon extends Base
 
     public static function nurl($id)
     {
-       return env('APP_URL') . '/news/'.$id.'.html';
+       return '/news/'.$id.'.html';
     }
 
     public static function curl($id)
     {
-       return env('APP_URL') . '/xm/'.$id.'.html';
+       return '/xm/'.$id.'.html';
     }
 
     public static function cnurl($purl,$id)
     {
-       return env('APP_URL') . '/xm/'.$purl.'/'.$id.'.html';
+       return '/xm/'.$purl.'/'.$id.'.html';
     }
     public static function aurl($id)
     {
-       return env('APP_URL') . '/know/'.$id.'.html';
+       return '/know/'.$id.'.html';
     }
     public static function murl($id)
     {
-       return env('APP_URL') . '/mall/'.$id.'.html';
+       return '/mall/'.$id.'.html';
     }
     public static function surl($id)
     {
-       return env('APP_URL') . '/sell/'.$id.'.html';
+       return '/sell/'.$id.'.html';
     }
     public static function purl($id)
     {
-       return env('APP_URL') . '/photo/'.$id.'.html';
+       return '/photo/'.$id.'.html';
     }
 
     public static function pagelink($str)
