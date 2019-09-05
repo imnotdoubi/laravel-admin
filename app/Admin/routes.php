@@ -30,6 +30,7 @@ Route::group([
         'countrys'              => AreaController::class,
         'sells'                 => SellController::class,
         'photos'                => PhotoController::class,
+        'invests'               => InvestmentController::class,
         'shenhe/articles'       => Review\AutoArticleController::class,
         'shenhe/asks'           => Review\AutoAskController::class,
     ]);

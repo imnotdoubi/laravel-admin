@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-08-27 07:45:02
+-- 生成日期： 2019-09-05 10:34:13
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -2432,7 +2432,241 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (2320, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-08-27 05:29:47', '2019-08-27 05:29:47'),
 (2321, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"114\"}', '2019-08-27 05:29:47', '2019-08-27 05:29:47'),
 (2322, 1, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:30:59', '2019-08-27 05:30:59'),
-(2323, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-27 05:31:08', '2019-08-27 05:31:08');
+(2323, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-27 05:31:08', '2019-08-27 05:31:08'),
+(2324, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:59:36', '2019-08-27 05:59:36'),
+(2325, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-27 05:59:45', '2019-08-27 05:59:45'),
+(2326, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:59:48', '2019-08-27 05:59:48'),
+(2327, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:59:51', '2019-08-27 05:59:51'),
+(2328, 1, 'admin/media', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:59:53', '2019-08-27 05:59:53'),
+(2329, 1, 'admin/countrys', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 05:59:57', '2019-08-27 05:59:57'),
+(2330, 1, 'admin/countrys', 'GET', '127.0.0.1', '[]', '2019-08-27 06:00:49', '2019-08-27 06:00:49'),
+(2331, 1, 'admin/invests', 'GET', '127.0.0.1', '[]', '2019-08-27 06:04:44', '2019-08-27 06:04:44'),
+(2332, 1, 'admin/invests/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:04:47', '2019-08-27 06:04:47'),
+(2333, 1, 'admin/invests', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:04:49', '2019-08-27 06:04:49'),
+(2334, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:06:36', '2019-08-27 06:06:36'),
+(2335, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:06:41', '2019-08-27 06:06:41'),
+(2336, 1, 'admin/articles/7/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:06:43', '2019-08-27 06:06:43'),
+(2337, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 06:06:49', '2019-08-27 06:06:49'),
+(2338, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:01:02', '2019-08-27 07:01:02'),
+(2339, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"title\":\"\\u4e91\\u6d77\\u5929\",\"slogan\":\"\\u4e91\\u6d77\\u5929\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u4e91\\u6d77\\u5929\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3c9ZQlMFMSaMCTJgB8vx4PPkmC6ZhbXU0zAXxIiK\"}', '2019-08-27 07:01:12', '2019-08-27 07:01:12'),
+(2340, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-27 07:01:13', '2019-08-27 07:01:13'),
+(2341, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"title\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e03\",\"slogan\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e03\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e03\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"3c9ZQlMFMSaMCTJgB8vx4PPkmC6ZhbXU0zAXxIiK\"}', '2019-08-27 07:01:31', '2019-08-27 07:01:31'),
+(2342, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-08-27 07:01:32', '2019-08-27 07:01:32'),
+(2343, 1, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:34:02', '2019-08-27 07:34:02'),
+(2344, 4, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-27 07:36:45', '2019-08-27 07:36:45'),
+(2345, 4, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:36:52', '2019-08-27 07:36:52'),
+(2346, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-08-27 07:36:56', '2019-08-27 07:36:56'),
+(2347, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:38:29', '2019-08-27 07:38:29'),
+(2348, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:44:57', '2019-08-27 07:44:57'),
+(2349, 1, 'admin/categories/4/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:45:04', '2019-08-27 07:45:04'),
+(2350, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:45:07', '2019-08-27 07:45:07'),
+(2351, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:45:10', '2019-08-27 07:45:10'),
+(2352, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u8d44\\u8baf\",\"typedir\":\"news\",\"order\":\"1\",\"title\":\"\\u8d44\\u8baf\",\"keyword\":\"\\u8d44\\u8baf\",\"dirposition\":\"\\u8d44\\u8baf\",\"mid\":\"1\",\"status\":\"on\",\"content\":null,\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-27 07:45:54', '2019-08-27 07:45:54'),
+(2353, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-27 07:45:54', '2019-08-27 07:45:54'),
+(2354, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_order\":\"[{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]}]},{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]},{\\\"id\\\":11},{\\\"id\\\":12},{\\\"id\\\":13},{\\\"id\\\":3},{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]}]\"}', '2019-08-27 07:46:13', '2019-08-27 07:46:13'),
+(2355, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:46:14', '2019-08-27 07:46:14'),
+(2356, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_order\":\"[{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]},{\\\"id\\\":3}]},{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]},{\\\"id\\\":11},{\\\"id\\\":12},{\\\"id\\\":13},{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]}]\"}', '2019-08-27 07:46:34', '2019-08-27 07:46:34'),
+(2357, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:46:35', '2019-08-27 07:46:35'),
+(2358, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:46:43', '2019-08-27 07:46:43'),
+(2359, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:46:45', '2019-08-27 07:46:45'),
+(2360, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 07:46:56', '2019-08-27 07:46:56'),
+(2361, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:11:21', '2019-08-27 08:11:21'),
+(2362, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:11:30', '2019-08-27 08:11:30'),
+(2363, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u95ee\\u7b54\",\"typedir\":\"know\",\"order\":\"3\",\"title\":\"\\u95ee\\u7b54\",\"keyword\":\"\\u95ee\\u7b54\",\"dirposition\":\"\\u95ee\\u7b54\",\"mid\":\"4\",\"status\":\"on\",\"content\":null,\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-27 08:11:57', '2019-08-27 08:11:57'),
+(2364, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-27 08:11:57', '2019-08-27 08:11:57'),
+(2365, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]},{\\\"id\\\":3}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]},{\\\"id\\\":11},{\\\"id\\\":12},{\\\"id\\\":13}]\"}', '2019-08-27 08:12:10', '2019-08-27 08:12:10'),
+(2366, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:12:10', '2019-08-27 08:12:10'),
+(2367, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:12:17', '2019-08-27 08:12:17'),
+(2368, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u5546\\u57ce\",\"typedir\":\"mall\",\"order\":\"4\",\"title\":\"\\u5546\\u57ce\",\"keyword\":\"\\u5546\\u57ce\",\"dirposition\":\"\\u5546\\u57ce\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-27 08:12:39', '2019-08-27 08:12:39'),
+(2369, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-27 08:12:40', '2019-08-27 08:12:40'),
+(2370, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:12:42', '2019-08-27 08:12:42'),
+(2371, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u4f9b\\u5e94\",\"typedir\":\"sell\",\"order\":\"5\",\"title\":\"\\u4f9b\\u5e94\",\"keyword\":\"\\u4f9b\\u5e94\",\"dirposition\":\"\\u4f9b\\u5e94\",\"mid\":\"6\",\"status\":\"on\",\"content\":null,\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-27 08:13:02', '2019-08-27 08:13:02'),
+(2372, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-27 08:13:02', '2019-08-27 08:13:02'),
+(2373, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:13:05', '2019-08-27 08:13:05'),
+(2374, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u56fe\\u5e93\",\"typedir\":\"photo\",\"order\":\"6\",\"title\":\"\\u56fe\\u5e93\",\"keyword\":\"\\u56fe\\u5e93\",\"dirposition\":\"\\u56fe\\u5e93\",\"mid\":\"7\",\"status\":\"on\",\"content\":null,\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-27 08:13:23', '2019-08-27 08:13:23'),
+(2375, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-27 08:13:24', '2019-08-27 08:13:24'),
+(2376, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"R8QYBfYhlLyECXvMh8FtZhxKDI1889NOh7woJiN8\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":17,\\\"children\\\":[{\\\"id\\\":11}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":12}]},{\\\"id\\\":19,\\\"children\\\":[{\\\"id\\\":13}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]},{\\\"id\\\":3}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]}]\"}', '2019-08-27 08:13:44', '2019-08-27 08:13:44'),
+(2377, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-27 08:13:44', '2019-08-27 08:13:44'),
+(2378, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:28:44', '2019-08-29 02:28:44'),
+(2379, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"3\",\"typename\":\"\\u5c0f\\u6307\\u5357\",\"typedir\":\"xzn\",\"order\":\"1\",\"title\":\"\\u5c0f\\u6307\\u5357\",\"keyword\":\"\\u5c0f\\u6307\\u5357\",\"dirposition\":\"\\u5c0f\\u6307\\u5357\",\"mid\":\"1\",\"status\":\"on\",\"content\":null,\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\"}', '2019-08-29 02:29:16', '2019-08-29 02:29:16'),
+(2380, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:17', '2019-08-29 02:29:17'),
+(2381, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:17', '2019-08-29 02:29:17'),
+(2382, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:17', '2019-08-29 02:29:17'),
+(2383, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:18', '2019-08-29 02:29:18'),
+(2384, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:18', '2019-08-29 02:29:18'),
+(2385, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:18', '2019-08-29 02:29:18'),
+(2386, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:18', '2019-08-29 02:29:18'),
+(2387, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:19', '2019-08-29 02:29:19'),
+(2388, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:19', '2019-08-29 02:29:19'),
+(2389, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:19', '2019-08-29 02:29:19'),
+(2390, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:19', '2019-08-29 02:29:19'),
+(2391, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:20', '2019-08-29 02:29:20'),
+(2392, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:20', '2019-08-29 02:29:20'),
+(2393, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:20', '2019-08-29 02:29:20'),
+(2394, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:20', '2019-08-29 02:29:20'),
+(2395, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:21', '2019-08-29 02:29:21'),
+(2396, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:21', '2019-08-29 02:29:21'),
+(2397, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:21', '2019-08-29 02:29:21'),
+(2398, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:21', '2019-08-29 02:29:21'),
+(2399, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:22', '2019-08-29 02:29:22'),
+(2400, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 02:29:31', '2019-08-29 02:29:31'),
+(2401, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:31', '2019-08-29 02:29:31'),
+(2402, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:32', '2019-08-29 02:29:32'),
+(2403, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:32', '2019-08-29 02:29:32'),
+(2404, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:32', '2019-08-29 02:29:32'),
+(2405, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:32', '2019-08-29 02:29:32'),
+(2406, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:32', '2019-08-29 02:29:32'),
+(2407, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:33', '2019-08-29 02:29:33'),
+(2408, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:33', '2019-08-29 02:29:33'),
+(2409, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:33', '2019-08-29 02:29:33'),
+(2410, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:33', '2019-08-29 02:29:33'),
+(2411, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:34', '2019-08-29 02:29:34'),
+(2412, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:34', '2019-08-29 02:29:34'),
+(2413, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:34', '2019-08-29 02:29:34'),
+(2414, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:34', '2019-08-29 02:29:34'),
+(2415, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:35', '2019-08-29 02:29:35'),
+(2416, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:35', '2019-08-29 02:29:35'),
+(2417, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:35', '2019-08-29 02:29:35'),
+(2418, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:35', '2019-08-29 02:29:35'),
+(2419, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:36', '2019-08-29 02:29:36'),
+(2420, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:36', '2019-08-29 02:29:36'),
+(2421, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:29:36', '2019-08-29 02:29:36'),
+(2422, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:30:29', '2019-08-29 02:30:29'),
+(2423, 1, 'admin/categories/20/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 02:30:36', '2019-08-29 02:30:36'),
+(2424, 1, 'admin/categories/20', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"typename\":\"\\u5c0f\\u6307\\u5357\",\"typedir\":\"xzn\",\"order\":\"1\",\"title\":\"\\u5c0f\\u6307\\u5357\\u5c0f\\u6307\\u5357\",\"keyword\":\"\\u5c0f\\u6307\\u5357\",\"dirposition\":\"\\u5c0f\\u6307\\u5357\",\"mid\":\"1\",\"status\":\"on\",\"content\":null,\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-29 02:30:43', '2019-08-29 02:30:43'),
+(2425, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 02:30:44', '2019-08-29 02:30:44'),
+(2426, 1, 'admin/categories/20/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:42:53', '2019-08-29 05:42:53'),
+(2427, 1, 'admin/categories/20', 'PUT', '127.0.0.1', '{\"parent_id\":\"3\",\"typename\":\"\\u884c\\u4e1a\\u52a8\\u6001\",\"typedir\":\"hydt\",\"order\":\"3\",\"title\":\"\\u884c\\u4e1a\\u52a8\\u6001\",\"keyword\":\"\\u884c\\u4e1a\\u52a8\\u6001\",\"dirposition\":\"\\u884c\\u4e1a\\u52a8\\u6001\",\"mid\":\"1\",\"status\":\"on\",\"content\":null,\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-08-29 05:43:17', '2019-08-29 05:43:17'),
+(2428, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-08-29 05:43:17', '2019-08-29 05:43:17'),
+(2429, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1},{\\\"id\\\":2},{\\\"id\\\":3},{\\\"id\\\":20}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]},{\\\"id\\\":17,\\\"children\\\":[{\\\"id\\\":11}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":12}]},{\\\"id\\\":19,\\\"children\\\":[{\\\"id\\\":13}]}]\"}', '2019-08-29 05:43:26', '2019-08-29 05:43:26'),
+(2430, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:43:27', '2019-08-29 05:43:27'),
+(2431, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:43:29', '2019-08-29 05:43:29'),
+(2432, 1, 'admin/categories/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:45:04', '2019-08-29 05:45:04'),
+(2433, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:45:52', '2019-08-29 05:45:52'),
+(2434, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]},{\\\"id\\\":3},{\\\"id\\\":20}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]},{\\\"id\\\":17,\\\"children\\\":[{\\\"id\\\":11}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":12}]},{\\\"id\\\":19,\\\"children\\\":[{\\\"id\\\":13}]}]\"}', '2019-08-29 05:47:23', '2019-08-29 05:47:23'),
+(2435, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1,\\\"children\\\":[{\\\"id\\\":2}]},{\\\"id\\\":3},{\\\"id\\\":20}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]},{\\\"id\\\":17,\\\"children\\\":[{\\\"id\\\":11}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":12}]},{\\\"id\\\":19,\\\"children\\\":[{\\\"id\\\":13}]}]\"}', '2019-08-29 05:47:23', '2019-08-29 05:47:23'),
+(2436, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:47:24', '2019-08-29 05:47:24'),
+(2437, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:47:24', '2019-08-29 05:47:24'),
+(2438, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"_token\":\"lzaJAloy5ZDyzMpaAqIsh9sXPalDmuuOtixCn3qu\",\"_order\":\"[{\\\"id\\\":4,\\\"children\\\":[{\\\"id\\\":5,\\\"children\\\":[{\\\"id\\\":7},{\\\"id\\\":14}]},{\\\"id\\\":6,\\\"children\\\":[{\\\"id\\\":8}]}]},{\\\"id\\\":15,\\\"children\\\":[{\\\"id\\\":1},{\\\"id\\\":2},{\\\"id\\\":3},{\\\"id\\\":20}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":9,\\\"children\\\":[{\\\"id\\\":10}]}]},{\\\"id\\\":17,\\\"children\\\":[{\\\"id\\\":11}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":12}]},{\\\"id\\\":19,\\\"children\\\":[{\\\"id\\\":13}]}]\"}', '2019-08-29 05:47:40', '2019-08-29 05:47:40'),
+(2439, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 05:47:40', '2019-08-29 05:47:40'),
+(2440, 1, 'admin/categories/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-29 08:26:11', '2019-08-29 08:26:11'),
+(2441, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-08-30 08:07:15', '2019-08-30 08:07:15'),
+(2442, 1, 'admin/news', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-30 08:07:22', '2019-08-30 08:07:22'),
+(2443, 1, 'admin/news/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-30 08:07:24', '2019-08-30 08:07:24'),
+(2444, 1, 'admin/news', 'POST', '127.0.0.1', '{\"comid\":\"39\",\"title\":\"\\u5408\\u8bb0\\u82b1\\u7532\\u597d\\u5403\\u5417\",\"keyword\":null,\"description\":null,\"status\":\"on\",\"content\":\"<p>\\u5408\\u8bb0\\u82b1\\u7532\\u597d\\u5403\\u5417\\u5408\\u8bb0\\u82b1\\u7532\\u597d\\u5403\\u5417\\u5408\\u8bb0\\u82b1\\u7532\\u597d\\u5403\\u5417<\\/p><p><br\\/><\\/p><p>\\u662f\\u6c99\\u53d1<img src=\\\"\\/upload\\/image\\/20190830\\/1567152478.jpg\\\" title=\\\"1567152478.jpg\\\" alt=\\\"25898347.jpg\\\"\\/><\\/p><p>\\u6492\\u65e6\\u6cd5<br\\/><\\/p>\",\"hits\":\"187\",\"author_id\":\"1\",\"_token\":\"6MPwYtQx94hKFIz2ArkKjIOdQHGVrcUJ50xsaVoD\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/news\"}', '2019-08-30 08:08:05', '2019-08-30 08:08:05'),
+(2445, 1, 'admin/news', 'GET', '127.0.0.1', '[]', '2019-08-30 08:08:05', '2019-08-30 08:08:05'),
+(2446, 1, 'admin/news/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-08-30 08:08:09', '2019-08-30 08:08:09'),
+(2447, 1, 'admin/news', 'POST', '127.0.0.1', '{\"comid\":\"39\",\"title\":\"\\u600e\\u4e48\\u52a0\\u76df\\u8fd9\\u4e2a\\u5e97\\u94fa\",\"keyword\":null,\"description\":null,\"status\":\"on\",\"content\":\"<p>\\u600e\\u4e48\\u52a0\\u76df\\u8fd9\\u4e2a\\u5e97\\u94fa\\u600e\\u4e48\\u52a0\\u76df\\u8fd9\\u4e2a\\u5e97\\u94fa<\\/p><p>dsfg <br\\/><\\/p>\",\"hits\":\"260\",\"author_id\":\"1\",\"_token\":\"6MPwYtQx94hKFIz2ArkKjIOdQHGVrcUJ50xsaVoD\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/news\"}', '2019-08-30 08:08:27', '2019-08-30 08:08:27'),
+(2448, 1, 'admin/news', 'GET', '127.0.0.1', '[]', '2019-08-30 08:08:27', '2019-08-30 08:08:27'),
+(2449, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-03 08:56:15', '2019-09-03 08:56:15'),
+(2450, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-03 08:56:18', '2019-09-03 08:56:18'),
+(2451, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 06:00:26', '2019-09-04 06:00:26'),
+(2452, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:00:35', '2019-09-04 06:00:35'),
+(2453, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:00:39', '2019-09-04 06:00:39'),
+(2454, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:06:47', '2019-09-04 06:06:47'),
+(2455, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:06:53', '2019-09-04 06:06:53'),
+(2456, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:06:57', '2019-09-04 06:06:57'),
+(2457, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"17\",\"typename\":\"\\u88c5\\u9970\\u6750\\u6599\",\"typedir\":\"zscl\",\"order\":\"1\",\"title\":\"\\u88c5\\u9970\\u6750\\u6599\",\"keyword\":\"\\u88c5\\u9970\\u6750\\u6599\",\"dirposition\":\"\\u88c5\\u9970\\u6750\\u6599\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-04 06:07:17', '2019-09-04 06:07:17'),
+(2458, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-04 06:07:17', '2019-09-04 06:07:17'),
+(2459, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"17\",\"typename\":\"\\u88c5\\u9970\\u6750\\u6599\",\"typedir\":\"zscl\",\"order\":\"2\",\"title\":\"\\u88c5\\u9970\\u6750\\u6599\",\"keyword\":\"\\u88c5\\u9970\\u6750\\u6599\",\"dirposition\":\"\\u88c5\\u9970\\u6750\\u6599\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\"}', '2019-09-04 06:08:22', '2019-09-04 06:08:22'),
+(2460, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-04 06:08:22', '2019-09-04 06:08:22'),
+(2461, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-04 06:08:26', '2019-09-04 06:08:26'),
+(2462, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"17\",\"typename\":\"\\u88c5\\u9970\\u6750\\u6599\",\"typedir\":\"zscl\",\"order\":\"2\",\"title\":\"\\u88c5\\u9970\\u6750\\u6599\",\"keyword\":\"\\u88c5\\u9970\\u6750\\u6599\",\"dirposition\":\"\\u88c5\\u9970\\u6750\\u6599\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\"}', '2019-09-04 06:08:46', '2019-09-04 06:08:46'),
+(2463, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-04 06:08:47', '2019-09-04 06:08:47'),
+(2464, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"17\",\"typename\":\"\\u88c5\\u9970\\u6750\\u6599\",\"typedir\":\"zscl\",\"order\":\"2\",\"title\":\"\\u88c5\\u9970\\u6750\\u6599\",\"keyword\":\"\\u88c5\\u9970\\u6750\\u6599\",\"dirposition\":\"\\u88c5\\u9970\\u6750\\u6599\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\"}', '2019-09-04 06:09:10', '2019-09-04 06:09:10'),
+(2465, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-04 06:09:11', '2019-09-04 06:09:11'),
+(2466, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:10:18', '2019-09-04 06:10:18'),
+(2467, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"17\",\"typename\":\"\\u5730\\u9762\\u6750\\u6599\",\"typedir\":\"dmcl\",\"order\":\"3\",\"title\":\"\\u5730\\u9762\\u6750\\u6599\",\"keyword\":\"\\u5730\\u9762\\u6750\\u6599\",\"dirposition\":\"\\u5730\\u9762\\u6750\\u6599\",\"mid\":\"5\",\"status\":\"on\",\"content\":null,\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-04 06:10:32', '2019-09-04 06:10:32'),
+(2468, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-04 06:10:32', '2019-09-04 06:10:32'),
+(2469, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:11:25', '2019-09-04 06:11:25'),
+(2470, 1, 'admin/malls/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:11:29', '2019-09-04 06:11:29'),
+(2471, 1, 'admin/malls', 'POST', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"level\":\"1\",\"amount\":\"100\",\"price\":\"10\",\"num\":\"100\",\"brand\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"content\":\"<p>\\u6492\\u65e6\\u53d1\\u5c04\\u70b9\\u53d1<\\/p><p>\\u963f\\u9053\\u592b<\\/p><p><img src=\\\"\\/upload\\/image\\/20190904\\/1567577704.png\\\" title=\\\"1567577704.png\\\" alt=\\\"01.png\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"491\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-04 06:15:15', '2019-09-04 06:15:15'),
+(2472, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 06:15:15', '2019-09-04 06:15:15'),
+(2473, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:46:57', '2019-09-04 06:46:57'),
+(2474, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '[]', '2019-09-04 06:53:42', '2019-09-04 06:53:42'),
+(2475, 1, 'admin/malls/3', 'PUT', '127.0.0.1', '{\"parent_id\":\"17\",\"title\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"level\":\"1\",\"amount\":\"100\",\"price\":\"10.00\",\"num\":\"100\",\"brand\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"content\":\"<p>\\u6492\\u65e6\\u53d1\\u5c04\\u70b9\\u53d1<\\/p><p>\\u963f\\u9053\\u592b<\\/p><p><img src=\\\"\\/upload\\/image\\/20190904\\/1567577704.png\\\" title=\\\"1567577704.png\\\" alt=\\\"01.png\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"491\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_method\":\"PUT\"}', '2019-09-04 06:53:50', '2019-09-04 06:53:50'),
+(2476, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 06:53:51', '2019-09-04 06:53:51'),
+(2477, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 06:53:53', '2019-09-04 06:53:53'),
+(2478, 1, 'admin/malls/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u7d27\\u6025\\u94dd\\u677f\",\"level\":\"0\",\"amount\":\"300\",\"price\":\"20.00\",\"num\":\"10\",\"brand\":\"nick\",\"content\":\"<p>\\u5c31\\u516d\\u89d2\\u6050\\u9f99d<img src=\\\"\\/upload\\/image\\/20190801\\/1564648298.png\\\" title=\\\"1564648298.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/><\\/p><p>\\u6492\\u65e6\\u6cd5<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"203\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-04 06:53:59', '2019-09-04 06:53:59'),
+(2479, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 06:53:59', '2019-09-04 06:53:59'),
+(2480, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 07:13:09', '2019-09-04 07:13:09'),
+(2481, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 07:13:12', '2019-09-04 07:13:12'),
+(2482, 1, 'admin/malls/3', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"level\":\"1\",\"amount\":\"100\",\"price\":\"10.00\",\"num\":\"100\",\"brand\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"content\":\"<p>\\u6492\\u65e6\\u53d1\\u5c04\\u70b9\\u53d1<\\/p><p>\\u963f\\u9053\\u592b<\\/p><p><img src=\\\"\\/upload\\/image\\/20190904\\/1567577704.png\\\" title=\\\"1567577704.png\\\" alt=\\\"01.png\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"491\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-04 07:13:21', '2019-09-04 07:13:21'),
+(2483, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 07:13:21', '2019-09-04 07:13:21'),
+(2484, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 07:51:53', '2019-09-04 07:51:53'),
+(2485, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-04 07:51:54', '2019-09-04 07:51:54'),
+(2486, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"3\"}', '2019-09-04 07:51:57', '2019-09-04 07:51:57'),
+(2487, 1, 'admin/malls/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u7d27\\u6025\\u94dd\\u677f\",\"level\":\"0\",\"amount\":\"300\",\"price\":\"20.00\",\"num\":\"10\",\"brand\":\"nick\",\"province\":\"3\",\"city\":\"39\",\"content\":\"<p>\\u5c31\\u516d\\u89d2\\u6050\\u9f99d<img src=\\\"\\/upload\\/image\\/20190801\\/1564648298.png\\\" title=\\\"1564648298.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/><\\/p><p>\\u6492\\u65e6\\u6cd5<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"603\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-04 07:52:03', '2019-09-04 07:52:03'),
+(2488, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 07:52:03', '2019-09-04 07:52:03'),
+(2489, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 07:52:05', '2019-09-04 07:52:05');
+INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `input`, `created_at`, `updated_at`) VALUES
+(2490, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-04 07:52:06', '2019-09-04 07:52:06'),
+(2491, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-04 07:52:10', '2019-09-04 07:52:10'),
+(2492, 1, 'admin/malls/3', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"level\":\"1\",\"amount\":\"100\",\"price\":\"10.00\",\"num\":\"100\",\"brand\":\"\\u6d4b\\u8bd5\\u5546\\u57ce111\",\"province\":\"2\",\"city\":\"36\",\"content\":\"<p>\\u6492\\u65e6\\u53d1\\u5c04\\u70b9\\u53d1<\\/p><p>\\u963f\\u9053\\u592b<\\/p><p><img src=\\\"\\/upload\\/image\\/20190904\\/1567577704.png\\\" title=\\\"1567577704.png\\\" alt=\\\"01.png\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"491\",\"author_id\":\"1\",\"_token\":\"kuf1OJwIRwX4jHPcFw28lBOTGCDuvhzoAmiJZfei\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-04 07:52:12', '2019-09-04 07:52:12'),
+(2493, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-04 07:52:12', '2019-09-04 07:52:12'),
+(2494, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-04 07:52:14', '2019-09-04 07:52:14'),
+(2495, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-04 07:52:14', '2019-09-04 07:52:14'),
+(2496, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '[]', '2019-09-05 01:27:32', '2019-09-05 01:27:32'),
+(2497, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-05 01:27:34', '2019-09-05 01:27:34'),
+(2498, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 01:27:37', '2019-09-05 01:27:37'),
+(2499, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"page\":\"2\"}', '2019-09-05 01:27:41', '2019-09-05 01:27:41'),
+(2500, 1, 'admin/companydatas/7/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 01:27:45', '2019-09-05 01:27:45'),
+(2501, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"6\"}', '2019-09-05 01:27:45', '2019-09-05 01:27:45'),
+(2502, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-05 01:27:45', '2019-09-05 01:27:45'),
+(2503, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"4\"}', '2019-09-05 01:27:46', '2019-09-05 01:27:46'),
+(2504, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"49\"}', '2019-09-05 01:27:46', '2019-09-05 01:27:46'),
+(2505, 1, 'admin/companydatas/7', 'PUT', '127.0.0.1', '{\"company\":{\"parent_id\":\"6\",\"catid\":\"8\",\"combrand\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"purl\":\"mrmf\",\"comname\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"type\":null,\"province\":\"4\",\"city\":\"49\",\"district\":\"671\",\"size\":\"3\",\"mode\":null,\"renqun\":\"\\u81ea\\u7531\\u521b\\u4e1a\",\"mdnum\":\"10\",\"yxnum\":\"50\",\"sqnum\":\"25\",\"capital\":\"100\",\"regyear\":null,\"business\":null,\"vip\":\"1\",\"introduce\":null,\"telephone\":null,\"fax\":null,\"mail\":null,\"address\":\"\\u5317\\u4eac\",\"homepage\":null,\"title\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"keyword\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"description\":\"\\u7f8e\\u5bb9\\u7f8e\\u53d1\",\"hits\":\"214\",\"status\":\"on\",\"author_id\":\"1\"},\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u987a\\u4e30<br\\/><\\/p>\",\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/companydatas?&page=2\"}', '2019-09-05 01:27:56', '2019-09-05 01:27:56'),
+(2506, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"page\":\"2\"}', '2019-09-05 01:27:56', '2019-09-05 01:27:56'),
+(2507, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 01:31:35', '2019-09-05 01:31:35'),
+(2508, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 01:31:45', '2019-09-05 01:31:45'),
+(2509, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-05 01:31:46', '2019-09-05 01:31:46'),
+(2510, 1, 'admin/malls/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u7d27\\u6025\\u94dd\\u677f\",\"level\":\"0\",\"amount\":\"300\",\"price\":\"20.00\",\"num\":\"10\",\"brand\":\"nick\",\"province\":\"2\",\"city\":\"36\",\"content\":\"<p>\\u5c31\\u516d\\u89d2\\u6050\\u9f99d<img src=\\\"\\/upload\\/image\\/20190801\\/1564648298.png\\\" title=\\\"1564648298.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/><\\/p><p>\\u6492\\u65e6\\u6cd5<br\\/><\\/p>\",\"status\":\"on\",\"n1\":null,\"n2\":null,\"hits\":\"603\",\"author_id\":\"1\",\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-05 01:31:53', '2019-09-05 01:31:53'),
+(2511, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-05 01:31:54', '2019-09-05 01:31:54'),
+(2512, 1, 'admin/malls/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 01:54:50', '2019-09-05 01:54:50'),
+(2513, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-05 01:54:50', '2019-09-05 01:54:50'),
+(2514, 1, 'admin/malls/2', 'PUT', '127.0.0.1', '{\"parent_id\":\"11\",\"title\":\"\\u7d27\\u6025\\u94dd\\u677f\",\"level\":\"0\",\"amount\":\"300\",\"price\":\"20.00\",\"num\":\"10\",\"brand\":\"nick\",\"province\":\"2\",\"city\":\"36\",\"content\":\"<p>\\u5c31\\u516d\\u89d2\\u6050\\u9f99d<img src=\\\"\\/upload\\/image\\/20190801\\/1564648298.png\\\" title=\\\"1564648298.png\\\" alt=\\\"QQ\\u622a\\u56fe20190228101344.png\\\"\\/><\\/p><p>\\u6492\\u65e6\\u6cd5<br\\/><\\/p>\",\"status\":\"on\",\"n1\":\"\\u624b\\u673a\\uff1a13455556666\",\"n2\":null,\"hits\":\"603\",\"author_id\":\"1\",\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/malls\"}', '2019-09-05 01:55:22', '2019-09-05 01:55:22'),
+(2515, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-05 01:55:22', '2019-09-05 01:55:22'),
+(2516, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:32:43', '2019-09-05 02:32:43'),
+(2517, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:32:44', '2019-09-05 02:32:44'),
+(2518, 1, 'admin/malls', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:35:38', '2019-09-05 02:35:38'),
+(2519, 1, 'admin/malls/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:35:40', '2019-09-05 02:35:40'),
+(2520, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-05 02:35:40', '2019-09-05 02:35:40'),
+(2521, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:35:44', '2019-09-05 02:35:44'),
+(2522, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 02:37:06', '2019-09-05 02:37:06'),
+(2523, 1, 'admin/sells/2', 'PUT', '127.0.0.1', '{\"typeid\":\"3\",\"parent_id\":\"12\",\"title\":\"\\u4e8c\\u624b\\u6c7d\\u8f66\\u4f9b\\u5e94\",\"areaid\":\"1\",\"brand\":\"\\u5965\\u8fea\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f\\u5730\\u65b9<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"1\",\"price\":\"100.00\",\"amount\":\"5\",\"telephone\":\"15688887777\",\"wx\":null,\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5965\\u8fea\\u516c\\u53f8\",\"hits\":\"500\",\"author_id\":\"1\",\"email\":\"123@qq.com\",\"n1\":\"\\u578b\\u53f7\",\"v1\":\"\\u5965\\u8feaA8\",\"n2\":null,\"v2\":null,\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/sells\"}', '2019-09-05 02:37:12', '2019-09-05 02:37:12'),
+(2524, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-09-05 02:37:12', '2019-09-05 02:37:12'),
+(2525, 1, 'admin/sells/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 03:02:32', '2019-09-05 03:02:32'),
+(2526, 1, 'admin/sells', 'POST', '127.0.0.1', '{\"typeid\":\"3\",\"parent_id\":\"12\",\"title\":\"\\u5927\\u4f17\\u6c7d\\u8f66\",\"areaid\":\"1\",\"brand\":\"\\u5927\\u4f17\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f<\\/p><p>\\u5927\\u4f17\\u6c7d\\u8f66<\\/p><p><img src=\\\"\\/upload\\/image\\/20190905\\/1567652612.jpg\\\" title=\\\"1567652612.jpg\\\" alt=\\\"25898347.jpg\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"10\",\"price\":\"10.00\",\"amount\":\"100\",\"telephone\":\"15688887777\",\"wx\":\"123456\",\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5927\\u4f17\\u6c7d\\u8f66\\u516c\\u53f8\",\"hits\":\"102\",\"author_id\":\"1\",\"email\":null,\"n1\":null,\"v1\":null,\"n2\":null,\"v2\":null,\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/sells\"}', '2019-09-05 03:04:20', '2019-09-05 03:04:20'),
+(2527, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-09-05 03:04:21', '2019-09-05 03:04:21'),
+(2528, 1, 'admin/sells/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 03:05:33', '2019-09-05 03:05:33'),
+(2529, 1, 'admin/sells/3', 'PUT', '127.0.0.1', '{\"typeid\":\"6\",\"parent_id\":\"12\",\"title\":\"\\u5927\\u4f17\\u6c7d\\u8f66\",\"areaid\":\"1\",\"brand\":\"\\u5927\\u4f17\",\"content\":\"<p>\\u963f\\u8428\\u5fb7\\u53d1\\u751f<\\/p><p>\\u5927\\u4f17\\u6c7d\\u8f66<\\/p><p><img src=\\\"\\/upload\\/image\\/20190905\\/1567652612.jpg\\\" title=\\\"1567652612.jpg\\\" alt=\\\"25898347.jpg\\\"\\/><\\/p><p>\\u963f\\u65af\\u8482\\u82ac<br\\/><\\/p>\",\"status\":\"on\",\"level\":\"1\",\"minamount\":\"10\",\"price\":\"10.00\",\"amount\":\"100\",\"telephone\":\"15688887777\",\"wx\":\"123456\",\"address\":\"\\u5317\\u4eac\",\"company\":\"\\u5927\\u4f17\\u6c7d\\u8f66\\u516c\\u53f8\",\"hits\":\"102\",\"author_id\":\"1\",\"email\":null,\"n1\":null,\"v1\":null,\"n2\":null,\"v2\":null,\"_token\":\"KdwTG2LlaXwVgpMNjNLl3UPlJpR70CBSAFQ8pvF7\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/sells\"}', '2019-09-05 03:05:41', '2019-09-05 03:05:41'),
+(2530, 1, 'admin/sells', 'GET', '127.0.0.1', '[]', '2019-09-05 03:05:42', '2019-09-05 03:05:42'),
+(2531, 1, 'admin/sells/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 03:07:40', '2019-09-05 03:07:40'),
+(2532, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-09-05 06:02:47', '2019-09-05 06:02:47'),
+(2533, 1, 'admin/photos/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:03:03', '2019-09-05 06:03:03'),
+(2534, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:04:03', '2019-09-05 06:04:03'),
+(2535, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:04:09', '2019-09-05 06:04:09'),
+(2536, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"19\",\"typename\":\"\\u751f\\u6d3b\",\"typedir\":\"shenghuo\",\"order\":\"2\",\"title\":\"\\u751f\\u6d3b\",\"keyword\":\"\\u751f\\u6d3b\",\"dirposition\":\"\\u751f\\u6d3b\",\"mid\":\"7\",\"status\":\"on\",\"content\":null,\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-05 06:04:34', '2019-09-05 06:04:34'),
+(2537, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 06:04:34', '2019-09-05 06:04:34'),
+(2538, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:04:37', '2019-09-05 06:04:37'),
+(2539, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"19\",\"typename\":\"\\u65c5\\u884c\",\"typedir\":\"lvxing\",\"order\":\"3\",\"title\":\"\\u65c5\\u884c\",\"keyword\":\"\\u65c5\\u884c\",\"dirposition\":\"\\u65c5\\u884c\",\"mid\":\"7\",\"status\":\"on\",\"content\":null,\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-05 06:04:53', '2019-09-05 06:04:53'),
+(2540, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 06:04:53', '2019-09-05 06:04:53'),
+(2541, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:04:59', '2019-09-05 06:04:59'),
+(2542, 1, 'admin/photos/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:05:07', '2019-09-05 06:05:07'),
+(2543, 1, 'admin/photos', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:05:12', '2019-09-05 06:05:12'),
+(2544, 1, 'admin/photos/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:05:13', '2019-09-05 06:05:13'),
+(2545, 1, 'admin/photos', 'POST', '127.0.0.1', '{\"parent_id\":\"24\",\"title\":\"\\u98ce\\u51491\",\"introduce\":\"\\u65c5\\u884c\\u98ce\\u51491\",\"status\":\"on\",\"hits\":\"162\",\"keyword\":null,\"description\":null,\"author_id\":\"1\",\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/photos\"}', '2019-09-05 06:07:41', '2019-09-05 06:07:41'),
+(2546, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-09-05 06:07:41', '2019-09-05 06:07:41'),
+(2547, 1, 'admin/photos/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 06:07:43', '2019-09-05 06:07:43'),
+(2548, 1, 'admin/photos', 'POST', '127.0.0.1', '{\"parent_id\":\"24\",\"title\":\"\\u98ce\\u51492\",\"introduce\":\"\\u65c5\\u884c\\u98ce\\u51492\",\"status\":\"on\",\"hits\":\"396\",\"keyword\":null,\"description\":null,\"author_id\":\"1\",\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/photos\"}', '2019-09-05 06:08:09', '2019-09-05 06:08:09'),
+(2549, 1, 'admin/photos', 'GET', '127.0.0.1', '[]', '2019-09-05 06:08:09', '2019-09-05 06:08:09'),
+(2550, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 07:54:26', '2019-09-05 07:54:26'),
+(2551, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 07:54:34', '2019-09-05 07:54:34'),
+(2552, 1, 'admin/categories', 'POST', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"typedir\":\"about\",\"order\":\"10\",\"title\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"keyword\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"dirposition\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"mid\":\"2\",\"status\":\"on\",\"content\":\"<p>\\u5982\\u679c\\u5e2e\\u52a9\\u4e86\\u60a8\\uff0c\\u4e0d\\u59a8\\u7ed9\\u4e91\\u6d77\\u5929\\u70b9\\u4e2aStars\\u3002<\\/p><p>\\u8fd9\\u662f\\u70b9\\u8d5e\\u94fe\\u63a5:<a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin<\\/a><img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0026.gif\\\"\\/><\\/p><p><br\\/><\\/p><p>\\u672c\\u4eba\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u6240\\u6709\\u5e03\\u5c40\\u5747\\u6765\\u6e90\\u4e8e\\u7f51\\u4e0a\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u4e0e\\u60a8\\u7684\\u8bbe\\u8ba1\\u7c7b\\u4f3c\\uff0c\\u8bf7\\u8054\\u7cfb\\u6211\\uff0c\\u7acb\\u5373\\u5220\\u9664\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u5728\\u8fd0\\u884c\\u4e2d\\u6709\\u95ee\\u9898\\uff0c\\u8bf7\\u76f4\\u63a5 <a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues<\\/a><br\\/><\\/p><p><br\\/><\\/p><p>\\u6211\\u4f1a\\u5728\\u6709\\u65f6\\u95f4\\u540e\\u53ca\\u65f6\\u5904\\u7406\\u3002\\u518d\\u6b21\\u611f\\u8c22<img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0061.gif\\\"\\/> <\\/p>\",\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-05 08:00:29', '2019-09-05 08:00:29'),
+(2553, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 08:00:29', '2019-09-05 08:00:29'),
+(2554, 1, 'admin/categories/25/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 08:07:46', '2019-09-05 08:07:46'),
+(2555, 1, 'admin/categories/25', 'PUT', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"typedir\":\"about\",\"order\":\"20\",\"title\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"keyword\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"dirposition\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"mid\":\"2\",\"status\":\"on\",\"content\":\"<p>\\u5982\\u679c\\u5e2e\\u52a9\\u4e86\\u60a8\\uff0c<strong>\\u4e0d\\u59a8\\u7ed9\\u4e91\\u6d77\\u5929\\u70b9\\u4e2aStars\\u3002<\\/strong><\\/p><p>\\u8fd9\\u662f\\u70b9\\u8d5e\\u94fe\\u63a5:<a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin<\\/a><img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0026.gif\\\"\\/><\\/p><p><br\\/><\\/p><p>\\u672c\\u4eba\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u6240\\u6709\\u5e03\\u5c40\\u5747\\u6765\\u6e90\\u4e8e\\u7f51\\u4e0a\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u4e0e\\u60a8\\u7684\\u8bbe\\u8ba1\\u7c7b\\u4f3c\\uff0c\\u8bf7\\u8054\\u7cfb\\u6211\\uff0c\\u7acb\\u5373\\u5220\\u9664\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u5728\\u8fd0\\u884c\\u4e2d\\u6709\\u95ee\\u9898\\uff0c\\u8bf7\\u76f4\\u63a5 <a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues<\\/a><br\\/><\\/p><p><br\\/><\\/p><p>\\u6211\\u4f1a\\u5728\\u6709\\u65f6\\u95f4\\u540e\\u53ca\\u65f6\\u5904\\u7406\\u3002\\u518d\\u6b21\\u611f\\u8c22<img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0061.gif\\\"\\/> <\\/p>\",\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-05 08:08:18', '2019-09-05 08:08:18'),
+(2556, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 08:08:18', '2019-09-05 08:08:18');
 
 -- --------------------------------------------------------
 
@@ -2594,7 +2828,8 @@ INSERT INTO `admin_role_users` (`role_id`, `user_id`, `created_at`, `updated_at`
 (2, 2, NULL, NULL),
 (2, 3, NULL, NULL),
 (2, 11, '2019-08-09 02:01:16', '2019-08-09 02:01:16'),
-(2, 12, '2019-08-09 02:04:15', '2019-08-09 02:04:15');
+(2, 12, '2019-08-09 02:04:15', '2019-08-09 02:04:15'),
+(2, 4, '2019-08-27 07:36:45', '2019-08-27 07:36:45');
 
 -- --------------------------------------------------------
 
@@ -2622,9 +2857,10 @@ CREATE TABLE `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `oid`, `username`, `password`, `name`, `email`, `avatar`, `autoflg`, `token`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'admin', '$2y$10$o.1mLzwO88hHt9ZP1zWbNOWqtahG5ijElpaR4NRHMq54LIZ69MkE.', 'Administrator', NULL, NULL, 0, NULL, 'cII8fzscYeRWijD5a2DJQP9nCMhrTS46Ckzpq9tXjHFk64m7rSHZoKSt7CCW', '2019-07-04 01:45:44', '2019-07-04 01:45:44'),
+(1, NULL, 'admin', '$2y$10$o.1mLzwO88hHt9ZP1zWbNOWqtahG5ijElpaR4NRHMq54LIZ69MkE.', 'Administrator', NULL, NULL, 0, NULL, 'Ga1xLbe7JuXAhkAWfsJfhKpOagjhzib2LPnYr6ldcp3R3oMy5eW64k7NXIVa', '2019-07-04 01:45:44', '2019-07-04 01:45:44'),
 (2, NULL, 'zhangsan', '$2y$10$l037xu4z67OWGPaiafMkCeYdx35CYHRlTi7muYGTBdEoRxeSHfa12', 'zhangsan', NULL, NULL, 0, NULL, NULL, '2019-07-05 02:41:01', '2019-08-08 06:53:43'),
-(3, NULL, 'lisi', '$2y$10$0KurfMMxqBjAEwYWJEzUC.K4V3K7OaGsb7WdMo1kvRV1aZ79XLun2', 'lisi', NULL, NULL, 0, NULL, 'hQ3fspiQ87c24ZSBdsRZ5VASE02o8x6Dp59ercrdTCLYIJHtBu7hY7SrIhgQ', '2019-08-08 07:30:05', '2019-08-08 07:30:05');
+(3, NULL, 'lisi', '$2y$10$0KurfMMxqBjAEwYWJEzUC.K4V3K7OaGsb7WdMo1kvRV1aZ79XLun2', 'lisi', NULL, NULL, 0, NULL, 'hQ3fspiQ87c24ZSBdsRZ5VASE02o8x6Dp59ercrdTCLYIJHtBu7hY7SrIhgQ', '2019-08-08 07:30:05', '2019-08-08 07:30:05'),
+(4, '25898347', 'imnotdoubi', '$2y$10$dJ3cYWSv6IL4bd9TkyaGteukfFRiWUd7NweYuQDa4UuyBqGQyFhxC', 'imnotdoubi', 'xin_shi715@126.com', NULL, 1, '694423748eb7cc74f87d1a7a70b23f59a00cf74e', 'LA4MiwjCxZEEPi5xeVDOJDEP7Bmf5j0bdTwEckhdR50d5upOzh4ezemjFKKh', '2019-08-27 07:36:45', '2019-08-27 07:36:45');
 
 -- --------------------------------------------------------
 
@@ -2647,7 +2883,8 @@ INSERT INTO `admin_user_permissions` (`user_id`, `permission_id`, `created_at`, 
 (2, 1, NULL, NULL),
 (3, 1, NULL, NULL),
 (11, 1, '2019-08-09 02:01:16', '2019-08-09 02:01:16'),
-(12, 1, '2019-08-09 02:04:15', '2019-08-09 02:04:15');
+(12, 1, '2019-08-09 02:04:15', '2019-08-09 02:04:15'),
+(4, 1, '2019-08-27 07:36:45', '2019-08-27 07:36:45');
 
 -- --------------------------------------------------------
 
@@ -6389,21 +6626,22 @@ CREATE TABLE `wbsdb_articles` (
   `author_id` int(4) DEFAULT '1',
   `created_date` date DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime DEFAULT NULL
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章';
 
 --
 -- 转存表中的数据 `wbsdb_articles`
 --
 
-INSERT INTO `wbsdb_articles` (`id`, `title`, `flag`, `parent_id`, `keyword`, `description`, `content`, `hits`, `favs`, `status`, `conver`, `author_id`, `created_date`, `created_at`, `updated_at`) VALUES
-(1, '街吧奶茶加盟', '', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, 'images/5fa83c54c10e6ca1444077824115377c.jpg', 1, '2019-07-29', '2019-07-29 10:54:01', '2019-08-14 16:48:38'),
-(2, '街吧奶茶加盟2', '2', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd速度发<br/></p>', 193, 0, 1, 'images/189ee1f82f292109e85758b4717aca7a.jpg', 1, '2019-07-29', '2019-07-29 11:54:19', '2019-08-14 16:48:47'),
-(3, '街吧奶茶加盟', '2,3', 1, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd斯蒂芬<br/></p>', 193, 0, 1, 'images/1d8e5ceea47cae36315a9ed36ed94a4e.jpg', 1, '2019-07-29', '2019-07-29 13:11:09', '2019-08-14 16:48:07'),
-(4, '测试测试444', '3', 3, NULL, NULL, '<p>测试测试444</p><p>asdf <br/></p><p><img src=\"/upload/image/20190806/1565080574.jpg\" title=\"1565080574.jpg\" alt=\"111111.jpg\"/></p><p>sadf<img src=\"/upload/image/20190806/1565080592.png\" title=\"1565080592.png\" alt=\"QQ截图20190228101344.png\"/></p>', 284, 0, 1, 'images/adcd7cd9ea2808d57a33fec96b055378.jpg', 1, '2019-08-06', '2019-08-06 16:25:57', '2019-08-14 16:48:21'),
-(5, '测试指南111', '', 3, NULL, NULL, '<p>测试指南111</p>', 387, 0, 1, 'images/30112ed7fef48033d49c6305b65e57ff.jpg', 1, '2019-08-14', '2019-08-14 17:36:11', '2019-08-14 17:36:11'),
-(6, '测试指南222', '', 3, NULL, NULL, '<p>测试指南222</p>', 149, 0, 1, 'images/07d4c93ff2052bb638145030cd797a9c.jpg', 1, '2019-08-14', '2019-08-14 17:36:34', '2019-08-14 17:36:34'),
-(7, '测试指南333', '', 3, NULL, NULL, '<p>测试指南333sdf <br/></p><p><img src=\"/upload/image/20190814/1565775896.jpg\" title=\"1565775896.jpg\" alt=\"15530630635768.jpg\"/>af</p>', 436, 0, 1, 'images/29394031edc9e15fe9927d280e06c503.jpg', 1, '2019-08-14', '2019-08-14 17:37:17', '2019-08-14 17:45:00');
+INSERT INTO `wbsdb_articles` (`id`, `title`, `flag`, `parent_id`, `keyword`, `description`, `content`, `hits`, `favs`, `status`, `conver`, `author_id`, `created_date`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '街吧奶茶加盟', '', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd<br/></p>', 193, 0, 1, 'images/5fa83c54c10e6ca1444077824115377c.jpg', 1, '2019-07-29', '2019-07-29 10:54:01', '2019-08-14 16:48:38', NULL),
+(2, '街吧奶茶加盟2', '2', 3, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd速度发<br/></p>', 193, 0, 1, 'images/189ee1f82f292109e85758b4717aca7a.jpg', 1, '2019-07-29', '2019-07-29 11:54:19', '2019-08-14 16:48:47', NULL),
+(3, '街吧奶茶加盟', '2,3', 1, '街吧奶茶加盟', '街吧奶茶加盟', '<p>dafsd斯蒂芬<br/></p>', 193, 0, 1, 'images/1d8e5ceea47cae36315a9ed36ed94a4e.jpg', 1, '2019-07-29', '2019-07-29 13:11:09', '2019-08-14 16:48:07', NULL),
+(4, '测试测试444', '3', 3, NULL, NULL, '<p>测试测试444</p><p>asdf <br/></p><p><img src=\"/upload/image/20190806/1565080574.jpg\" title=\"1565080574.jpg\" alt=\"111111.jpg\"/></p><p>sadf<img src=\"/upload/image/20190806/1565080592.png\" title=\"1565080592.png\" alt=\"QQ截图20190228101344.png\"/></p>', 284, 0, 1, 'images/adcd7cd9ea2808d57a33fec96b055378.jpg', 1, '2019-08-06', '2019-08-06 16:25:57', '2019-08-14 16:48:21', NULL),
+(5, '测试指南111', '', 3, NULL, NULL, '<p>测试指南111</p>', 387, 0, 1, 'images/30112ed7fef48033d49c6305b65e57ff.jpg', 1, '2019-08-14', '2019-08-14 17:36:11', '2019-08-14 17:36:11', NULL),
+(6, '测试指南222', '', 3, NULL, NULL, '<p>测试指南222</p>', 149, 0, 1, 'images/07d4c93ff2052bb638145030cd797a9c.jpg', 1, '2019-08-14', '2019-08-14 17:36:34', '2019-08-14 17:36:34', NULL),
+(7, '测试指南333', '', 3, NULL, NULL, '<p>测试指南333sdf <br/></p><p><img src=\"/upload/image/20190814/1565775896.jpg\" title=\"1565775896.jpg\" alt=\"15530630635768.jpg\"/>af</p>', 436, 0, 1, 'images/29394031edc9e15fe9927d280e06c503.jpg', 1, '2019-08-14', '2019-08-14 17:37:17', '2019-08-14 17:45:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -6433,8 +6671,8 @@ CREATE TABLE `wbsdb_asks` (
 --
 
 INSERT INTO `wbsdb_asks` (`id`, `parent_id`, `level`, `title`, `thumb`, `hits`, `comments`, `content`, `quesid`, `author_id`, `hidden`, `status`, `created_at`, `updated_at`) VALUES
-(2, 10, 1, '公交车出行快不快', 'images/628babe2e9d428d6188dff2f7fd6adcb.jpg', 165, 0, '<p>斯蒂芬萨芬斯蒂芬<br/></p>', 4, 1, 0, 1, '2019-08-01 13:24:50', '2019-08-01 15:04:07'),
-(3, 9, 1, '电信客服电话是多少', '', 307, 0, '<p>如题回答<br/></p>', NULL, 1, 0, 1, '2019-08-01 14:31:14', '2019-08-01 18:10:18');
+(2, 10, 1, '公交车出行快不快', 'images/628babe2e9d428d6188dff2f7fd6adcb.jpg', 165, 2, '<p>斯蒂芬萨芬斯蒂芬<br/></p>', 4, 1, 0, 1, '2019-08-01 13:24:50', '2019-08-01 15:04:07'),
+(3, 9, 1, '电信客服电话是多少', '', 307, 1, '<p>如题回答<br/></p>', NULL, 1, 0, 1, '2019-08-01 14:31:14', '2019-08-01 18:10:18');
 
 -- --------------------------------------------------------
 
@@ -6456,28 +6694,40 @@ CREATE TABLE `wbsdb_categories` (
   `status` int(4) DEFAULT '1',
   `author_id` bigint(10) DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- 转存表中的数据 `wbsdb_categories`
 --
 
-INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir`, `title`, `keyword`, `dirposition`, `content`, `mid`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, '创业故事', 'gushi', '创业故事', '创业故事', '创业故事', NULL, 1, 1, 0, '2019-07-12 06:24:10', '2019-07-12 06:24:10'),
-(2, 1, 2, '小故事', 'xgs', '小故事', NULL, NULL, '<p>要想开一个成功的干洗店，绝不是购买一套干洗店设备如此简单，技术的专业程度、创新性如何，经验的实战性与可操作性怎样，服务的真实性与可持续性，都攸关干洗店在市场的存活率。<img src=\"/ueditor/php/upload/image/20190724/1563945554.jpg\" title=\"1563945554.jpg\" alt=\"111111.jpg\"/><img src=\"/upload/image/20190724/1563946779.png\" title=\"1563946779.png\" alt=\"QQ截图20190228101344.png\"/></p><p>经验与技术是创业者急需的技能。技术洗衣专业与否，直接关系能否洗好衣服，只有洗衣质量达标，才能获得顾客的支持；且只有洗衣技术够专、够全，才能为顾客提供各种新式的洗衣服务，才能拓展干洗店的生意、业务，提高营利。而经验，是关乎干洗店经营能否顺手、顺心，只有总部提供丰富的干洗店实战经验，才能解决经营壁垒，经营成本才有可能降低。</p><p><br/></p><p>一个真正的品牌洗衣店加盟，在服务上，会做到有即是有，无就是无，顾客的无理要求，基本都会直接拒绝，只有那些一心为了获得投资者加盟的品牌，才会纸上谈兵，肆意承诺。</p><p>判断洗衣店加盟服务的另一个有效方法，即是看起是否具有大规模的直营店，只有总部经营直营店，才懂得市场经营，才会真正积累开干洗店的经验。而那些总部无直营店的品牌，其服务来源基本靠无中生有，如果投资者在经营干洗店时，选择此类品牌，那离关店亦不遥</p>', 2, 1, 0, '2019-07-23 02:51:04', '2019-07-29 02:54:15'),
-(3, 0, 3, '加盟指南', 'jmzn', '加盟指南', '加盟指南', '加盟指南', NULL, 1, 1, 0, '2019-07-24 06:29:54', '2019-07-29 02:54:15'),
-(4, 0, 3, '创业项目', 'xm', '创业项目', '创业项目', '创业项目', NULL, 3, 1, 0, '2019-07-30 01:42:39', '2019-07-30 01:42:39'),
-(5, 4, 1, '餐饮', 'canyin', '餐饮加盟', '餐饮', '餐饮', NULL, 3, 1, 0, '2019-07-30 01:43:04', '2019-07-30 01:43:04'),
-(6, 4, 2, '美容', 'meirong', '美容', '美容', '美容', NULL, 3, 1, 0, '2019-07-30 01:43:44', '2019-07-30 01:43:44'),
-(7, 5, 1, '快餐', 'kuaican', '快餐', '快餐', '快餐', NULL, 3, 1, 0, '2019-07-30 01:44:08', '2019-08-06 08:24:01'),
-(8, 6, 1, '美发', 'meifa', '美发', '美发', '美发', NULL, 3, 1, 0, '2019-07-30 01:44:47', '2019-07-30 01:44:47'),
-(9, 0, 1, '生活服务', 'shfw', '生活服务', '生活服务', '生活服务', NULL, 4, 1, 0, '2019-08-01 02:23:47', '2019-08-01 02:23:47'),
-(10, 9, 1, '交通出行', 'jtcx', '交通出行', '交通出行', '交通出行', NULL, 4, 1, 0, '2019-08-01 02:24:29', '2019-08-01 02:24:29'),
-(11, 0, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-01 08:24:02'),
-(12, 0, 1, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-02 03:35:40'),
-(13, 0, 1, '精美图片', 'jmtp', '精美图片', '精美图片', '精美图片', NULL, 7, 1, 0, '2019-08-05 03:20:00', '2019-08-05 03:20:00'),
-(14, 5, 1, '小吃', 'xiaochi', '小吃', '小吃', '小吃', NULL, 3, 1, 0, '2019-08-16 02:32:49', '2019-08-16 02:32:49');
+INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir`, `title`, `keyword`, `dirposition`, `content`, `mid`, `status`, `author_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 15, 8, '创业故事', 'gushi', '创业故事', '创业故事', '创业故事', NULL, 1, 1, 0, '2019-07-12 06:24:10', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(2, 15, 9, '小故事', 'xgs', '小故事', NULL, NULL, '<p>要想开一个成功的干洗店，绝不是购买一套干洗店设备如此简单，技术的专业程度、创新性如何，经验的实战性与可操作性怎样，服务的真实性与可持续性，都攸关干洗店在市场的存活率。<img src=\"/ueditor/php/upload/image/20190724/1563945554.jpg\" title=\"1563945554.jpg\" alt=\"111111.jpg\"/><img src=\"/upload/image/20190724/1563946779.png\" title=\"1563946779.png\" alt=\"QQ截图20190228101344.png\"/></p><p>经验与技术是创业者急需的技能。技术洗衣专业与否，直接关系能否洗好衣服，只有洗衣质量达标，才能获得顾客的支持；且只有洗衣技术够专、够全，才能为顾客提供各种新式的洗衣服务，才能拓展干洗店的生意、业务，提高营利。而经验，是关乎干洗店经营能否顺手、顺心，只有总部提供丰富的干洗店实战经验，才能解决经营壁垒，经营成本才有可能降低。</p><p><br/></p><p>一个真正的品牌洗衣店加盟，在服务上，会做到有即是有，无就是无，顾客的无理要求，基本都会直接拒绝，只有那些一心为了获得投资者加盟的品牌，才会纸上谈兵，肆意承诺。</p><p>判断洗衣店加盟服务的另一个有效方法，即是看起是否具有大规模的直营店，只有总部经营直营店，才懂得市场经营，才会真正积累开干洗店的经验。而那些总部无直营店的品牌，其服务来源基本靠无中生有，如果投资者在经营干洗店时，选择此类品牌，那离关店亦不遥</p>', 2, 1, 0, '2019-07-23 02:51:04', '2019-08-29 05:47:40', '2019-08-30 07:53:27'),
+(3, 15, 10, '加盟指南', 'jmzn', '加盟指南', '加盟指南', '加盟指南', NULL, 1, 1, 0, '2019-07-24 06:29:54', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(4, 0, 1, '创业项目', 'xm', '创业项目', '创业项目', '创业项目', NULL, 3, 1, 0, '2019-07-30 01:42:39', '2019-08-27 07:46:14', '2019-08-30 07:53:27'),
+(5, 4, 2, '餐饮', 'canyin', '餐饮加盟', '餐饮', '餐饮', NULL, 3, 1, 0, '2019-07-30 01:43:04', '2019-08-27 08:12:10', '2019-08-30 07:53:27'),
+(6, 4, 5, '美容', 'meirong', '美容', '美容', '美容', NULL, 3, 1, 0, '2019-07-30 01:43:44', '2019-08-27 08:12:10', '2019-08-30 07:53:27'),
+(7, 5, 3, '快餐', 'kuaican', '快餐', '快餐', '快餐', NULL, 3, 1, 0, '2019-07-30 01:44:08', '2019-08-27 08:12:10', '2019-08-30 07:53:27'),
+(8, 6, 6, '美发', 'meifa', '美发', '美发', '美发', NULL, 3, 1, 0, '2019-07-30 01:44:47', '2019-08-27 08:12:10', '2019-08-30 07:53:27'),
+(9, 16, 13, '生活服务', 'shfw', '生活服务', '生活服务', '生活服务', NULL, 4, 1, 0, '2019-08-01 02:23:47', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(10, 9, 14, '交通出行', 'jtcx', '交通出行', '交通出行', '交通出行', NULL, 4, 1, 0, '2019-08-01 02:24:29', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(11, 17, 1, '建筑机械', 'jzjx', '建筑机械', '建筑机械', '建筑机械', NULL, 5, 1, 0, '2019-08-01 08:24:02', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(12, 18, 18, '汽车', 'car', '汽车', '汽车', '汽车', NULL, 6, 1, 0, '2019-08-02 03:35:40', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(13, 19, 5, '精美图片', 'jmtp', '精美图片', '精美图片', '精美图片', NULL, 7, 1, 0, '2019-08-05 03:20:00', '2019-08-29 05:43:27', '2019-08-30 07:53:27'),
+(14, 5, 4, '小吃', 'xiaochi', '小吃', '小吃', '小吃', NULL, 3, 1, 0, '2019-08-16 02:32:49', '2019-08-27 08:12:10', '2019-08-30 07:53:27'),
+(15, 0, 7, '资讯', 'news', '资讯', '资讯', '资讯', NULL, 1, 1, 0, '2019-08-27 07:45:54', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(16, 0, 12, '问答', 'know', '问答', '问答', '问答', NULL, 4, 1, 0, '2019-08-27 08:11:57', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(17, 0, 15, '商城', 'mall', '商城', '商城', '商城', NULL, 5, 1, 0, '2019-08-27 08:12:40', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(18, 0, 17, '供应', 'sell', '供应', '供应', '供应', NULL, 6, 1, 0, '2019-08-27 08:13:02', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(19, 0, 19, '图库', 'photo', '图库', '图库', '图库', NULL, 7, 1, 0, '2019-08-27 08:13:23', '2019-08-29 05:43:27', '2019-08-30 07:53:27'),
+(20, 15, 11, '行业动态', 'hydt', '行业动态', '行业动态', '行业动态', NULL, 1, 1, 0, '2019-08-29 02:29:17', '2019-08-29 05:43:26', '2019-08-30 07:53:27'),
+(21, 17, 2, '装饰材料', 'zscl', '装饰材料', '装饰材料', '装饰材料', NULL, 5, 1, 0, '2019-09-04 06:09:11', '2019-09-04 06:09:11', NULL),
+(22, 17, 3, '地面材料', 'dmcl', '地面材料', '地面材料', '地面材料', NULL, 5, 1, 0, '2019-09-04 06:10:32', '2019-09-04 06:10:32', NULL),
+(23, 19, 10, '生活', 'shenghuo', '生活', '生活', '生活', NULL, 7, 1, 0, '2019-09-05 06:04:34', '2019-09-05 06:04:34', NULL),
+(24, 19, 3, '旅行', 'lvxing', '旅行', '旅行', '旅行', NULL, 7, 1, 0, '2019-09-05 06:04:53', '2019-09-05 06:04:53', NULL),
+(25, 0, 20, '关于云海天', 'about', '关于云海天', '关于云海天', '关于云海天', '<p>如果帮助了您，<strong>不妨给云海天点个Stars。</strong></p><p>这是点赞链接:<a href=\"https://github.com/imnotdoubi/laravel-admin\">https://github.com/imnotdoubi/laravel-admin</a><img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/></p><p><br/></p><p>本人非专业设计，非专业设计，非专业设计，所有布局均来源于网上。</p><p><br/></p><p>如果与您的设计类似，请联系我，立即删除。</p><p><br/></p><p>如果在运行中有问题，请直接 <a href=\"https://github.com/imnotdoubi/laravel-admin/issues\">https://github.com/imnotdoubi/laravel-admin/issues</a><br/></p><p><br/></p><p>我会在有时间后及时处理。再次感谢<img src=\"http://img.baidu.com/hi/jx2/j_0061.gif\"/> </p>', 2, 1, 0, '2019-09-05 08:00:29', '2019-09-05 08:08:18', NULL);
 
 -- --------------------------------------------------------
 
@@ -6523,37 +6773,38 @@ CREATE TABLE `wbsdb_companys` (
   `content` text COMMENT '品牌内容',
   `author_id` int(4) DEFAULT '0' COMMENT '添加用户人',
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime DEFAULT NULL
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='公司';
 
 --
 -- 转存表中的数据 `wbsdb_companys`
 --
 
-INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `status`, `vip`, `type`, `catid`, `parent_id`, `province`, `city`, `district`, `mode`, `capital`, `size`, `regyear`, `business`, `telephone`, `fax`, `mail`, `address`, `imagesarr`, `homepage`, `thumb`, `introduce`, `hits`, `mdnum`, `yxnum`, `sqnum`, `renqun`, `title`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`) VALUES
-(7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 6, 6, 4, 49, 673, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, '北京', '', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, 10, 50, 25, '自由创业', '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-08-14 16:50:31'),
-(8, '大东北烤肉拌饭', 'ddbbf', '大东北烤肉拌饭', 0, 1, 1, '个体', 8, 6, 6, 74, 918, '大东北烤肉拌饭', 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/d5a6be28f7b1b84d652b6f9a9aa5764b.jpg', '大东北烤肉拌饭', 107, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:54:11', '2019-08-15 09:54:11'),
-(9, '流弊的猪脚饭', 'lbdzjf', '流弊的猪脚饭', 0, 1, 1, NULL, 8, 6, 3, 38, 508, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1683ea58ebeec52fd3a2fe32bf71f92f.png', '流弊的猪脚饭', 417, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:55:13', '2019-08-15 09:55:13'),
-(10, '72街排骨饭', 'paiguf', '72街排骨饭', 0, 1, 1, NULL, 8, 6, 5, 61, 801, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1a6e3a283df68bed8764523b5121a63a.png', '72街排骨饭', 444, 10, 50, 25, '自由创业', '72街排骨饭', NULL, NULL, NULL, 1, '2019-08-15 09:56:07', '2019-08-15 09:56:07'),
-(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 1, 1, '个体', 8, 6, 5, NULL, NULL, '张氏大食堂', 100, '3', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, 10, 50, 25, '自由创业', '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-15 09:46:00'),
-(11, '米高林铁板饭', 'mgl', '米高林铁板饭', 0, 1, 1, NULL, 8, 6, 13, NULL, NULL, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/9798c0410648c8dffd172e9ba87f59f4.jpg', '米高林铁板饭', 223, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:56:49', '2019-08-16 10:09:22'),
-(12, '吉米屋快餐', 'jmwkc', '吉米屋快餐', 0, 1, 1, NULL, 8, 6, 22, 307, 2657, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/420c03843044abe51e4a8f223846b9bd.png', '吉米屋快餐', 279, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:57:46', '2019-08-15 09:57:46'),
-(13, '臭豆腐', 'choudoufu', '臭豆腐', 0, 1, 1, '企业', 14, 5, 4, 49, 671, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/5eae7eea3aaef49cacdc3680da5f206a.png', '臭豆腐', 400, 10, 50, 25, '自由创业', '臭豆腐', '臭豆腐', '臭豆腐', NULL, 1, '2019-08-16 10:34:18', '2019-08-16 10:34:18'),
-(28, '16便当', 'shiliubian', '16便当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '20~50万', '2016-07-05', '快餐', '01077777777', '01077777777', '123@qq.com', '辽宁省沈阳市沈北新区辉山聚农路34号', '[\"images/yht19082716C9AAF2C8E.png\",\"images/yht19082716C9AAF4342.png\",\"images/yht19082716C9AAF592E.png\",\"images/yht19082716C9AAF744D.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBCE40442.jpg', '云海天发布', 1225, 100, 916, 430, '自由创业', '16便当加盟店怎么样_16便当多少钱_品牌优势', '16便当加盟店,16便当加盟怎么样,16便当多少钱', '16便当加盟店品牌详情、16便当加盟费用、16便当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选16便当。', '', 1, '2019-08-27 05:36:10', '2019-08-27 05:36:10'),
-(29, '炒民在膳', 'chaominzs', '炒民在膳', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '10~20万', '2017-05-09', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省广州市', '[\"images/yht19082716C95998516.png\",\"images/yht19082716C95999516.png\",\"images/yht19082716C9599AC06.png\",\"images/yht19082716C9599BBB7.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB730C980.jpg', '云海天发布', 1641, 98, 776, 301, '自由创业', '炒民在膳加盟店怎么样_炒民在膳多少钱_品牌优势', '炒民在膳加盟店,炒民在膳加盟怎么样,炒民在膳多少钱', '炒民在膳加盟店品牌详情、炒民在膳加盟费用、炒民在膳品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒民在膳。', '', 1, '2019-08-27 05:36:21', '2019-08-27 05:36:21'),
-(27, '炒饭别走', 'chaofanbz', '炒饭别走', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 0, '10~20万', '2014-09-10', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省徐州市', '[\"images/yht19082716CA9FDE2F3.png\",\"images/yht19082716CA9FDF6E7.png\",\"images/yht19082716CA9FE0C50.png\",\"images/yht19082716CA9FE2AC3.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBD09934E.jpg', '云海天发布', 1143, 58, 886, 605, '自由创业', '炒饭别走加盟店怎么样_炒饭别走多少钱_品牌优势', '炒饭别走加盟店,炒饭别走加盟怎么样,炒饭别走多少钱', '炒饭别走加盟店品牌详情、炒饭别走加盟费用、炒饭别走品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒饭别走。', '', 1, '2019-08-27 05:36:00', '2019-08-27 05:36:00'),
-(30, '点点当', 'dndndg', '点点当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '5~10万', '2015-04-20', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省深圳市', '[\"images/yht19082716C95515C13.jpg\",\"images/yht19082716C955169B3.jpg\",\"images/yht19082716C955177CB.jpg\",\"images/yht19082716C9551834B.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB6F02070.jpg', '云海天发布', 1130, 75, 868, 248, '自由创业', '点点当加盟店怎么样_点点当多少钱_品牌优势', '点点当加盟店,点点当加盟怎么样,点点当多少钱', '点点当加盟店品牌详情、点点当加盟费用、点点当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选点点当。', '', 1, '2019-08-27 05:36:25', '2019-08-27 05:36:25'),
-(31, '九秒拌铁板饭', 'jmbtbf', '九秒拌铁板饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '10~20万', '2010-03-13', '快餐', '01077777777', '01077777777', '123@qq.com', '山东省济南市', '[\"images/yht19082716C84807C6C.jpg\",\"images/yht19082716C84808500.jpg\",\"images/yht19082716C84808C0C.jpg\",\"images/yht19082716C848092E0.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB8494E4F.jpg', '云海天发布', 1797, 45, 908, 501, '自由创业', '九秒拌铁板饭加盟店怎么样_九秒拌铁板饭多少钱_品牌优势', '九秒拌铁板饭加盟店,九秒拌铁板饭加盟怎么样,九秒拌铁板饭多少钱', '九秒拌铁板饭加盟店品牌详情、九秒拌铁板饭加盟费用、九秒拌铁板饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选九秒拌铁板饭。', '', 1, '2019-08-27 05:36:28', '2019-08-27 05:36:28'),
-(32, '东厂烧饭', 'dongchang', '东厂烧饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '5~10万', '2015-12-16', '快餐', '01077777777', '01077777777', '123@qq.com', '浙江省温州市', '[\"images/yht19082716C8E837276.png\",\"images/yht19082716C8E839A52.png\",\"images/yht19082716C8E83B91B.png\",\"images/yht19082716C8E83CD63.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8E83307F.jpg', '云海天发布', 1636, 90, 738, 545, '自由创业', '东厂烧饭加盟店怎么样_东厂烧饭多少钱_品牌优势', '东厂烧饭加盟店,东厂烧饭加盟怎么样,东厂烧饭多少钱', '东厂烧饭加盟店品牌详情、东厂烧饭加盟费用、东厂烧饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选东厂烧饭。', '', 1, '2019-08-27 05:36:35', '2019-08-27 05:36:35'),
-(33, '顽味咖喱快餐', 'wanweikl', '顽味咖喱快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '1~5万', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省苏州市', '[\"images/yht19082716C8E7DCB26.png\",\"images/yht19082716C8E7DD2FE.png\",\"images/yht19082716C8E7DE32E.png\",\"images/yht19082716C8E7DFEB2.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8E7D9D43.jpg', '云海天发布', 1538, 85, 699, 527, '自由创业', '顽味咖喱快餐加盟店怎么样_顽味咖喱快餐多少钱_品牌优势', '顽味咖喱快餐加盟店,顽味咖喱快餐加盟怎么样,顽味咖喱快餐多少钱', '顽味咖喱快餐加盟店品牌详情、顽味咖喱快餐加盟费用、顽味咖喱快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选顽味咖喱快餐。', '', 1, '2019-08-27 05:36:44', '2019-08-27 05:36:44'),
-(34, '俏南湖五谷杂粮鱼粉', 'qiaonanh', '俏南湖五谷杂粮鱼粉', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '5~10万', '2014-08-05', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省苏州市', '[\"images/yht19082716C8ECABF23.png\",\"images/yht19082716C8ECAC750.png\",\"images/yht19082716C8ECAD0B6.png\",\"images/yht19082716C8ECADB32.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8ECA98B3.jpg', '云海天发布', 2947, 66, 637, 616, '自由创业', '俏南湖五谷杂粮鱼粉加盟店怎么样_俏南湖五谷杂粮鱼粉多少钱_品牌优势', '俏南湖五谷杂粮鱼粉加盟店,俏南湖五谷杂粮鱼粉加盟怎么样,俏南湖五谷杂粮鱼粉多少钱', '俏南湖五谷杂粮鱼粉加盟店品牌详情、俏南湖五谷杂粮鱼粉加盟费用、俏南湖五谷杂粮鱼粉品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选俏南湖五谷杂粮鱼粉。', '', 1, '2019-08-27 05:36:52', '2019-08-27 05:36:52'),
-(35, '雅比斯快餐', 'yabisikc', '雅比斯快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '1~5万', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '安徽省芜湖市', '[\"images/yht19082716C92F7098B.png\",\"images/yht19082716C92F71797.png\",\"images/yht19082716C92F722BB.png\",\"images/yht19082716C92F72D7F.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CACE61D46.jpg', '云海天发布', 3080, 88, 654, 266, '自由创业', '雅比斯快餐加盟店怎么样_雅比斯快餐多少钱_品牌优势', '雅比斯快餐加盟店,雅比斯快餐加盟怎么样,雅比斯快餐多少钱', '雅比斯快餐加盟店品牌详情、雅比斯快餐加盟费用、雅比斯快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选雅比斯快餐。', '', 1, '2019-08-27 05:36:58', '2019-08-27 05:36:58'),
-(36, '程大碗快餐', 'chendawan', '程大碗快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 2, '10~20万', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '湖南省长沙市', '[\"images/yht19082716C6A763E9D.png\",\"images/yht19082716C6A764749.png\",\"images/yht19082716C6A764F8E.png\",\"images/yht19082716C6A7658AD.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C6A76165E.jpg', '云海天发布', 2728, 121, 759, 523, '自由创业', '程大碗快餐加盟店怎么样_程大碗快餐多少钱_品牌优势', '程大碗快餐加盟店,程大碗快餐加盟怎么样,程大碗快餐多少钱', '程大碗快餐加盟店品牌详情、程大碗快餐加盟费用、程大碗快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选程大碗快餐。', '', 1, '2019-08-27 05:37:07', '2019-08-27 05:37:07'),
-(37, '潜水艇三明治', 'qianshuits', '潜水艇三明治', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '10~20万', '2002-10-22', '快餐', '01077777777', '01077777777', '123@qq.com', '北京市朝阳区', '[\"images/yht19082716C674F02C5.png\",\"images/yht19082716C674F15F6.png\",\"images/yht19082716C674F2B5D.png\",\"images/yht19082716C674F4011.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C674EBF7B.jpg', '云海天发布', 3306, 144, 849, 589, '自由创业', '潜水艇三明治加盟店怎么样_潜水艇三明治多少钱_品牌优势', '潜水艇三明治加盟店,潜水艇三明治加盟怎么样,潜水艇三明治多少钱', '潜水艇三明治加盟店品牌详情、潜水艇三明治加盟费用、潜水艇三明治品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选潜水艇三明治。', '', 1, '2019-08-27 05:37:14', '2019-08-27 05:37:14'),
-(38, '双益快餐', 'shuangyikc', '双益快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '20~50万', '2001-09-24', '快餐', '01077777777', '01077777777', '123@qq.com', '上海市徐汇区', '[\"images/yht19082716C724A38EC.png\",\"images/yht19082716C724A4ECC.png\",\"images/yht19082716C724A66D4.png\",\"images/yht19082716C724A7A7C.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C724A0B48.jpg', '云海天发布', 2741, 100, 834, 265, '自由创业', '双益快餐加盟店怎么样_双益快餐多少钱_品牌优势', '双益快餐加盟店,双益快餐加盟怎么样,双益快餐多少钱', '双益快餐加盟店品牌详情、双益快餐加盟费用、双益快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选双益快餐。', '', 1, '2019-08-27 05:37:20', '2019-08-27 05:37:20'),
-(39, '和记花甲', 'hejihuajia', '和记花甲', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '1~5万', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '安徽省芜湖市', '[\"images/yht19082716C742E1A8A.png\",\"images/yht19082716C742E262A.png\",\"images/yht19082716C742E32E5.png\",\"images/yht19082716C742E3E4A.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C742DF153.jpg', '云海天发布', 3061, 121, 704, 412, '自由创业', '和记花甲加盟店怎么样_和记花甲多少钱_品牌优势', '和记花甲加盟店,和记花甲加盟怎么样,和记花甲多少钱', '和记花甲加盟店品牌详情、和记花甲加盟费用、和记花甲品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选和记花甲。', '', 1, '2019-08-27 05:37:30', '2019-08-27 05:37:30'),
-(40, '三牛快餐', 'sanniukuai', '三牛快餐', 0, 1, 1, '个体', 7, 5, 10, 114, 1270, '经销', 4, NULL, '2012-06-01', '快餐', '010 7777 7777', '01077777777', '123@qq.com', '上海市浦东新区', '[\"images/yht19082716C8FEBDA68.png\",\"images/yht19082716C8FEBEDE8.png\",\"images/yht19082716C8FEBFED8.png\",\"images/yht19082716C8FEC1574.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CACBB763F.jpg', '云海天发布', 3208, 144, 801, 264, '自由创业', '三牛快餐加盟店怎么样_三牛快餐多少钱_品牌优势', '三牛快餐加盟店,三牛快餐加盟怎么样,三牛快餐多少钱', '三牛快餐加盟店品牌详情、三牛快餐加盟费用、三牛快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选三牛快餐。', '', 1, '2019-08-27 05:37:35', '2019-08-27 13:28:28'),
-(41, '佐敦茶餐厅', 'zuoduncct', '佐敦茶餐厅', 0, 1, 1, '个体', 7, 5, 11, NULL, NULL, '经销', 3, '1', '2014-08-09', '快餐', '010 7777 7777', '01077777777', '123@qq.com', '广东省广州市', '[\"images/yht19082716C8EF10E46.png\",\"images/yht19082716C8EF11676.png\",\"images/yht19082716C8EF1204A.png\",\"images/yht19082716C8EF1291A.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CAC937EAE.jpg', '云海天发布', 2284, 778, 804, 295, '自由创业', '佐敦茶餐厅加盟店怎么样_佐敦茶餐厅多少钱_品牌优势', '佐敦茶餐厅加盟店,佐敦茶餐厅加盟怎么样,佐敦茶餐厅多少钱', '佐敦茶餐厅加盟店品牌详情、佐敦茶餐厅加盟费用、佐敦茶餐厅品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选佐敦茶餐厅。', '', 1, '2019-08-27 05:37:41', '2019-08-27 13:20:44');
+INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `status`, `vip`, `type`, `catid`, `parent_id`, `province`, `city`, `district`, `mode`, `capital`, `size`, `regyear`, `business`, `telephone`, `fax`, `mail`, `address`, `imagesarr`, `homepage`, `thumb`, `introduce`, `hits`, `mdnum`, `yxnum`, `sqnum`, `renqun`, `title`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 8, 6, 4, 49, 671, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, '北京', '[\"images\\/6b90194cae3220bbec83c4ca36c556a9.jpg\",\"images\\/67ce4ae70ceef2a49eefba2d43e2e798.jpg\",\"images\\/ab4c8c226d15e054d0e08e77c257323d.jpg\",\"images\\/90ca1569f0ed3208ad391f5284e8fe78.jpg\"]', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, 10, 50, 25, '自由创业', '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-09-05 09:27:56', NULL),
+(8, '大东北烤肉拌饭', 'ddbbf', '大东北烤肉拌饭', 0, 1, 1, '个体', 8, 6, 6, 74, 918, '大东北烤肉拌饭', 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/d5a6be28f7b1b84d652b6f9a9aa5764b.jpg', '大东北烤肉拌饭', 107, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:54:11', '2019-08-15 09:54:11', NULL),
+(9, '流弊的猪脚饭', 'lbdzjf', '流弊的猪脚饭', 0, 1, 1, NULL, 8, 6, 3, 38, 508, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1683ea58ebeec52fd3a2fe32bf71f92f.png', '流弊的猪脚饭', 417, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:55:13', '2019-08-15 09:55:13', NULL),
+(10, '72街排骨饭', 'paiguf', '72街排骨饭', 0, 1, 1, NULL, 8, 6, 5, 61, 801, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1a6e3a283df68bed8764523b5121a63a.png', '72街排骨饭', 444, 10, 50, 25, '自由创业', '72街排骨饭', NULL, NULL, NULL, 1, '2019-08-15 09:56:07', '2019-08-15 09:56:07', NULL),
+(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 1, 1, '个体', 8, 6, 5, NULL, NULL, '张氏大食堂', 100, '3', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, 10, 50, 25, '自由创业', '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-15 09:46:00', NULL),
+(11, '米高林铁板饭', 'mgl', '米高林铁板饭', 0, 1, 1, NULL, 8, 6, 13, NULL, NULL, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/9798c0410648c8dffd172e9ba87f59f4.jpg', '米高林铁板饭', 223, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:56:49', '2019-08-16 10:09:22', NULL),
+(12, '吉米屋快餐', 'jmwkc', '吉米屋快餐', 0, 1, 1, NULL, 8, 6, 22, 307, 2657, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/420c03843044abe51e4a8f223846b9bd.png', '吉米屋快餐', 279, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:57:46', '2019-08-15 09:57:46', NULL),
+(13, '臭豆腐', 'choudoufu', '臭豆腐', 0, 1, 1, '企业', 14, 5, 4, 49, 671, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/5eae7eea3aaef49cacdc3680da5f206a.png', '臭豆腐', 400, 10, 50, 25, '自由创业', '臭豆腐', '臭豆腐', '臭豆腐', NULL, 1, '2019-08-16 10:34:18', '2019-08-16 10:34:18', NULL),
+(28, '16便当', 'shiliubian', '16便当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '5', '2016-07-05', '快餐', '01077777777', '01077777777', '123@qq.com', '辽宁省沈阳市沈北新区辉山聚农路34号', '[\"images/yht19082716C9AAF2C8E.png\",\"images/yht19082716C9AAF4342.png\",\"images/yht19082716C9AAF592E.png\",\"images/yht19082716C9AAF744D.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBCE40442.jpg', '云海天发布', 1225, 100, 916, 430, '自由创业', '16便当加盟店怎么样_16便当多少钱_品牌优势', '16便当加盟店,16便当加盟怎么样,16便当多少钱', '16便当加盟店品牌详情、16便当加盟费用、16便当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选16便当。', '', 1, '2019-08-27 05:36:10', '2019-08-27 05:36:10', NULL),
+(29, '炒民在膳', 'chaominzs', '炒民在膳', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '4', '2017-05-09', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省广州市', '[\"images/yht19082716C95998516.png\",\"images/yht19082716C95999516.png\",\"images/yht19082716C9599AC06.png\",\"images/yht19082716C9599BBB7.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB730C980.jpg', '云海天发布', 1641, 98, 776, 301, '自由创业', '炒民在膳加盟店怎么样_炒民在膳多少钱_品牌优势', '炒民在膳加盟店,炒民在膳加盟怎么样,炒民在膳多少钱', '炒民在膳加盟店品牌详情、炒民在膳加盟费用、炒民在膳品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒民在膳。', '', 1, '2019-08-27 05:36:21', '2019-08-27 05:36:21', NULL),
+(27, '炒饭别走', 'chaofanbz', '炒饭别走', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 0, '4', '2014-09-10', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省徐州市', '[\"images/yht19082716CA9FDE2F3.png\",\"images/yht19082716CA9FDF6E7.png\",\"images/yht19082716CA9FE0C50.png\",\"images/yht19082716CA9FE2AC3.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBD09934E.jpg', '云海天发布', 1143, 58, 886, 605, '自由创业', '炒饭别走加盟店怎么样_炒饭别走多少钱_品牌优势', '炒饭别走加盟店,炒饭别走加盟怎么样,炒饭别走多少钱', '炒饭别走加盟店品牌详情、炒饭别走加盟费用、炒饭别走品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒饭别走。', '', 1, '2019-08-27 05:36:00', '2019-08-27 05:36:00', NULL),
+(30, '点点当', 'dndndg', '点点当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '3', '2015-04-20', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省深圳市', '[\"images/yht19082716C95515C13.jpg\",\"images/yht19082716C955169B3.jpg\",\"images/yht19082716C955177CB.jpg\",\"images/yht19082716C9551834B.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB6F02070.jpg', '云海天发布', 1130, 75, 868, 248, '自由创业', '点点当加盟店怎么样_点点当多少钱_品牌优势', '点点当加盟店,点点当加盟怎么样,点点当多少钱', '点点当加盟店品牌详情、点点当加盟费用、点点当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选点点当。', '', 1, '2019-08-27 05:36:25', '2019-08-27 05:36:25', NULL),
+(31, '九秒拌铁板饭', 'jmbtbf', '九秒拌铁板饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '4', '2010-03-13', '快餐', '01077777777', '01077777777', '123@qq.com', '山东省济南市', '[\"images/yht19082716C84807C6C.jpg\",\"images/yht19082716C84808500.jpg\",\"images/yht19082716C84808C0C.jpg\",\"images/yht19082716C848092E0.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB8494E4F.jpg', '云海天发布', 1797, 45, 908, 501, '自由创业', '九秒拌铁板饭加盟店怎么样_九秒拌铁板饭多少钱_品牌优势', '九秒拌铁板饭加盟店,九秒拌铁板饭加盟怎么样,九秒拌铁板饭多少钱', '九秒拌铁板饭加盟店品牌详情、九秒拌铁板饭加盟费用、九秒拌铁板饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选九秒拌铁板饭。', '', 1, '2019-08-27 05:36:28', '2019-08-27 05:36:28', NULL),
+(32, '东厂烧饭', 'dongchang', '东厂烧饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '3', '2015-12-16', '快餐', '01077777777', '01077777777', '123@qq.com', '浙江省温州市', '[\"images/yht19082716C8E837276.png\",\"images/yht19082716C8E839A52.png\",\"images/yht19082716C8E83B91B.png\",\"images/yht19082716C8E83CD63.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8E83307F.jpg', '云海天发布', 1636, 90, 738, 545, '自由创业', '东厂烧饭加盟店怎么样_东厂烧饭多少钱_品牌优势', '东厂烧饭加盟店,东厂烧饭加盟怎么样,东厂烧饭多少钱', '东厂烧饭加盟店品牌详情、东厂烧饭加盟费用、东厂烧饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选东厂烧饭。', '', 1, '2019-08-27 05:36:35', '2019-08-27 05:36:35', NULL),
+(33, '顽味咖喱快餐', 'wanweikl', '顽味咖喱快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '2', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省苏州市', '[\"images/yht19082716C8E7DCB26.png\",\"images/yht19082716C8E7DD2FE.png\",\"images/yht19082716C8E7DE32E.png\",\"images/yht19082716C8E7DFEB2.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8E7D9D43.jpg', '云海天发布', 1538, 85, 699, 527, '自由创业', '顽味咖喱快餐加盟店怎么样_顽味咖喱快餐多少钱_品牌优势', '顽味咖喱快餐加盟店,顽味咖喱快餐加盟怎么样,顽味咖喱快餐多少钱', '顽味咖喱快餐加盟店品牌详情、顽味咖喱快餐加盟费用、顽味咖喱快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选顽味咖喱快餐。', '', 1, '2019-08-27 05:36:44', '2019-08-27 05:36:44', NULL),
+(34, '俏南湖五谷杂粮鱼粉', 'qiaonanh', '俏南湖五谷杂粮鱼粉', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '3', '2014-08-05', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省苏州市', '[\"images/yht19082716C8ECABF23.png\",\"images/yht19082716C8ECAC750.png\",\"images/yht19082716C8ECAD0B6.png\",\"images/yht19082716C8ECADB32.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8ECA98B3.jpg', '云海天发布', 2947, 66, 637, 616, '自由创业', '俏南湖五谷杂粮鱼粉加盟店怎么样_俏南湖五谷杂粮鱼粉多少钱_品牌优势', '俏南湖五谷杂粮鱼粉加盟店,俏南湖五谷杂粮鱼粉加盟怎么样,俏南湖五谷杂粮鱼粉多少钱', '俏南湖五谷杂粮鱼粉加盟店品牌详情、俏南湖五谷杂粮鱼粉加盟费用、俏南湖五谷杂粮鱼粉品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选俏南湖五谷杂粮鱼粉。', '', 1, '2019-08-27 05:36:52', '2019-08-27 05:36:52', NULL),
+(35, '雅比斯快餐', 'yabisikc', '雅比斯快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '2', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '安徽省芜湖市', '[\"images/yht19082716C92F7098B.png\",\"images/yht19082716C92F71797.png\",\"images/yht19082716C92F722BB.png\",\"images/yht19082716C92F72D7F.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CACE61D46.jpg', '云海天发布', 3080, 88, 654, 266, '自由创业', '雅比斯快餐加盟店怎么样_雅比斯快餐多少钱_品牌优势', '雅比斯快餐加盟店,雅比斯快餐加盟怎么样,雅比斯快餐多少钱', '雅比斯快餐加盟店品牌详情、雅比斯快餐加盟费用、雅比斯快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选雅比斯快餐。', '', 1, '2019-08-27 05:36:58', '2019-08-27 05:36:58', NULL),
+(36, '程大碗快餐', 'chendawan', '程大碗快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 2, '4', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '湖南省长沙市', '[\"images/yht19082716C6A763E9D.png\",\"images/yht19082716C6A764749.png\",\"images/yht19082716C6A764F8E.png\",\"images/yht19082716C6A7658AD.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C6A76165E.jpg', '云海天发布', 2728, 121, 759, 523, '自由创业', '程大碗快餐加盟店怎么样_程大碗快餐多少钱_品牌优势', '程大碗快餐加盟店,程大碗快餐加盟怎么样,程大碗快餐多少钱', '程大碗快餐加盟店品牌详情、程大碗快餐加盟费用、程大碗快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选程大碗快餐。', '', 1, '2019-08-27 05:37:07', '2019-08-27 05:37:07', NULL),
+(37, '潜水艇三明治', 'qianshuits', '潜水艇三明治', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '4', '2002-10-22', '快餐', '01077777777', '01077777777', '123@qq.com', '北京市朝阳区', '[\"images/yht19082716C674F02C5.png\",\"images/yht19082716C674F15F6.png\",\"images/yht19082716C674F2B5D.png\",\"images/yht19082716C674F4011.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C674EBF7B.jpg', '云海天发布', 3306, 144, 849, 589, '自由创业', '潜水艇三明治加盟店怎么样_潜水艇三明治多少钱_品牌优势', '潜水艇三明治加盟店,潜水艇三明治加盟怎么样,潜水艇三明治多少钱', '潜水艇三明治加盟店品牌详情、潜水艇三明治加盟费用、潜水艇三明治品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选潜水艇三明治。', '', 1, '2019-08-27 05:37:14', '2019-08-27 05:37:14', NULL),
+(38, '双益快餐', 'shuangyikc', '双益快餐', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '5', '2001-09-24', '快餐', '01077777777', '01077777777', '123@qq.com', '上海市徐汇区', '[\"images/yht19082716C724A38EC.png\",\"images/yht19082716C724A4ECC.png\",\"images/yht19082716C724A66D4.png\",\"images/yht19082716C724A7A7C.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C724A0B48.jpg', '云海天发布', 2741, 100, 834, 265, '自由创业', '双益快餐加盟店怎么样_双益快餐多少钱_品牌优势', '双益快餐加盟店,双益快餐加盟怎么样,双益快餐多少钱', '双益快餐加盟店品牌详情、双益快餐加盟费用、双益快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选双益快餐。', '', 1, '2019-08-27 05:37:20', '2019-08-27 05:37:20', NULL),
+(39, '和记花甲', 'hejihuajia', '和记花甲', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '2', '2014-08-09', '快餐', '01077777777', '01077777777', '123@qq.com', '安徽省芜湖市', '[\"images/yht19082716C742E1A8A.png\",\"images/yht19082716C742E262A.png\",\"images/yht19082716C742E32E5.png\",\"images/yht19082716C742E3E4A.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C742DF153.jpg', '云海天发布', 3061, 121, 704, 412, '自由创业', '和记花甲加盟店怎么样_和记花甲多少钱_品牌优势', '和记花甲加盟店,和记花甲加盟怎么样,和记花甲多少钱', '和记花甲加盟店品牌详情、和记花甲加盟费用、和记花甲品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选和记花甲。', '', 1, '2019-08-27 05:37:30', '2019-08-27 05:37:30', NULL),
+(40, '三牛快餐', 'sanniukuai', '三牛快餐', 0, 1, 1, '个体', 7, 5, 10, 114, 1270, '经销', 4, '4', '2012-06-01', '快餐', '010 7777 7777', '01077777777', '123@qq.com', '上海市浦东新区', '[\"images/yht19082716C8FEBDA68.png\",\"images/yht19082716C8FEBEDE8.png\",\"images/yht19082716C8FEBFED8.png\",\"images/yht19082716C8FEC1574.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CACBB763F.jpg', '云海天发布', 3208, 144, 801, 264, '自由创业', '三牛快餐加盟店怎么样_三牛快餐多少钱_品牌优势', '三牛快餐加盟店,三牛快餐加盟怎么样,三牛快餐多少钱', '三牛快餐加盟店品牌详情、三牛快餐加盟费用、三牛快餐品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选三牛快餐。', '', 1, '2019-08-27 05:37:35', '2019-08-27 13:28:28', NULL),
+(41, '佐敦茶餐厅', 'zuoduncct', '佐敦茶餐厅', 0, 1, 1, '个体', 7, 5, 11, NULL, NULL, '经销', 3, '1', '2014-08-09', '快餐', '010 7777 7777', '01077777777', '123@qq.com', '广东省广州市', '[\"images/yht19082716C8EF10E46.png\",\"images/yht19082716C8EF11676.png\",\"images/yht19082716C8EF1204A.png\",\"images/yht19082716C8EF1291A.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CAC937EAE.jpg', '云海天发布', 2284, 778, 804, 295, '自由创业', '佐敦茶餐厅加盟店怎么样_佐敦茶餐厅多少钱_品牌优势', '佐敦茶餐厅加盟店,佐敦茶餐厅加盟怎么样,佐敦茶餐厅多少钱', '佐敦茶餐厅加盟店品牌详情、佐敦茶餐厅加盟费用、佐敦茶餐厅品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选佐敦茶餐厅。', '', 1, '2019-08-27 05:37:41', '2019-08-27 13:20:44', NULL);
 
 -- --------------------------------------------------------
 
@@ -6618,9 +6869,9 @@ INSERT INTO `wbsdb_investments` (`id`, `title`, `order`) VALUES
 (3, '5-10万', 3),
 (4, '10-20万', 4),
 (5, '20-30万', 5),
-(6, '30-50万', 8),
-(7, '50-100万', 6),
-(8, '100万以上', 7);
+(6, '30-50万', 7),
+(7, '50-100万', 8),
+(8, '100万以上', 9);
 
 -- --------------------------------------------------------
 
@@ -6638,6 +6889,9 @@ CREATE TABLE `wbsdb_malls` (
   `price` decimal(10,2) UNSIGNED NOT NULL DEFAULT '0.00',
   `amount` int(10) UNSIGNED DEFAULT '0' COMMENT '库存',
   `thumb` varchar(255) DEFAULT '' COMMENT '图集',
+  `litpic` varchar(199) DEFAULT NULL,
+  `province` bigint(10) DEFAULT '0',
+  `city` bigint(10) DEFAULT '0',
   `content` text COMMENT '商品详情',
   `keyword` varchar(255) DEFAULT '',
   `introduce` varchar(255) NOT NULL DEFAULT '',
@@ -6654,8 +6908,9 @@ CREATE TABLE `wbsdb_malls` (
 -- 转存表中的数据 `wbsdb_malls`
 --
 
-INSERT INTO `wbsdb_malls` (`id`, `parent_id`, `level`, `title`, `brand`, `num`, `price`, `amount`, `thumb`, `content`, `keyword`, `introduce`, `status`, `hits`, `n1`, `n2`, `author_id`, `created_at`, `updated_at`) VALUES
-(2, 11, 0, '紧急铝板', 'nick', 10, '20.00', 300, '[\"images\\/c1285e4ea3e3a0e7c329b4d447d55a46.jpg\"]', '<p>就六角恐龙d<img src=\"/upload/image/20190801/1564648298.png\" title=\"1564648298.png\" alt=\"QQ截图20190228101344.png\"/></p><p>撒旦法<br/></p>', '', '', 1, 203, NULL, NULL, 1, '2019-08-01 16:31:48', '2019-08-01 16:35:12');
+INSERT INTO `wbsdb_malls` (`id`, `parent_id`, `level`, `title`, `brand`, `num`, `price`, `amount`, `thumb`, `litpic`, `province`, `city`, `content`, `keyword`, `introduce`, `status`, `hits`, `n1`, `n2`, `author_id`, `created_at`, `updated_at`) VALUES
+(3, 11, 1, '测试商城111', '测试商城111', 100, '10.00', 100, '[\"images\\/87d81c8301b4bf2afa32067e9c13eb96.jpg\",\"images\\/63751a8e2bade161cb034e5451c6cb9e.jpg\",\"images\\/7fce63e4412f4679aa8182c6b17d26a0.jpg\",\"images\\/f77aa66fe654d372c00da05b2052be63.jpg\"]', 'images/e487e669c4c485634e06914741db3b88.jpg', 2, 36, '<p>撒旦发射点发</p><p>阿道夫</p><p><img src=\"/upload/image/20190904/1567577704.png\" title=\"1567577704.png\" alt=\"01.png\"/></p><p>阿斯蒂芬<br/></p>', '', '', 0, 491, NULL, NULL, 1, '2019-09-04 14:15:15', '2019-09-04 15:52:12'),
+(2, 11, 0, '紧急铝板', 'nick', 10, '20.00', 300, '[\"images\\/c1285e4ea3e3a0e7c329b4d447d55a46.jpg\",\"images\\/56effd71ee53e4a66913fb30ac5c6443.jpg\"]', 'images/0e77072fec2af4bc1250b17c4ed7820b.jpg', 2, 36, '<p>就六角恐龙d<img src=\"/upload/image/20190801/1564648298.png\" title=\"1564648298.png\" alt=\"QQ截图20190228101344.png\"/></p><p>撒旦法<br/></p>', '', '', 1, 603, '手机：13455556666', NULL, 1, '2019-08-01 16:31:48', '2019-09-05 09:55:22');
 
 -- --------------------------------------------------------
 
@@ -6697,8 +6952,17 @@ CREATE TABLE `wbsdb_news` (
   `content` text,
   `author_id` int(10) DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime DEFAULT NULL
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='公司新闻';
+
+--
+-- 转存表中的数据 `wbsdb_news`
+--
+
+INSERT INTO `wbsdb_news` (`id`, `comid`, `title`, `hits`, `thumb`, `status`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(2, '39', '合记花甲好吃吗', 187, NULL, 1, NULL, NULL, '<p>合记花甲好吃吗合记花甲好吃吗合记花甲好吃吗</p><p><br/></p><p>是沙发<img src=\"/upload/image/20190830/1567152478.jpg\" title=\"1567152478.jpg\" alt=\"25898347.jpg\"/></p><p>撒旦法<br/></p>', 1, '2019-08-30 16:08:05', '2019-08-30 16:08:05', NULL),
+(3, '39', '怎么加盟这个店铺', 260, NULL, 1, NULL, NULL, '<p>怎么加盟这个店铺怎么加盟这个店铺</p><p>dsfg <br/></p>', 1, '2019-08-30 16:08:27', '2019-08-30 16:08:27', NULL);
 
 -- --------------------------------------------------------
 
@@ -6768,7 +7032,9 @@ CREATE TABLE `wbsdb_photos` (
 --
 
 INSERT INTO `wbsdb_photos` (`id`, `parent_id`, `title`, `thumb`, `conver`, `introduce`, `keyword`, `description`, `hits`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
-(2, 13, '测试图片1', 'images/755281af66f39aca22096e0adc0e05d1.jpg', '[\"images\\/9143b8f559793e7e14fc6980ad74f6fc.jpg\",\"images\\/dc20ee45a50b75632be98c6ad2cbea91.png\"]', '测试图片1测试图片1', NULL, NULL, 443, 1, 1, '2019-08-05 03:20:41', '2019-08-05 03:20:41');
+(3, 24, '风光1', 'images/c7995b46db4632a6d1ea83d32b37f512.jpg', '[\"images\\/daba5522a8cb0a37fbc70d50aacf416a.jpg\",\"images\\/a49b43849f24a19fdc8d9956b3063ee5.jpg\"]', '旅行风光1', NULL, NULL, 162, 1, 1, '2019-09-05 06:07:41', '2019-09-05 06:07:41'),
+(2, 13, '测试图片1', 'images/755281af66f39aca22096e0adc0e05d1.jpg', '[\"images\\/9143b8f559793e7e14fc6980ad74f6fc.jpg\",\"images\\/dc20ee45a50b75632be98c6ad2cbea91.png\"]', '测试图片1测试图片1', NULL, NULL, 443, 1, 1, '2019-08-05 03:20:41', '2019-08-05 03:20:41'),
+(4, 24, '风光2', 'images/42416784d7c73794aaed441a53c83e41.jpg', '[\"images\\/9446048f723a59d56e57594699908552.jpg\",\"images\\/bde5f85084eba5781b829c39ba794c33.jpg\"]', '旅行风光2', NULL, NULL, 396, 1, 1, '2019-09-05 06:08:09', '2019-09-05 06:08:09');
 
 -- --------------------------------------------------------
 
@@ -6795,7 +7061,7 @@ CREATE TABLE `wbsdb_questions` (
 --
 
 INSERT INTO `wbsdb_questions` (`id`, `askid`, `content`, `author_id`, `fandui`, `zhichi`, `hidden`, `ip`, `status`, `created_at`, `updated_at`) VALUES
-(1, 2, '<p>反正比不行快<br/></p>', 1, 13, 43, 0, '', 0, '2019-08-01 14:20:47', '2019-08-01 16:33:42'),
+(1, 2, '<p>反正比不行快<br/></p>', 1, 13, 43, 0, '', 1, '2019-08-01 14:20:47', '2019-08-01 16:33:42'),
 (4, 2, '<p>绿色环保，可行<br/></p>', 1, 7, 47, 0, '', 1, '2019-08-01 14:35:41', '2019-08-01 14:35:41'),
 (3, 3, '<p>10000 不用谢<br/></p>', 1, 14, 31, 0, '', 1, '2019-08-01 14:31:44', '2019-08-01 14:31:44');
 
@@ -6824,6 +7090,7 @@ CREATE TABLE `wbsdb_sells` (
   `amount` float UNSIGNED DEFAULT '0' COMMENT '供货总量',
   `keyword` varchar(255) DEFAULT '',
   `hits` int(10) UNSIGNED DEFAULT '10',
+  `litpic` varchar(255) DEFAULT NULL,
   `thumb` varchar(255) DEFAULT '' COMMENT '图片集',
   `company` varchar(100) DEFAULT '',
   `telephone` varchar(50) DEFAULT '' COMMENT '电话',
@@ -6843,8 +7110,9 @@ CREATE TABLE `wbsdb_sells` (
 -- 转存表中的数据 `wbsdb_sells`
 --
 
-INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `title`, `introduce`, `n1`, `n2`, `v1`, `v2`, `brand`, `content`, `price`, `minamount`, `amount`, `keyword`, `hits`, `thumb`, `company`, `telephone`, `address`, `email`, `qq`, `wx`, `totime`, `totimeid`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
-(2, 12, 3, 1, 1, '二手汽车供应', '', '型号', NULL, '奥迪A8', NULL, '奥迪', '<p>阿萨德发生地方<br/></p>', '100.00', 1, 5, '', 500, '[\"images\\/e0709092ed332350d2ab3adf8957992a.jpg\"]', '奥迪公司', '15688887777', '北京', '123@qq.com', '', NULL, 0, 1, 1, 1, '2019-08-02 03:39:10', '2019-08-02 03:39:10');
+INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `title`, `introduce`, `n1`, `n2`, `v1`, `v2`, `brand`, `content`, `price`, `minamount`, `amount`, `keyword`, `hits`, `litpic`, `thumb`, `company`, `telephone`, `address`, `email`, `qq`, `wx`, `totime`, `totimeid`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
+(2, 12, 3, 1, 1, '二手汽车供应', '', '型号', NULL, '奥迪A8', NULL, '奥迪', '<p>阿萨德发生地方<br/></p>', '100.00', 1, 5, '', 500, 'images/d9b95814dc6ac8d0a9fdc457c1b235c3.jpg', '[\"images\\/e0709092ed332350d2ab3adf8957992a.jpg\"]', '奥迪公司', '15688887777', '北京', '123@qq.com', '', NULL, 0, 1, 1, 1, '2019-08-02 03:39:10', '2019-09-05 02:37:12'),
+(3, 12, 6, 1, 1, '大众汽车', '', NULL, NULL, NULL, NULL, '大众', '<p>阿萨德发生</p><p>大众汽车</p><p><img src=\"/upload/image/20190905/1567652612.jpg\" title=\"1567652612.jpg\" alt=\"25898347.jpg\"/></p><p>阿斯蒂芬<br/></p>', '10.00', 10, 100, '', 102, 'images/58405eb798a463e116aee00cec13530e.jpg', '[\"images\\/f55e21a1939b39ddf0908fc2a45e8c60.jpg\",\"images\\/399ed6561c558664f216577a439157ec.jpg\"]', '大众汽车公司', '15688887777', '北京', NULL, '', '123456', 0, 1, 1, 1, '2019-09-05 03:04:21', '2019-09-05 03:05:41');
 
 -- --------------------------------------------------------
 
@@ -6870,7 +7138,7 @@ CREATE TABLE `wbsdb_settings` (
 --
 
 INSERT INTO `wbsdb_settings` (`id`, `enable`, `title`, `keyword`, `description`, `slogan`, `copyright`, `icp`, `statistic`, `logo`) VALUES
-(1, 'on', '我不是逗逼', '我不是逗逼', 'https://github.com/imnotdoubi/laravel-admin', '我不是逗逼', NULL, NULL, NULL, NULL);
+(1, 'on', '云海天发布', '云海天发布', 'https://github.com/imnotdoubi/laravel-admin', '云海天发布', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -7041,7 +7309,8 @@ ALTER TABLE `wbsdb_investments`
 --
 ALTER TABLE `wbsdb_malls`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `catid` (`parent_id`);
+  ADD KEY `catid` (`parent_id`),
+  ADD KEY `province` (`province`,`city`);
 
 --
 -- 表的索引 `wbsdb_migrations`
@@ -7112,7 +7381,7 @@ ALTER TABLE `admin_menu`
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2324;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2557;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -7130,7 +7399,7 @@ ALTER TABLE `admin_roles`
 -- 使用表AUTO_INCREMENT `admin_users`
 --
 ALTER TABLE `admin_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用表AUTO_INCREMENT `migrations`
@@ -7166,7 +7435,7 @@ ALTER TABLE `wbsdb_asks`
 -- 使用表AUTO_INCREMENT `wbsdb_categories`
 --
 ALTER TABLE `wbsdb_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_companys`
@@ -7190,7 +7459,7 @@ ALTER TABLE `wbsdb_investments`
 -- 使用表AUTO_INCREMENT `wbsdb_malls`
 --
 ALTER TABLE `wbsdb_malls`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_migrations`
@@ -7202,7 +7471,7 @@ ALTER TABLE `wbsdb_migrations`
 -- 使用表AUTO_INCREMENT `wbsdb_news`
 --
 ALTER TABLE `wbsdb_news`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_phonemanages`
@@ -7214,7 +7483,7 @@ ALTER TABLE `wbsdb_phonemanages`
 -- 使用表AUTO_INCREMENT `wbsdb_photos`
 --
 ALTER TABLE `wbsdb_photos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_questions`
@@ -7226,7 +7495,7 @@ ALTER TABLE `wbsdb_questions`
 -- 使用表AUTO_INCREMENT `wbsdb_sells`
 --
 ALTER TABLE `wbsdb_sells`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_users`

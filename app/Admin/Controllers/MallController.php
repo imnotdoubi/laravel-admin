@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Models\Mall;
 use App\Models\Categorie;
+use App\Models\Area;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Illuminate\Support\Facades\Auth;
@@ -125,6 +126,14 @@ class MallController extends AdminController
         $form->number('num', __('商品出售数量'));
 
         $form->text('brand', __('商品品牌'));
+
+        $form->select('province','省份')->options(
+              Area::where('parent_id',0)->orderBy('id','asc')->pluck('title', 'id')
+          )->load('city', '/admin/api/city');
+
+        $form->select('city','城市');
+        
+        $form->image('litpic', __('缩略图'))->uniqueName()->removable();
          //图集上传
         $form->multipleImage('thumb','商品图集【可传多个】')->uniqueName()->removable();
 

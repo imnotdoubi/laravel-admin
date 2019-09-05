@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+/*头部开始*/
+.centerr .bt h1 span:hover{color:red;}
+.header{ width:1100px; height:116px; margin:0 auto; background:#fff;}
+/*面包屑导航*/
+.mianbao{ width:1100px; height:38px; margin:0 auto;}
+.mianbaol{ width:30px;height:38px; background:url(../../../images/NewIndex/Company/mianbao.png) no-repeat; background-position:12px 10px; float:left;}
+.mianbaor{ width:800px; height:38px; float: left;}
+.mianbaor li{ line-height:38px; font-size:12px; float:left; padding:0 6px;}
+.mianbaor li:hover{ color:#fa0000;}
+/*.mianbaor li img{ margin-right:8px;}*/
+/*分类导航*/
+.fenlei{ width:1100px; height:38px; border: solid 1px #ddd; margin:0 auto;}
+.fenlei p{ font-size:14px; display:block; float:left; line-height:38px; margin-left:12px;}
+.fenlei li{ font-size:14px; margin-left:28px; float:left; display:block; line-height:38px;}
+.fenlei li a:hover{ color:#fa0000;}
+/*地区导航*/
+.daohang{ width:1100px; height:38px; border: solid 1px #ddd; margin:0 auto; border-top:none;position:relative;}
+.daohang p{ width:125px; height:38px; float:left; display:block; line-height:38px; border-right: solid 1px #ddd; padding-left:14px;}
+.daohang p:hover{ color:#fa0000;}
+.daohang p img{ margin-left:6px;}
+/*内容部分*/
+#center{ width:100%; height:1482px;}
+.center{ width:1100px;  margin:0 auto; margin-top:9px;display:table;}
+
+.centerl{ width:870px;height:204px; background:#f6f3f3;margin-bottom:9px; position:relative;overflow:hidden;}
+.centerlnr{float:left;}
+.center_logo{ width:196px; height:159px; border: solid 1px #ddd; margin-top:25px; margin-left:17px; float:left;}
+.center_text{ width:202px; height:158px; margin-top:28px; margin-left:9px; float:left;}
+.text_biaoti{ width:197px; height:16px;}
+.text_biaoti p{font-size:14px; color:#555; display:block; line-height:14px; display:block; float:left;}
+.text_biaoti p:hover{color:#fa0000;}
+.vip{ width:26px; height:14px; background:#bd0000; border-radius:4px 4px 4px 4px; margin-top:1px; float:right;}
+.vip p{ width:100%;font-size:10px;line-height:14px;color:#fff;text-align:center;}
+.vip p:hover{ color:#F5F968;}
+.text ul{ width:202px; height:auto; margin-top:17px; display:block;}
+.text li{ font-size:12px; color:#666; line-height:20px;}
+.text li:hover{ color:#fa0000;}
+.center_button{ width:73px; height:26px; border:solid 1px #bd0000; border-radius:4px 4px 4px 4px; margin-top:14px; float:left;}
+.center_button p{ font-size:12px; color:#bd0000; text-align:center; line-height:26px;}
+.center_button1 p{ font-size:12px; color:#bd0000; text-align:center; line-height:26px;}
+.center_button1{ width:73px; height:26px; border:solid 1px #bd0000; border-radius:4px 4px 4px 4px; margin-top:14px; margin-left:21px; float:left;}
+.center_chanpin{ width:424px; height:204px; background:url(../../../images/NewIndex/Company/erweima.png) no-repeat; background-position:390px 0; float:right;}
+.center_chanpins{ width:424px; height:24px;}
+.center_chanpins p{ font-size:12px; color:#555; line-height:24px; margin-right:32px; float:right;}
+.center_chanpins p:hover{ color:#fa0000;}
+.center_chanpinx{ width:424px; height:163px; /*background:rgba(215,55,95,1.00);*/}
+.pucture{ width:116px; height:161px; border: solid 1px #ddd; margin-right:23px; float:left; background:#fff;}
+.pucture .img{height:138px;overflow:hidden;}
+.pucture p{color:#555;line-height:22px;height:22px;font-size:12px;text-align:center; border-top: solid 1px #ddd;}
+.pucture p:hover{color:#fa0000;}
+
+.centerr{ width:222px; height:1482px;float:right;overflow:hidden;}
+.centerr .bt{width:100%;height:30px;background:#f0efef;}
+.centerr .bt h3{font-size:14px;padding-left:25px;color:#555;line-height:30px;background: url(../../../images/NewIndex/Company/rbj.png) no-repeat 7px center;font-weight:normal;}
+.centerr .bt h3 span{font-size:12px;padding-right:14px;margin-right:10px;float:right;background: url(../../../images/NewIndex/Company/jt.png) no-repeat right center;}
+.rnr{border:#ddd solid 1px;font-size:12px;margin-bottom:9px;background:#fff;}
+.rnr p{color:#555;padding:10px 18px;height:84px;line-height:28px;font-size:14px;}
+.rnr p:hover{ color:#fa0000;}
+.bju{padding:11px 0 12px 0;}
+.bju1{padding:9px 0 9px 7px;}
+.bju2{padding:9px 9px ;border-bottom:#dddcdc solid 1px;}
+.rnr dl{padding:6.5px 9px;height:54px;overflow:hidden;}
+.rnr dl dd h2:hover{ color:#fa0000;}
+.rnr dl dd h3:hover{ color:#fa0000;}
+.rnr dl dt{width:54px;height:54px;overflow:hidden;float:left;overflow:hidden;}
+.rnr dl dd{width:142px;overflow:hidden;color:#555;float:right;}
+.rnr dl dd h2{font-size:14px;font-weight:normal;margin-top:5px;}
+.rnr dl dd h3{font-size:12px;font-weight:normal;margin-top:5px;}
+dl.cptpt {width:99px;height:140px;padding:7px 2px;float:left;}
+dl.cptpt dt{width:97px;height:118px;border:#f2efef solid 1px;}
+dl.cptpt dd{color:#555;font-size:12px;text-align:center;width:100%;height:20px;line-height:16px;background:#f2efef;}
+.hx{width:200px;height:1px;overflow:hidden;background:#dddcdc;margin:4px 0;clear:both;}
+.rnr h1{font-size:14px;font-weight:normal;color:#555;line-height:26px;height:26px;}
+.rnr h1:hover{ color:#fa0000;}
+.rnr h2:hover{ color:#fa0000;}
+.rnr h2{font-size:12px;font-weight:normal;color:#555;line-height:24px;height:24px;}
+/*.rnr h4{width:200px;height:1px;line-height:10px;overflow:hidden;background:#dddcdc;magrin:10px 0;clear:both;}*/
+.rnr ul{height:auto;padding:5px 0;}
+.rnr ul li{padding:0 10px 0 15px;height:32px;line-height:32px;background: url(../../../images/NewIndex/Company/dian.png) no-repeat 8px center;}
+.rnr ul li a:hover span{ color:#fa0000;}
+.rnr ul li a{display:block;font-size:12px;}
+.fl{float:left;width:125px;overflow:hidden;}
+.fr{float:right;}
+#footers{ width:100%; height:100px; }
+.footers{ width:1100px; height:103px; margin:0 auto;}
+.yema{ width:680px; height:32px;/* background:blue;*/ margin:0 auto; margin-top:38px;}
+.yema li{ font-size:12px; color:#666; padding:8px 11px; border:solid 1px #ddd; margin-left:3px; float:left;}
+.yema span li{ border:none; padding:10px 4px;}
+.yema a li{/* background:#bd0000;*/ color:#555;}
+/*.yema a li:hover{ color:#fa0000;}*/
+.yema a h4 li{ background:#bd0000; color:#fff; font-size:12px; font-weight:normal;}
+.footerx{ width:1100px; height:auto; margin:0 auto; background:#blue;}
+.service_7999{margin-bottom:5px;font-size:12px;}
+.service_7999 span{width:100%;font-size:20px;line-height:30px;text-indent:10px;color:#bd0000; margin-left:10px;}
+.service_7999 p{line-height:25px;font-size:13px;padding:10px;text-indent: 2em;}
+.service_7999 #friend-link{text-indent:inherit;}
+.service_7999 p a{margin-right: 10px;display:inline-block;text-indent:0;}
+.service_7999 p a:hover{ color:#fa0000;}
+.index-wrap .footer-bg{line-height:36px;width:100%;margin-top:15px;}
+.index-wrap .footer-bg .footer-txt{width:1000px;margin:0 auto;font-size:12px;text-align: center;}
+#gy{ width:100%px; height:36px; background:#00415f;padding:0 10px;  }
+.gy{ width:850px; height:36px;margin:0 auto;}
+.gy a{font-size:12px;color:#fff;border-right: 1px solid #fff; line-height:36px; padding:4px 4px 4px 4px; overflow:hidden;}
+
+.gy span a{ border-right:none;}
+.index-wrap .footer-bg .footer-txt a:last-child{border:none;}
+.copyright{width:1000px;margin:0 auto;text-align: center;font-size:12px;margin-top:10px;line-height:20px;}
+.copyright img{display:inline;}
+#xc{border:none;margin-top:20px;}
+#xc img{margin:0 auto;}
+.imgMove{position:absolute;overflow:hidden;}
+.imgMove img{position:relative;}
+#scrollDiv{display:inline-block;overflow:hidden;height:54px;}
+
+
+
+.mianbaor > ul > a > li > img,.daohang > a > p > img{display:inline-block;}
+
+
+.hideItem{position:absolute;top:41px;z-index:100;}
+.hideItem,.hideItem .ulItem{width:1100px;line-height:40px;height:0px;z-index:999;}
+.ulItem{height:40px;overflow:hidden;z-index:1;background-color:#fff;position:absolute;}
+.hideItem .ulItem li{float:left;font-size:12px;padding:0 10px;}
+.hideItem .ulItem .selector-active a{color:#fa0000;}
+.selector-active a{color:#fa0000;}
+
+.ptypeUl{height:40px;overflow:hidden;z-index:101;background-color:#fff;}
+
+.twod-code{position:absolute;top:2px;right:2px;width:22px;height:28px;}
+.codeContianer{width:118px;height:163px;position:absolute;z-index:999;background-color:#fff;border:1px solid #ccc;right:21px;top:-100%;}
+.tcode{width:100px;height:100px;position:relative;margin:0 auto;top:20px;}
+.codespan{width:100%;font-size:12px;color:#ccc;text-align:center;position:absolute;bottom:15px;}

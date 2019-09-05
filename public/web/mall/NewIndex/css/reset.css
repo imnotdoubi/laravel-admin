@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+ul,li{list-style: none;}
+a:link{text-decoration: none;color:#666;}
+a:visited{color:#444;}
+input{font-family: "微软雅黑","microsoft yahei";border:none;/*background:none;*/}
+img{display:block;}
+h1{font-weight: normal;}
+h2{color:#fff;font-size:14px;font-weight:normal}

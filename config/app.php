@@ -125,6 +125,8 @@ return [
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
+    'upload'    =>'/upload/',
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -229,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'Socialite' => Overtrue\LaravelSocialite\Socialite::class,
+        'Pcommon'   => \App\Helpers\Web\Pcommon::class
 
 
     ],

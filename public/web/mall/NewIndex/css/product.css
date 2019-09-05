@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+/*头部开始*/
+/*headtop开始*/
+.headtop{ width: 1100px; height: 390px; margin: 0 auto; margin-top: 6px;}
+.headtopleft{ width: 175px; height:390px; background:#f8f3f3;float: left;}
+.headtoplefts{ width: 175px; height: 46px;background: url(../../images/cpfl.png) no-repeat; background-position: 14px 14px;}
+.headtoplefts p{ color: #555; font-size: 16px; text-align: center; line-height: 46px;}
+.headtopleftx{ width: 175px; height: 344px; background: #f8f3f3;}
+.headtopleftx ul li{height:43px;line-height:43px; font-size: 15px;/*font-family:"方正兰亭细黑";*/}
+.headtopleftx ul li a{width:100%;height:100%;display:inline-block;}
+.headtopleftx ul li a:hover{background:#fa0000;color:#fff}
+
+.headtopleftx ul li i{width:18px;margin:0 10px 0 29px;}
+.headtopright{ width: 918px; height: 390px; float: right;}
+.headtoprights{ width: 918px; height: 234px;}
+.lunbo{ width: 414px; height: 234px; float: left;}
+.lunboright{ width: 162px; height: 234px; float: left; margin-left: 6px;}
+.headtoprightx{width: 918px; height: 150px; margin-top: 6px;}
+.headtoprightx li{ width: 302px; height: 150px; float: left; }
+.headtoprightx span li{ margin: 0px 6px 0px 6px;}
+.zixun{ width: 1100px;height: 64px; background: #f8f3f3; margin: 0 auto; margin-top: 10px;}
+.zixunleft{ width: 71px; height: 64px; background: #e6d7d7; float: left;}
+.zixunleft p{ margin-top: 8px;}
+.zixunleft h1{ font-size: 20px;color: #bd0000; line-height: 24px; font-weight: normal; text-align: center;}
+.zixunright ul{ width: 315px; height: 64px; margin-left: 28px; float: left;}
+.zixunright li{ font-size: 13px; /*line-height: 28px;*/ padding-top: 10px;}
+
+
+.center{width:1100px; height: auto; padding-top:17px; margin: 0 auto;/*background:red;*/}
+.louceng{/*background:blue;*/margin-bottom:10px;}
+.1f{height:33px; border-bottom:2px solid #bd0000; background:url(../../images/dao.png) 187px 0px no-repeat;}
+.title-left{float:left;background:#bd0000 url(../../images/dao.png) no-repeat right center;}
+.title-right{float:left;line-height:33px; text-align:right; padding-right:15px; box-sizing:border-box; color:#bd0000;font-size:14px;background: url(../../images/dao-1.png) right center no-repeat;}
+.title-right a{color:#bd0000;}
+.title-left h2{font-size:20px;color:#fff;line-height:33px;font-weight: normal;padding-left:40px;}
+.title-left h2 a{color:#fff;}
+.title-left span{color:#fff;float:left;font-size:28px; width:30px; line-height:33px; padding-left:5px;}
+.ad-seats-left{float:left; width:230px; height:315px;}
+.ad-seats-right{float:left;width:867px; height:315px; margin-right:-1px; margin-left:-1px;/*background:blue;*/
+ position:relative;}
+ .ad-seats-right ul{height:34px;margin-left:1px;margin-top:-2px;background:#f7f7f9;border-top:#bd0202 solid 2px;}
+.ad-seats-right li{float:left;width:288px;height:34px; line-height:34px; text-align:center; font-size:16px; background:#f7f7f9;}
+.ad-seats-right .none{border:none; background:#fff;cursor:pointer;}
+
+.ad-seats-right .ding{ width:852px; height:258px;position:absolute; top:46px; left:14px; background: #0086B3;}
+ding .ding_zi dd p:hover{color:#0c95ff; cursor:pointer;}
+/*xinjia start*/
+.cp{width:98.4%;padding-left:1.6%;height:280px;/*background:red;*/clear:both;border-right:#ddd solid 1px;}
+.cp dl{width:33.33333%;height:122px;padding:12px 0 0 0;float:left;}
+.cp dl dt{width:100px;height:122px;/*background:pink;*/float:left;overflow:hidden;}
+.cp dl dt img{width:100%;}
+.cp dl dd{width:175px;padding-left:8px;height:122px;/*background:purple;*/float:left;position:relative;}
+.cp dl dd p{color:#555;font-size:14px;line-height:30px;height:30px;overflow:hidden;}
+.cp dl dd p:hover{ color: #fa0000;}
+.cp dl dd p.jiu{font-size:12px;}
+.cp dl dd p.jiu span{font-size: 10px;height12px; background:#bd0202;color:#fff;padding:0 3px 0 3px;margin-left:2px;border-radius:6px;}
+.cp dl dd a.ck{width:66px;height:24px;line-height:24px;color:#555;font-size:12px;display:inline-block;text-align:center;border:#555 solid 1px;border-radius:6px;position: absolute;bottom:15px;}
+.cp dl dd a.rig{width:66px;height:24px;line-height:24px;color:#555;font-size:12px;display:inline-block;text-align:center;border:#555 solid 1px;border-radius:6px;position: absolute;bottom:15px;left:92px;}
+.cp dl dd a.ck:hover{color:#fff;background:#bd0202;border:#bd0202 solid 1px;}
+.cp dl dd a.rig:hover{color:#fff;background:#bd0202;border:#bd0202 solid 1px;}
+/*xinjia end*/
+
+
+
+
+
+
+
+.footer{border-top:#ddd solid 1px;margin-top:25px;padding-top:5px;}
+.footerx{ width:1100px; height:auto; margin:0 auto; background:#blue;}
+/*
+.service_7999{margin-bottom:5px;font-size:12px;}
+.service_7999 span{width:100%;font-size:20px;line-height:30px;text-indent:10px;color:#bd0000; margin-left:10px;}
+.service_7999 p{line-height:25px;font-size:13px;padding:10px;text-indent: 2em;}
+.service_7999 #friend-link{text-indent:inherit;}
+.service_7999 p a{margin-right: 10px;display:inline-block;text-indent:0;}
+.service_7999 p a:hover{ color:#fa0000;}*/
+.index-wrap .footer-bg{line-height:36px;width:100%;margin-top:15px;}
+.index-wrap .footer-bg .footer-txt{width:1000px;margin:0 auto;font-size:12px;text-align: center;}
+#gy{ width:100%px; height:36px; background:#00415f;padding:0 10px;  }
+.gy{ width:850px; height:36px;margin:0 auto;}
+.gy a{font-size:12px;color:#fff;border-right: 1px solid #fff; line-height:36px; padding:4px 4px 4px 4px; overflow:hidden;}
+/*.gy a:hover{ background:#fa2222;}*/
+.gy span a{ border-right:none;}
+.index-wrap .footer-bg .footer-txt a:last-child{border:none;}
+.copyright{width:1000px;margin:0 auto;text-align: center;font-size:12px;margin-top:10px;line-height:20px;}
+.copyright img{display:inline;}
+#xc{border:none;margin-top:20px;}
+#xc img{margin:0 auto;}
+.imgMove{position:absolute;overflow:hidden;}
+.imgMove img{position:relative;}
+#scrollDiv{display:inline-block;overflow:hidden;height:54px;}
+
+
+#banner{width: 414px; height: 234px; float:left; position:relative;text-align:center;}
+#banner img{position:absolute; top:0; left:0;width: 414px; height: 234px;}
+#banner p{position:absolute; bottom:6px; height:16px; background:rgba(255,255,255,0.50); border-radius:8px;padding-right:5px;display:inline;}/*width:100px;*/
+#banner p font{width:11px; height:11px; border-radius:5px; background:#fff; margin-left:9px; display:block; float:left; margin-top:3px;}
+#banner .se{background:#fa0001;}

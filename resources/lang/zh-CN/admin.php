@@ -102,4 +102,9 @@ return [
     'menu_titles'            => [],
     'prev'                   => '上一步',
     'next'                   => '下一步',
+    'attributes'           => [
+            'captcha'               => '验证码',
+            //...
+    ]
+
 ];

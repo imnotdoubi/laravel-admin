@@ -3,6 +3,7 @@
 namespace App\Models;
 use App\Models\Investment;
 use App\Models\CompanyData;
+use App\Models\Categorie;
 use Encore\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
@@ -27,6 +28,6 @@ class Company extends Model
     public function companydata()
     {
         return $this->belongsTo(CompanyData::class,'id','id');
-
     }
+
 }

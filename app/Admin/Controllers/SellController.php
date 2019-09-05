@@ -148,6 +148,8 @@ class SellController extends AdminController
           );
 
           $form->text('brand', __('商品品牌'));
+
+          $form->image('litpic', __('缩略图'))->uniqueName()->removable();
             //图集上传
           $form->multipleImage('thumb','商品图集【可传多个】')->uniqueName()->removable();
 

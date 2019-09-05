@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; list-style: none; }
+#pic a { text-decoration: none; color: #fff; }
+#flash { width: 320px; height: 205px; margin-right: 5px; position: relative; cursor: pointer; }
+#pic li { position: absolute; top: 0; left: 0; z-index: 1; display: none; }
+#num { position: absolute; left: 40%; bottom: 10px; z-index: 2; cursor: default; }
+#num li { float: left; width: 20px; height: 20px; border-radius: 50%; background: #666; margin: 3px; line-height: 20px; text-align: center; color: #fff; cursor: pointer; }
+#num li.active { background: #f00; }
+.arrow { height: 60px; width: 30px; line-height: 60px; text-align: center; display: block; position: absolute; top: 45%; z-index: 3; display: none; }
+.arrow:hover { background: rgba(0,0,0,0.7); }
+#flash:hover .arrow { display: block; }
+#left { left: 2%; }
+#right { right: 2%; }
+
+
+/*Ê×Ò³ÂÖ²¥Í¼*/
+/* ºËÐÄ´úÂë */
+.focus { width: 320px; height: 205px; overflow: hidden; position: relative; }
+.focus ul { height: 205px; position: absolute; }
+.focus ul li { float: left; width: 320px; height: 205px; overflow: hidden; position: relative; background: #000; margin:0px;}
+.focus ul li div { position: absolute; overflow: hidden; }
+.focus .btn { position: absolute; width: 100px; height: 10px; padding: 5px 10px; right: 0; bottom: 5px; text-align: center; }
+.focus .btn span { display: inline-block; _display: inline; _zoom: 1; width: 13px; height: 13px; _font-size: 0; margin-left: 5px; cursor: pointer; background: #fff; border-radius: 50%; }
+.focus .btn span.on { background: yellow; }
+.focus .preNext { width: 45px; height: 100px; position: absolute; top: 50px; background: url(../../../images/sprite.png) no-repeat 0 0; cursor: pointer; display: none; }
+.focus .pre { left: 0; }
+.focus .next { right: 0; background-position: right top; }

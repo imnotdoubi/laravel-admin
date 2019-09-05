@@ -20,4 +20,10 @@ class Mall extends Model
         return json_decode($thumb, true);
     }
 
+    public function provs()
+    {
+        return $this->belongsTo(Area::class,'province','id');
+
+    }
+
 }
