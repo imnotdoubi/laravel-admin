@@ -6,7 +6,7 @@
                     <li>首页</li>
                 </a>
                 
-                <a href="/mall">
+                <a href="/sell">
                     <li>
                         &gt;供应
                     </li>

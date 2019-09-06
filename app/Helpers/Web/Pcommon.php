@@ -240,14 +240,17 @@ class Pcommon extends Base
 
     public static function malls($str =1 ,$typeid)
     {
-        return Cache::remember('new_malls_' . $str, parent::getCacheMinutes(120, 150), function () use ($str) {
-
+        return Cache::remember('new_malls_' . $str."_".$typeid, parent::getCacheMinutes(120, 150), function () use ($str,$typeid) {
+            $parent_id =  Categorie::where('parent_id' , $typeid)->orWhere('id',$typeid)->pluck('id');
+            
             if ($str == 1) 
-                return  Mall::orderBy('created_at', 'desc')->take(6)->get();
+                return  Mall::whereIn('parent_id',$parent_id)->orderBy('created_at', 'desc')->take(6)->get();
             else if ($str == 2) 
-                return  Mall::orderBy('hits', 'desc')->take(6)->get();
+                return  Mall::whereIn('parent_id',$parent_id)->orderBy('hits', 'desc')->take(6)->get();
             else if ($str == 3) 
-                return  Mall::orderBy('level', 'desc')->take(6)->get();
+                return  Mall::whereIn('parent_id',$parent_id)->orderBy('level', 'desc')->take(6)->get();
+            else
+                return  Mall::orderBy('created_at', 'desc')->take(6)->get();
         });
     }
 

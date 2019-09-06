@@ -37,7 +37,7 @@
         
             
             <div class="AnswerQuantity">
-            <span>已有<em>{{$head->comments}}</em>个回答</span>
+            <span>已有<em>{{$head->qcount($head->id)}}</em>个回答</span>
             </div>
 
             <!---AnswerItemList S--->

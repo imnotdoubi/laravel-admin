@@ -95,7 +95,8 @@
                     </div>
                 </div>
                 <div class="tuwen">
-                    {!! $mall->content !!}
+                    <!--在你自己的服务器请去掉替换-->
+                    {!! str_replace('src="/upload','src="http://47.98.200.91/upload',$mall->content) !!}
                 </div>
             </div>
         </div>

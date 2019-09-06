@@ -85,7 +85,8 @@
           <div class="layout-info-l">
 	<div class="item-article" id="jmxq">
 		<div class="con">
-			{!! $head->companydata->content !!}
+			<!--在你自己的服务器请去掉替换-->
+			{!! str_replace('src="/upload','src="http://47.98.200.91/upload',$head->companydata->content) !!}
 
 		</div>
 

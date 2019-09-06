@@ -25,7 +25,7 @@
                         <a href="{{\Pcommon::aurl($v->id)}}" class="title">{{$v->title}}</a>
                     </div>
                     <div class="da">
-                        <span><em>{{$v->comments}}</em><dl>已有回答</dl></span>
+                        <span><em>{{$v->qcount($v->id)}}</em><dl>已有回答</dl></span>
                     </div>
                 </div>
                 <div class="desc">{!! $v->content !!}</div>

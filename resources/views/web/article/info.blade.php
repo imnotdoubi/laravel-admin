@@ -20,7 +20,8 @@
 	    	<h1>{{$head->title}}</h1>
 	        <div class="news_cn_time">更新时间：{{$head->created_at}}&nbsp;&nbsp;&nbsp;&nbsp;来源：云海天&nbsp;&nbsp;&nbsp;&nbsp;阅读：{{$head->hits}}次</div>
 	        <div class="content">
-	   	     	{!! $head->content !!}
+	   	     	<!--在你自己的服务器请去掉替换-->
+			{!! str_replace('src="/upload','src="http://47.98.200.91/upload',$head->content) !!}
 	        </div>
 	        
 	        <div class="page_sx clearfix">

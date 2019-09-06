@@ -5,19 +5,37 @@
     <div class="nav">
 	        <div class="clearfix">
 	        	 @forelse(\Pcommon::indexLeftCategory(4) as $k=>$v)
-	        <a href="/{{$v->typedir}}/">{{$v->typename}}</a>
+	        <a href="/{{$v->typedir}}">{{$v->typename}}</a>
 			        @empty
-		        @endforelse       
+		        @endforelse
+                <!--因数据有限，调用其他分类下数据，如果你的数据够，请删除下面的调用-->
+                 @forelse(\Pcommon::indexLeftCategory(17) as $k=>$v)
+            <a href="/mall/{{$v->typedir}}">{{$v->typename}}</a>
+                    @empty
+                @endforelse
+                 @forelse(\Pcommon::indexLeftCategory(15) as $k=>$v)
+            <a href="/news/{{$v->typedir}}">{{$v->typename}}</a>
+                    @empty
+                @endforelse
+
+                 @forelse(\Pcommon::indexLeftCategory(18) as $k=>$v)
+            <a href="/sell/{{$v->typedir}}">{{$v->typename}}</a>
+                    @empty
+                @endforelse 
+                @forelse(\Pcommon::indexLeftCategory(19) as $k=>$v)
+            <a href="/photo/{{$v->typedir}}">{{$v->typename}}</a>
+                    @empty
+                @endforelse       
 	    	 </div>
     </div>
     
     <div class="zt_center">
         <div class="flexslider">
             <ul class="slides">
-                <li><a href="#" ><img src="/web/images/flash2/1.jpg" /></a></li>
-                <li><a href="#" ><img src="/web/images/flash2/2.jpg" /></a></li>
-                <li><a href="#" ><img src="/web/images/flash2/3.jpg" /></a></li>
-                <li><a href="#" ><img src="/web/images/flash2/4.jpg" /></a></li>
+                <li><a href="https://github.com/imnotdoubi/laravel-admin" ><img src="/web/images/flash2/1.jpg" /></a></li>
+                <li><a href="https://github.com/imnotdoubi/laravel-admin" ><img src="/web/images/flash2/2.jpg" /></a></li>
+                <li><a href="https://github.com/imnotdoubi/laravel-admin" ><img src="/web/images/flash2/3.jpg" /></a></li>
+                <li><a href="https://github.com/imnotdoubi/laravel-admin" ><img src="/web/images/flash2/4.jpg" /></a></li>
             </ul>
         </div>
         <!-- 幻灯片 End -->
@@ -28,7 +46,7 @@
         
         <ul class="anli_marqueea clearfix">
         	 @forelse(\Pcommon::indexCompanys() as $v)
-		        <li><a href="/xm/{{$v->id}}/"><img src="{{config('app.upload')}}{{$v->thumb}}" alt="{{$v->combrand}}" width="228" height="118"/></a></li>
+		        <li><a href="{{\Pcommon::curl($v->id)}}"><img src="{{config('app.upload')}}{{$v->thumb}}" alt="{{$v->combrand}}" width="228" height="118"/></a></li>
 	        @empty
 	        @endforelse
         </ul>
@@ -40,7 +58,7 @@
         <div class="title"><strong>项目关注排行榜</strong><span>ranking list</span></div>
         <ul>
         	 @forelse(\Pcommon::indexHotCompanys() as $v)
-	        	<li><span>{{$v->hits}}</span><a href="/xm/{{$v->id}}/">{{$v->combrand}}</a></li>
+	        	<li><span>{{$v->hits}}</span><a href="{{\Pcommon::curl($v->id)}}">{{$v->combrand}}</a></li>
 	        @empty
 	        @endforelse
         </ul>
@@ -54,16 +72,16 @@
 		<div class="box clearfix">
 		    <div class="jingxuan_title"><strong>{{$v->typename}}品牌推荐</strong><span>
 		    	 @forelse(\Pcommon::indexLeftCategory($v->id) as $k2=>$v2)
-		        <a href="/{{$v2->typedir}}/">{{$v2->typename}}</a>
+		        <a href="/{{$v2->typedir}}">{{$v2->typename}}</a>
 		         @empty
 				@endforelse
-		    <a href="/{{$v->typedir}}/" class="more">更多 &gt;</a>
+		    <a href="/{{$v->typedir}}" class="more">更多 &gt;</a>
 		    </span></div>
 		    
 		    <div class="xm_list2">
 		        <ul class="clearfix">
 		        @forelse(\Pcommon::indexTjCompanys($v->id) as $k3=>$v3)
-		         <li><a href="/xm/{{$v3->id}}"><img src="{{config('app.upload')}}{{$v3->thumb}}" /><div><span>{{$v3->combrand}}</span><p><i>门店：{{$v3->mdnum}}家</i>{{\Pcommon::indexTzid($v3->size)}}</p></div></a></li>
+		         <li><a href="{{\Pcommon::curl($v3->id)}}"><img src="{{config('app.upload')}}{{$v3->thumb}}" /><div><span>{{$v3->combrand}}</span><p><i>门店：{{$v3->mdnum}}家</i>{{\Pcommon::indexTzid($v3->size)}}</p></div></a></li>
 		         @empty
 				@endforelse
 		        </ul>
@@ -82,7 +100,7 @@
                 @forelse(\Pcommon::indexRqCompanys() as $k=>$v)
                 @if($k<5)
                 <li>
-                    <a href="/xm/{{$v->id}}" class="pic"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a>
+                    <a href="{{\Pcommon::curl($v->id)}}" class="pic"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a>
                     <div class="bt"><strong>{{$v->comname}}</strong><i>{{\Pcommon::indexTzid($v->tzid)}}</i></div>
                     <p>{{$v->mode}}</p>
                     <div><span><i>全国门店：</i>{{$v->mdnum}}家</span><span><i>加盟意向：</i>{{$v->yxnum}}人</span></div>
@@ -101,7 +119,7 @@
         <ul class="clearfix">
               @forelse(\Pcommon::indexRqCompanys() as $k=>$v)
                @if($k>4)
-               <li><a href="/xm/{{$v->id}}" ><img src="{{config('app.upload')}}{{$v->thumb}}" alt="{{$v->combrand}}"/>
+               <li><a href="{{\Pcommon::curl($v->id)}}" ><img src="{{config('app.upload')}}{{$v->thumb}}" alt="{{$v->combrand}}"/>
                 <div><span>{{$v->combrand}}</span><p><i>门店：{{$v->mdnum}}家</i>{{\Pcommon::indexTzid($v->size)}}</p></div></a></li>
                 @endif
              @empty
@@ -118,8 +136,8 @@
         <ul>
         	@forelse(\Pcommon::indexNews() as $k=>$v)
                   <li>
-                <span><a href="/news/{{$v->id}}"><img src="{{config('app.upload')}}{{$v->conver}}" /></a></span>
-                <strong><a href="/news/{{$v->id}}">{{$v->title}}</a></strong>
+                <span><a href="{{\Pcommon::nurl($v->id)}}"><img src="{{config('app.upload')}}{{$v->conver}}" /></a></span>
+                <strong><a href="{{\Pcommon::nurl($v->id)}}">{{$v->title}}</a></strong>
                 <p>{{str_limit($v->description,60,'')}}</p>
             </li>
              @empty
@@ -134,8 +152,8 @@
         <div class="tj">
         	@forelse(\Pcommon::indexAsk() as $k=>$v)
         	@if($k == 0)
-               <span><a href="/know/{{$v->id}}"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a></span>
-            <strong><a href="/know/{{$v->id}}">{{$v->title}}</a></strong>
+               <span><a href="{{\Pcommon::aurl($v->id)}}"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a></span>
+            <strong><a href="{{\Pcommon::aurl($v->id)}}">{{$v->title}}</a></strong>
             <p>{{str_limit($v->description,30,'')}}</p>
             @endif
              @empty
@@ -144,7 +162,7 @@
         <ul>
         	@forelse(\Pcommon::indexAsk() as $k=>$v)
         	@if($k > 0)
-            <li><a href="/know/{{$v->id}}">{{$v->title}}</a></li>
+            <li><a href="{{\Pcommon::aurl($v->id)}}">{{$v->title}}</a></li>
             @endif
              @empty
 			@endforelse
@@ -155,8 +173,8 @@
         <div class="tj">
         	@forelse(\Pcommon::indexMall() as $k=>$v)
         	@if($k == 0)
-               <span><a href="/mall/{{$v->id}}"><img src="{{config('app.upload')}}{{$v->litpic}}" /></a></span>
-            <strong><a href="/mall/{{$v->id}}">{{$v->title}}</a></strong>
+               <span><a href="{{\Pcommon::murl($v->id)}}"><img src="{{config('app.upload')}}{{$v->litpic}}" /></a></span>
+            <strong><a href="{{\Pcommon::murl($v->id)}}">{{$v->title}}</a></strong>
             <p>{{str_limit($v->description,30,'')}}</p>
             @endif
              @empty
@@ -165,7 +183,7 @@
         <ul>
         	@forelse(\Pcommon::indexMall() as $k=>$v)
         	@if($k > 0)
-            <li><a href="/mall/{{$v->id}}">{{$v->title}}</a></li>
+            <li><a href="{{\Pcommon::murl($v->id)}}">{{$v->title}}</a></li>
             @endif
              @empty
 			@endforelse
@@ -177,8 +195,8 @@
         <div class="tj">
         	@forelse(\Pcommon::indexSell() as $k=>$v)
         	@if($k == 0)
-               <span><a href="/sell/{{$v->id}}"><img src="{{config('app.upload')}}{{$v->litpic}}" /></a></span>
-            <strong><a href="/sell/{{$v->id}}">{{$v->title}}</a></strong>
+               <span><a href="{{\Pcommon::surl($v->id)}}"><img src="{{config('app.upload')}}{{$v->litpic}}" /></a></span>
+            <strong><a href="{{\Pcommon::surl($v->id)}}">{{$v->title}}</a></strong>
             <p>{{str_limit($v->description,30,'')}}</p>
             @endif
              @empty
@@ -187,7 +205,7 @@
         <ul>
         	@forelse(\Pcommon::indexSell() as $k=>$v)
         	@if($k > 0)
-            <li><a href="/sell/{{$v->id}}">{{$v->title}}</a></li>
+            <li><a href="{{\Pcommon::surl($v->id)}}">{{$v->title}}</a></li>
             @endif
              @empty
 			@endforelse
@@ -199,8 +217,8 @@
         <div class="tj">
         	@forelse(\Pcommon::indexPhoto() as $k=>$v)
         	@if($k == 0)
-               <span><a href="/photo/{{$v->id}}"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a></span>
-            <strong><a href="/photo/{{$v->id}}">{{$v->title}}</a></strong>
+               <span><a href="{{\Pcommon::purl($v->id)}}"><img src="{{config('app.upload')}}{{$v->thumb}}" /></a></span>
+            <strong><a href="{{\Pcommon::purl($v->id)}}">{{$v->title}}</a></strong>
             <p>{{str_limit($v->description,30,'')}}</p>
             @endif
              @empty
@@ -209,7 +227,7 @@
         <ul>
         	@forelse(\Pcommon::indexPhoto() as $k=>$v)
         	@if($k > 0)
-            <li><a href="/photo/{{$v->id}}">{{$v->title}}</a></li>
+            <li><a href="{{\Pcommon::purl($v->id)}}">{{$v->title}}</a></li>
             @endif
              @empty
 			@endforelse
