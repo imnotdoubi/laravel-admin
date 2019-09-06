@@ -5,6 +5,8 @@ laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
 
 laravel-admin目前已更新PC端预览，后续会更新链接查看<br>
 
+http://47.98.200.91/data/vendor.zip
+
 #安装方式
 
 $git clone https://github.com/imnotdoubi/laravel-admin.git
