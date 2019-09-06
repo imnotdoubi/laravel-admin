@@ -19,9 +19,30 @@
     <div class="fenlei">
         <p> 分类>></p>
         <ul>
-            
          @forelse(\Pcommon::indexLeftCategory(18) as $k=>$v)
             <li @if($sell->id == $v->id) class='selector-active' @endif>
+                <a href="/sell/{{$v->typedir}}" title="{{$v->typename}}"> {{$v->typename}}</a>
+            </li>
+        @empty
+        @endforelse
+        </ul>
+    </div>
+      <div class="fenlei">
+        <p> 子分类>></p>
+        <ul>
+            @php
+                if(empty($pcate)){
+                    $cChild = $sell->id;
+                    $cparid = $sell->parent_id;
+                }
+                else{
+                    $cChild = $pcate->id;
+                    $cparid = $sell->id;
+                }
+
+            @endphp
+         @forelse(\Pcommon::indexLeftCategory($cChild) as $k=>$v)
+            <li @if($cparid == $v->id) class='selector-active' @endif>
                 <a href="/sell/{{$v->typedir}}" title="{{$v->typename}}"> {{$v->typename}}</a>
             </li>
         @empty

@@ -26,8 +26,19 @@ class SellController extends Controller
 
         $sell     = Categorie::where('typedir', $sname)->firstOrFail();
         $list     = Sell::where('status',1);
-        if($sname!= 'sell')
-            $list = $list->where('parent_id',$sell->id);
+        $data['sell']  = $sell;
+        $data['pcate'] = "";
+        if($sname!= 'sell'){
+            if($sell->parent_id != 18){
+                $list = $list->where('parent_id',$sell->id);
+                $data['pcate'] = Categorie::where('id', $sell->parent_id)->first();
+            }
+            else{
+                $child_id =  Categorie::where('parent_id' , $sell->id)->orWhere('id',$sell->id)->pluck('id');
+                $list     = $list->whereIn('parent_id',$child_id);
+            }
+        }
+
         $url      = "sell/".$sname;
         if ($area) {
             $area = Area::where('name', $area)->firstOrFail();
@@ -35,9 +46,8 @@ class SellController extends Controller
             $data['area'] = $area;
             $url .= "/".$area->name;
         }
-        $data['head']     = $data['sell'] = $sell;
+        $data['head']     = $sell;
         $data['list']     = $list->orderBy('created_at', 'desc')->paginate(16, ['*'], 'page', $page);
-       
         $data['links']    = "";
         if(!empty($data['list']))
             $data['links']    = Pcommon::mpagelink($url,$data['list']->links());

@@ -22,12 +22,15 @@
     
     <div class="zx_left">
 
-    @forelse(\Pcommon::indexLeftCategory($head->id) as $k =>$v)
-    	@if($v->mid == 1)
+    @forelse(\Pcommon::indexLeftCategory($head->id) as $k =>$pv)
+    	@php
+    		$newsArr =  \Pcommon::articles($pv->id);
+    	@endphp
+    	@if($pv->mid == 1)
 		        <div class="zx_lb">
-			        <div class="bt2"><a href="/{{$head->typedir}}/{{$v->typedir}}">更多&gt;</a><strong>{{$v->typename}}</strong></div>
+			        <div class="bt2"><a href="/{{$head->typedir}}/{{$pv->typedir}}">更多&gt;</a><strong>{{$pv->typename}}</strong></div>
 			        <div class="tj">
-			        	@forelse(\Pcommon::articles($v->id) as $k=>$v)
+			        	@forelse($newsArr as $k=>$v)
 			        	@if($k == 0)
 			               <span><a href="{{\Pcommon::nurl($v->id)}}"><img src="{{config('app.upload')}}{{$v->conver}}" /></a></span>
 			            <strong><a href="{{\Pcommon::nurl($v->id)}}">{{$v->title}}</a></strong>
@@ -37,7 +40,7 @@
 						@endforelse
 			        </div>
 			        <ul>
-			        	@forelse(\Pcommon::articles($v->id) as $k=>$v)
+			        	@forelse($newsArr as $k=>$v)
 			        	@if($k > 0)
 			            <li><a href="{{\Pcommon::nurl($v->id)}}">{{$v->title}}</a></li>
 			            @endif

@@ -47,11 +47,9 @@ class Pcommon extends Base
 
     public static function indexLeftCategory($id)
     {
-
         $leftCatgory = Cache::remember('indexLeftCategory_'.$id, parent::getCacheMinutes(100, 300), function() use ($id) {
             return Categorie::where('parent_id', $id)->orderBy('order','asc')->get();
          });
-
         return $leftCatgory;
     }
 
@@ -137,9 +135,12 @@ class Pcommon extends Base
 
     public static function articles($typeid)
     {
-        $articlearr = Cache::remember('articles', parent::getCacheMinutes(100, 300), function() use($typeid){
+
+        $articlearr = Cache::remember('articles'.$typeid, parent::getCacheMinutes(100, 300), function() use($typeid){
             return Article::where('parent_id',$typeid)->orderBy('id','desc')->take(10)->get();
          });
+
+       // dd($articlearr);
         return $articlearr;
     }
 
@@ -237,29 +238,23 @@ class Pcommon extends Base
         });
     }
 
-
     public static function malls($str =1 ,$typeid)
     {
-        return Cache::remember('new_malls_' . $str.'_'.$typeid, parent::getCacheMinutes(120, 150), function () use ($str,$typeid) {
+        return Cache::remember('new_malls_' . $str, parent::getCacheMinutes(120, 150), function () use ($str) {
 
             if ($str == 1) 
-                return  Mall::where('parent_id', $typeid)->orderBy('created_at', 'desc')->take(6)->get();
+                return  Mall::orderBy('created_at', 'desc')->take(6)->get();
             else if ($str == 2) 
-                return  Mall::where('parent_id', $typeid)->orderBy('hits', 'desc')->take(6)->get();
+                return  Mall::orderBy('hits', 'desc')->take(6)->get();
             else if ($str == 3) 
-                return  Mall::where('parent_id', $typeid)->orderBy('level', 'desc')->take(6)->get();
-
-            
+                return  Mall::orderBy('level', 'desc')->take(6)->get();
         });
     }
 
-    public static function sells($typeid)
+    public static function sells()
     {
-        return Cache::remember('new_sells_' .$typeid, parent::getCacheMinutes(120, 150), function () use ($typeid) {
-            $hotsell =  Sell::where('parent_id', $typeid)->orderBy('hits', 'desc')->take(6)->get();
-            if($typeid == 18)
-                $hotsell =  Sell::orderBy('hits', 'desc')->take(6)->get();
-            return $hotsell;
+        return Cache::remember('new_sells_', parent::getCacheMinutes(120, 150), function (){
+               return Sell::orderBy('hits', 'desc')->take(6)->get();
         });
     }
 

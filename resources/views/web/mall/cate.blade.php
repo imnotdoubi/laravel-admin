@@ -21,7 +21,29 @@
         <ul>
             
          @forelse(\Pcommon::indexLeftCategory(17) as $k=>$v)
-            <li @if($category->id == $v->id) class='selector-active' @endif>
+            <li @if(empty($pcate))@if($category->id == $v->id) class='selector-active' @endif @else @if($pcate->id == $v->id) class='selector-active' @endif @endif>
+                <a href="/mall/{{$v->typedir}}" title="{{$v->typename}}"> {{$v->typename}}</a>
+            </li>
+        @empty
+        @endforelse
+        </ul>
+    </div>
+    <div class="fenlei">
+        <p> 子分类>></p>
+        <ul>
+            @php
+                if(empty($pcate)){
+                    $cChild = $category->id;
+                    $cparid = $category->parent_id;
+                }
+                else{
+                    $cChild = $pcate->id;
+                    $cparid = $category->id;
+                }
+
+            @endphp
+         @forelse(\Pcommon::indexLeftCategory($cChild) as $k=>$v)
+            <li @if($cparid == $v->id) class='selector-active' @endif>
                 <a href="/mall/{{$v->typedir}}" title="{{$v->typename}}"> {{$v->typename}}</a>
             </li>
         @empty

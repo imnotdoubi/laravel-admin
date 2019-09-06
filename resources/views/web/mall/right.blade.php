@@ -5,8 +5,7 @@
                     <span></span>
                     <h2> 推荐产品</h2>
                 </div>
-
-                 @forelse(\Pcommon::malls(2,$category->id) as $v)
+                 @forelse(\Pcommon::malls(2) as $v)
                         <div class="tjcp">
                             <a href="{{\Pcommon::murl($v->id)}}">
                                 <img src="{{config('app.upload')}}{{$v->litpic}}" style="width: 181px; height: 200px;"

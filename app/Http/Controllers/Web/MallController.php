@@ -38,7 +38,18 @@ class MallController extends Controller
     function list($sname, $area, $page = 1,$fl) {
 
         $category = Categorie::where('typedir', $sname)->firstOrFail();
-        $list     = Mall::where('status',1)->where('parent_id',$category->id);
+        $list     = Mall::where('status',1);
+        $data['category']  = $category;
+        $data['pcate']     = "";
+        if($category->parent_id != 17){
+            $list = $list->where('parent_id',$category->id);
+            $data['pcate'] = Categorie::where('id', $category->parent_id)->first();
+        }
+        else{
+            $child_id =  Categorie::where('parent_id' , $category->id)->orWhere('id',$category->id)->pluck('id');
+            $list     = $list->whereIn('parent_id',$child_id);
+        }
+
         $ftype    = '';  
         if($fl == 2){
            $ftype = 'l_';
@@ -51,7 +62,7 @@ class MallController extends Controller
             $data['area'] = $area;
             $url .= "/".$area->name;
         }
-        $data['head']     = $data['category'] = $category;
+        $data['head']     = $category;
         $data['list']     = $list->orderBy('created_at', 'desc')->paginate(16, ['*'], 'page', $page);
         $data['links']    = "";
         $data['ftype']    = $ftype;

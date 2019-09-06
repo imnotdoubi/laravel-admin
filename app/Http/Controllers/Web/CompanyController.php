@@ -13,7 +13,7 @@ class CompanyController extends Controller
     public function index($jine=0,$page=1) 
     {
         $categorys      = Categorie::where('id' , 4)->first();
-        $list           =  Company::where('status',1);
+        $list           = Company::where('status',1);
         $data['head']   = $categorys;
         if($jine > 0)
                 $list   = $list->where('size' , $jine)->orderBy('created_at', 'desc')->paginate(10, ['*'], 'page', $page);
