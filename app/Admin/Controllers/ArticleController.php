@@ -67,7 +67,7 @@ class ArticleController extends AdminController
         $grid->column('parent_id', __('分类'))->display(function ($parent_id) {
             $cates = Categorie::where('id',$parent_id)->first();
             if($cates)
-                return "<a href='/".$cates->typedir."/'>".$cates->typename."</a>";
+                return "<a href='/news/".$cates->typedir."/'>".$cates->typename."</a>";
             else
                 return "无";
         });

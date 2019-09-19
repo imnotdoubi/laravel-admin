@@ -31,6 +31,7 @@ Route::group([
         'sells'                 => SellController::class,
         'photos'                => PhotoController::class,
         'invests'               => InvestmentController::class,
+        'modules'               => ModuleController::class,
         'shenhe/articles'       => Review\AutoArticleController::class,
         'shenhe/asks'           => Review\AutoAskController::class,
     ]);

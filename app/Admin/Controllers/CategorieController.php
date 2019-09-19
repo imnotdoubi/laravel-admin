@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Models\Categorie;
+use App\Models\Module;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -17,7 +18,8 @@ class CategorieController extends AdminController
      *
      * @var string
      */
-    protected $title = '栏目';
+    protected $title  = '栏目';
+    protected $points = '已存在,请修改';
     /**
      * Index interface.
      *
@@ -39,22 +41,7 @@ class CategorieController extends AdminController
         return Categorie::tree(function (Tree $tree) {
 
             $tree->branch(function ($branch) {
-                if($branch['mid'] == 2)
-                    $midname =  "单页面";
-                else if($branch['mid'] == 3)
-                     $midname =  "项目";
-                else if($branch['mid'] == 4)
-                     $midname =  "问答";
-                else if($branch['mid'] == 5)
-                     $midname =  "商城";
-                else if($branch['mid'] == 6)
-                     $midname =  "供应"; 
-                else if($branch['mid'] == 7)
-                     $midname =  "图库";                
-                else
-                    $midname = "文章";
-
-                // $typename ='<a href="{$typedir}" target="_blank">{$tname}</a>';
+                $midname = Module::where('id',$branch['mid'])->value('name');
 
                 return "{$branch['id']} - {$branch['typename']} -[{$midname}]";
 
@@ -83,20 +70,7 @@ class CategorieController extends AdminController
         $grid->column('typename', __('栏目名'));
         $grid->column('typedir', __('栏目url'));
         $grid->column('mid', __('父栏目'))->display(function ($mid) {
-            if($mid == 2)
-                return "单页面";
-            else if($mid == 3)
-                return "项目";
-            else if($mid == 4)
-                return "问答";
-            else if($mid == 5)
-                return "商城";
-            else if($mid == 6)
-                return "供应";
-            else if($mid == 7)
-                return "图库";
-            else
-                return "文章";
+            return Module::where('id',$branch['mid'])->value('name');
         });
         $grid->column('created_at', __('添加时间'))->hide();
         // $grid->column('updated_at', __('Updated at'));
@@ -108,32 +82,6 @@ class CategorieController extends AdminController
         });
 
         return $grid;
-    }
-
-    /**
-     * Make a show builder.
-     *
-     * @param mixed $id
-     * @return Show
-     */
-    protected function detail($id)
-    {
-        $show = new Show(Categorie::findOrFail($id));
-
-        $show->field('id', __('Id'));
-        $show->field('topid', __('Topid'));
-        $show->field('sortrank', __('Sortrank'));
-        $show->field('typename', __('Typename'));
-        $show->field('typedir', __('Typedir'));
-        $show->field('title', __('Title'));
-        $show->field('keyword', __('Keyword'));
-        $show->field('dirposition', __('Dirposition'));
-        $show->field('contents', __('Contents'));
-        $show->field('mid', __('Mid'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
-
-        return $show;
     }
 
     /**
@@ -168,13 +116,16 @@ class CategorieController extends AdminController
 
             $form->select('parent_id','父栏目')->options(Categorie::selectOptions());
             $form->text('typename', __('栏目名'))->required();
-            $form->text('typedir', __('栏目url'))->required();
+            $form->text('typedir', __('栏目url'))->required()->creationRules(['required', "unique:wbsdb_categories,typedir,{typedir}"], ['unique' => '栏目url'.$this->points])->updateRules(['required', "unique:wbsdb_categories,typedir,{typedir}"], ['unique' => '栏目url'.$this->points]);
             $form->number('order', __('排序'))->default(1);
-            $form->text('title', __('标题'))->required();;
+            $form->text('title', __('标题'))->required();
             $form->text('keyword', __('关键词'));
             $form->text('dirposition', __('描述'));
-            // $form->number('mid', __('栏目类型'))->default(1);
-            $form->radio('mid', '栏目类型')->options(['1' => '普通文章', '2'=> '单页面', '3'=> '项目类型', '4'=> '问答', '5'=> '商城', '6'=> '供应', '7'=> '图库'])->default('1');
+
+            $form->radio('mid', '栏目类型')->options(
+                Module::orderBy('order','asc')->pluck('name', 'id')
+            )->default('1');
+
             $states = [
                 'on'  => ['value' => 1, 'text' => '打开', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => '关闭', 'color' => 'danger'],
