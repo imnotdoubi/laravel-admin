@@ -3,12 +3,19 @@ laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
 开箱即用，当前已发布商城、会员、项目、文章、项目资讯、问答、图库管理、供应管理、网站配置、等模型<br>
 新增微信小程序版本，详情请移步https://github.com/imnotdoubi/laraveladmin-xcx<br>
 
-laravel-admin目前已更新PC端预览，链接查看 http://47.98.200.91/admin/auth/login  用户密码：yunhaitian  admin<br>
+目前已更新PC端预览，链接查看 http://47.98.200.91<br>
+
+后台查看链接查看 http://47.98.200.91/admin/auth/login  用户密码：yunhaitian  admin<br>
 
 有朋友说更新慢，因此取消了数据中图片和vendor文件夹，<br>
 
 如果您更新后遇到问题，请直接点击下面的链接下载替换本地目录<br>
-http://47.98.200.91/data/vendor.zip
+http://47.98.200.91/data/vendor.zip<br>
+
+前端会员注册方法：<br>
+可以先执行：php artisan make:auth<br>
+然后替换掉\resources\views\auth 和  \app\Http\Controllers\Auth文件夹 下的内容  跟 \config\auth.php文件
+
 
 #安装方式
 
@@ -22,13 +29,10 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 #后台登录地址
 http://127.0.0.1/admin/auth/login  默认密码 admin  admin
 
-#后台部分截图
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/1.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/2.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/3.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/4.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/5.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/6.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/7.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/8.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/9.jpg)
+#部分截图
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/10.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/11.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/12.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/13.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/14.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/15.jpg)
