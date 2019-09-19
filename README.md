@@ -1,4 +1,4 @@
-# laravel-admin（如果帮助了你，请给个Star）
+# laravel-admin（如果帮助了你，请给个Star）请认真看下面
 laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
 开箱即用，当前已发布商城、会员、项目、文章、项目资讯、问答、图库管理、供应管理、网站配置、等模型<br>
 新增微信小程序版本，详情请移步https://github.com/imnotdoubi/laraveladmin-xcx<br>
