@@ -9,6 +9,9 @@ laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
 
 有朋友说更新慢，因此取消了数据中图片和vendor文件夹，<br>
 
+public目录下载(包含样式记得下载)<br>
+http://47.98.200.91/data/public.zip<br>
+
 如果您更新后遇到问题，请直接点击下面的链接下载替换本地目录<br>
 http://47.98.200.91/data/vendor.zip<br>
 
@@ -30,9 +33,9 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 http://127.0.0.1/admin/auth/login  默认密码 admin  admin
 
 #部分截图
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/10.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/11.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/12.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/13.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/14.jpg)
-![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/15.jpg)
+![laravel-admin](http://47.98.200.91/vimg/10.jpg)
+![laravel-admin](http://47.98.200.91/vimg/11.jpg)
+![laravel-admin](http://47.98.200.91/vimg/12.jpg)
+![laravel-admin](http://47.98.200.91/vimg/13.jpg)
+![laravel-admin](http://47.98.200.91/vimg/14.jpg)
+![laravel-admin](http://47.98.200.91/vimg/15.jpg)
