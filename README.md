@@ -1,4 +1,4 @@
-# laravel-admin（如果帮助了你，请给个Star）请认真看下面
+# laravel-admin（如果帮助了你，请给个Star），请认真看下面介绍
 laravel-admin码的B2B电子商务行业门户后台网站管理系统<br>
 开箱即用，当前已发布商城、会员、项目、文章、项目资讯、问答、图库管理、供应管理、网站配置、等模型<br>
 新增微信小程序版本，详情请移步https://github.com/imnotdoubi/laraveladmin-xcx<br>
@@ -33,9 +33,9 @@ $git clone https://github.com/imnotdoubi/laravel-admin.git
 http://127.0.0.1/admin/auth/login  默认密码 admin  admin
 
 #部分截图
-![laravel-admin](http://47.98.200.91/vimg/10.jpg)
-![laravel-admin](http://47.98.200.91/vimg/11.jpg)
-![laravel-admin](http://47.98.200.91/vimg/12.jpg)
-![laravel-admin](http://47.98.200.91/vimg/13.jpg)
-![laravel-admin](http://47.98.200.91/vimg/14.jpg)
-![laravel-admin](http://47.98.200.91/vimg/15.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/10.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/11.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/12.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/13.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/14.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/15.jpg)
