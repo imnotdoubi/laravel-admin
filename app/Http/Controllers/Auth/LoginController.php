@@ -25,7 +25,34 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/member';
+
+    public function username()
+    {
+        return 'name';
+    }
+    
+    protected function guard()
+    {
+        return \Auth::guard('web');
+    }
+
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+    //简单登录判断处理，详细过程请自行操作
+    public function login()
+    {
+        $username = request()->input('username');
+        $password = request()->input('password');
+        if (auth('web')->attempt(['name' => $username, 'password' => $password, 'status_at' => 1])) {
+            event(new \App\Events\UserEvent(auth('web')->user()));
+            return redirect()->intended($this->redirectTo);
+        } else {
+            return redirect('/login/')->withErrors('用户名或密码错误');
+        }
+    }
 
     /**
      * Create a new controller instance.

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-09-05 10:34:13
+-- 生成日期： 2019-09-19 09:38:10
 -- 服务器版本： 10.1.37-MariaDB
 -- PHP 版本： 7.1.26
 
@@ -57,7 +57,7 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (12, 0, 12, '项目管理', 'fa-group', '/', '*', '2019-07-30 01:46:33', '2019-08-26 09:22:39'),
 (13, 14, 26, '省份城市', 'fa-map-marker', '/countrys', '*', '2019-07-31 02:44:43', '2019-08-05 03:15:18'),
 (14, 0, 25, '辅助功能', 'fa-align-center', '', '', '2019-07-31 03:33:07', '2019-08-05 03:15:18'),
-(15, 14, 27, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-08-05 03:15:18'),
+(15, 14, 28, '投资方案', 'fa-cny', 'invests', '*', '2019-07-31 03:58:16', '2019-09-11 06:42:47'),
 (17, 12, 14, '项目资讯', 'fa-dedent', 'news', '*', '2019-07-31 08:40:52', '2019-08-02 03:32:50'),
 (18, 0, 19, '问答管理', 'fa-map', '/', '*', '2019-08-01 02:13:03', '2019-08-02 03:32:50'),
 (19, 18, 20, '问题列表', 'fa-align-right', 'asks', '*', '2019-08-01 02:13:57', '2019-08-02 03:32:50'),
@@ -70,11 +70,12 @@ INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `p
 (26, 0, 17, '供应管理', 'fa-bus', '/', '*', '2019-08-02 03:27:25', '2019-08-02 03:32:50'),
 (27, 26, 18, '供应列表', 'fa-align-right', 'sells', '*', '2019-08-02 03:27:45', '2019-08-02 03:32:50'),
 (30, 29, 0, 'o', 'fa-bars', '/', NULL, '2019-08-02 03:31:24', '2019-08-02 03:31:24'),
-(31, 14, 28, '网站设置', 'fa-anchor', 'forms/settings', '*', '2019-08-02 09:10:36', '2019-08-05 03:15:18'),
+(31, 14, 29, '网站设置', 'fa-anchor', 'forms/settings', '*', '2019-08-02 09:10:36', '2019-09-11 06:42:47'),
 (32, 0, 23, '图库管理', 'fa-area-chart', '/', '*', '2019-08-05 03:14:40', '2019-08-05 03:15:18'),
 (33, 32, 24, '图库列表', 'fa-align-right', 'photos', '*', '2019-08-05 03:15:00', '2019-08-05 03:15:18'),
 (34, 12, 13, '项目列表', 'fa-bars', 'companydatas', '*', '2019-08-06 05:41:11', '2019-08-26 09:22:16'),
-(41, 14, 29, '文件管理', 'fa-file', 'media', '*', '2019-08-07 07:51:58', '2019-08-07 08:41:34');
+(41, 14, 30, '文件管理', 'fa-file', 'media', '*', '2019-08-07 07:51:58', '2019-09-11 06:42:47'),
+(42, 14, 27, '功能模块', 'fa-align-center', 'modules', NULL, '2019-09-11 06:42:41', '2019-09-11 06:42:47');
 
 -- --------------------------------------------------------
 
@@ -2666,7 +2667,231 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (2553, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 08:00:29', '2019-09-05 08:00:29'),
 (2554, 1, 'admin/categories/25/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 08:07:46', '2019-09-05 08:07:46'),
 (2555, 1, 'admin/categories/25', 'PUT', '127.0.0.1', '{\"parent_id\":\"0\",\"typename\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"typedir\":\"about\",\"order\":\"20\",\"title\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"keyword\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"dirposition\":\"\\u5173\\u4e8e\\u4e91\\u6d77\\u5929\",\"mid\":\"2\",\"status\":\"on\",\"content\":\"<p>\\u5982\\u679c\\u5e2e\\u52a9\\u4e86\\u60a8\\uff0c<strong>\\u4e0d\\u59a8\\u7ed9\\u4e91\\u6d77\\u5929\\u70b9\\u4e2aStars\\u3002<\\/strong><\\/p><p>\\u8fd9\\u662f\\u70b9\\u8d5e\\u94fe\\u63a5:<a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin<\\/a><img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0026.gif\\\"\\/><\\/p><p><br\\/><\\/p><p>\\u672c\\u4eba\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u975e\\u4e13\\u4e1a\\u8bbe\\u8ba1\\uff0c\\u6240\\u6709\\u5e03\\u5c40\\u5747\\u6765\\u6e90\\u4e8e\\u7f51\\u4e0a\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u4e0e\\u60a8\\u7684\\u8bbe\\u8ba1\\u7c7b\\u4f3c\\uff0c\\u8bf7\\u8054\\u7cfb\\u6211\\uff0c\\u7acb\\u5373\\u5220\\u9664\\u3002<\\/p><p><br\\/><\\/p><p>\\u5982\\u679c\\u5728\\u8fd0\\u884c\\u4e2d\\u6709\\u95ee\\u9898\\uff0c\\u8bf7\\u76f4\\u63a5 <a href=\\\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues\\\">https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\\/issues<\\/a><br\\/><\\/p><p><br\\/><\\/p><p>\\u6211\\u4f1a\\u5728\\u6709\\u65f6\\u95f4\\u540e\\u53ca\\u65f6\\u5904\\u7406\\u3002\\u518d\\u6b21\\u611f\\u8c22<img src=\\\"http:\\/\\/img.baidu.com\\/hi\\/jx2\\/j_0061.gif\\\"\\/> <\\/p>\",\"_token\":\"rNcVjY5uBBTOo2FvJXndXRvQCcU5UExjhgAKNXd2\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/categories\"}', '2019-09-05 08:08:18', '2019-09-05 08:08:18'),
-(2556, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 08:08:18', '2019-09-05 08:08:18');
+(2556, 1, 'admin/categories', 'GET', '127.0.0.1', '[]', '2019-09-05 08:08:18', '2019-09-05 08:08:18'),
+(2557, 1, 'admin/categories/5/edit', 'GET', '127.0.0.1', '[]', '2019-09-05 09:05:20', '2019-09-05 09:05:20'),
+(2558, 1, 'admin/auth/login', 'POST', '127.0.0.1', '{\"username\":\"admin\",\"password\":\"admin\",\"remember\":\"1\",\"_token\":\"A83M1YVJM2JH1YxvnNr6OsbD1eiT1GoniZWNUIap\"}', '2019-09-05 09:05:38', '2019-09-05 09:05:38'),
+(2559, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-05 09:05:38', '2019-09-05 09:05:38'),
+(2560, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 09:05:40', '2019-09-05 09:05:40'),
+(2561, 1, 'admin/categories/5/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 09:05:42', '2019-09-05 09:05:42'),
+(2562, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-05 09:08:23', '2019-09-05 09:08:23'),
+(2563, 1, 'admin/malls', 'GET', '127.0.0.1', '[]', '2019-09-06 02:51:15', '2019-09-06 02:51:15'),
+(2564, 1, 'admin/malls/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-06 02:51:18', '2019-09-06 02:51:18'),
+(2565, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"2\"}', '2019-09-06 02:51:18', '2019-09-06 02:51:18'),
+(2566, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-11 06:41:52', '2019-09-11 06:41:52'),
+(2567, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:42:05', '2019-09-11 06:42:05'),
+(2568, 1, 'admin/auth/roles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:42:08', '2019-09-11 06:42:08'),
+(2569, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:42:10', '2019-09-11 06:42:10'),
+(2570, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"14\",\"title\":\"\\u529f\\u80fd\\u6a21\\u5757\",\"icon\":\"fa-align-center\",\"uri\":\"modules\",\"roles\":[null],\"permission\":null,\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\"}', '2019-09-11 06:42:41', '2019-09-11 06:42:41'),
+(2571, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-09-11 06:42:41', '2019-09-11 06:42:41'),
+(2572, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7}]},{\\\"id\\\":11},{\\\"id\\\":10,\\\"children\\\":[{\\\"id\\\":23},{\\\"id\\\":24}]},{\\\"id\\\":12,\\\"children\\\":[{\\\"id\\\":34},{\\\"id\\\":17}]},{\\\"id\\\":21,\\\"children\\\":[{\\\"id\\\":22}]},{\\\"id\\\":26,\\\"children\\\":[{\\\"id\\\":27}]},{\\\"id\\\":18,\\\"children\\\":[{\\\"id\\\":19},{\\\"id\\\":20},{\\\"id\\\":25}]},{\\\"id\\\":32,\\\"children\\\":[{\\\"id\\\":33}]},{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":13},{\\\"id\\\":42},{\\\"id\\\":15},{\\\"id\\\":31},{\\\"id\\\":41}]}]\"}', '2019-09-11 06:42:47', '2019-09-11 06:42:47'),
+(2573, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:42:47', '2019-09-11 06:42:47'),
+(2574, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2019-09-11 06:44:46', '2019-09-11 06:44:46'),
+(2575, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:45:04', '2019-09-11 06:45:04'),
+(2576, 1, 'admin/modules/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:45:13', '2019-09-11 06:45:13'),
+(2577, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u5355\\u9875\\u9762\",\"order\":\"2\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/modules\"}', '2019-09-11 06:45:34', '2019-09-11 06:45:34'),
+(2578, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:45:35', '2019-09-11 06:45:35'),
+(2579, 1, 'admin/modules/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:45:37', '2019-09-11 06:45:37'),
+(2580, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u9879\\u76ee\\u7c7b\\u578b\",\"order\":\"3\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/modules\"}', '2019-09-11 06:45:44', '2019-09-11 06:45:44'),
+(2581, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:45:44', '2019-09-11 06:45:44'),
+(2582, 1, 'admin/modules/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:45:45', '2019-09-11 06:45:45'),
+(2583, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u95ee\\u7b54\",\"order\":\"4\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"after-save\":\"2\",\"_previous_\":\"http:\\/\\/www.lar-admin.test\\/admin\\/modules\"}', '2019-09-11 06:45:57', '2019-09-11 06:45:57'),
+(2584, 1, 'admin/modules/create', 'GET', '127.0.0.1', '[]', '2019-09-11 06:45:57', '2019-09-11 06:45:57'),
+(2585, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u5546\\u57ce\",\"order\":\"5\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"after-save\":\"2\"}', '2019-09-11 06:46:09', '2019-09-11 06:46:09'),
+(2586, 1, 'admin/modules/create', 'GET', '127.0.0.1', '[]', '2019-09-11 06:46:09', '2019-09-11 06:46:09'),
+(2587, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u4f9b\\u5e94\",\"order\":\"6\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\",\"after-save\":\"2\"}', '2019-09-11 06:46:17', '2019-09-11 06:46:17'),
+(2588, 1, 'admin/modules/create', 'GET', '127.0.0.1', '[]', '2019-09-11 06:46:18', '2019-09-11 06:46:18'),
+(2589, 1, 'admin/modules', 'POST', '127.0.0.1', '{\"name\":\"\\u56fe\\u5e93\",\"order\":\"7\",\"_token\":\"Ihurnz41cwme2hRaswP1hX3QPnRyLKvTTM0AMum4\"}', '2019-09-11 06:46:26', '2019-09-11 06:46:26'),
+(2590, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:46:27', '2019-09-11 06:46:27'),
+(2591, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:48:36', '2019-09-11 06:48:36'),
+(2592, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:48:36', '2019-09-11 06:48:36'),
+(2593, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:48:40', '2019-09-11 06:48:40'),
+(2594, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:48:40', '2019-09-11 06:48:40'),
+(2595, 1, 'admin/modules', 'GET', '127.0.0.1', '[]', '2019-09-11 06:48:58', '2019-09-11 06:48:58'),
+(2596, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:49:00', '2019-09-11 06:49:00'),
+(2597, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:50:09', '2019-09-11 06:50:09'),
+(2598, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-11 06:52:34', '2019-09-11 06:52:34'),
+(2599, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-11 06:52:43', '2019-09-11 06:52:43'),
+(2600, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:53:29', '2019-09-11 06:53:29'),
+(2601, 1, 'admin/categories/4/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:53:34', '2019-09-11 06:53:34'),
+(2602, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:53:43', '2019-09-11 06:53:43'),
+(2603, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 06:53:44', '2019-09-11 06:53:44'),
+(2604, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-11 07:00:08', '2019-09-11 07:00:08'),
+(2605, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:00:22', '2019-09-11 07:00:22'),
+(2606, 1, 'admin/categories/5/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:00:26', '2019-09-11 07:00:26'),
+(2607, 1, 'admin/categories/5/edit', 'GET', '127.0.0.1', '[]', '2019-09-11 07:01:00', '2019-09-11 07:01:00'),
+(2608, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:01:04', '2019-09-11 07:01:04'),
+(2609, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:01:05', '2019-09-11 07:01:05'),
+(2610, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:02:33', '2019-09-11 07:02:33'),
+(2611, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:02:35', '2019-09-11 07:02:35'),
+(2612, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-11 07:06:10', '2019-09-11 07:06:10'),
+(2613, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-16 08:35:24', '2019-09-16 08:35:24'),
+(2614, 1, 'admin/categories', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 08:35:34', '2019-09-16 08:35:34'),
+(2615, 1, 'admin/categories/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 08:35:37', '2019-09-16 08:35:37'),
+(2616, 1, 'admin/categories/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:00:16', '2019-09-16 09:00:16'),
+(2617, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:00:19', '2019-09-16 09:00:19'),
+(2618, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:00:22', '2019-09-16 09:00:22'),
+(2619, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:00:23', '2019-09-16 09:00:23'),
+(2620, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:01:02', '2019-09-16 09:01:02'),
+(2621, 1, 'admin/companydatas/41/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:01:04', '2019-09-16 09:01:04'),
+(2622, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:01:04', '2019-09-16 09:01:04'),
+(2623, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:01:54', '2019-09-16 09:01:54'),
+(2624, 1, 'admin/companydatas/41/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:02:01', '2019-09-16 09:02:01'),
+(2625, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-16 09:02:02', '2019-09-16 09:02:02'),
+(2626, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"11\"}', '2019-09-16 09:02:02', '2019-09-16 09:02:02'),
+(2627, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:02:02', '2019-09-16 09:02:02'),
+(2628, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"128\"}', '2019-09-16 09:02:03', '2019-09-16 09:02:03'),
+(2629, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:02:06', '2019-09-16 09:02:06'),
+(2630, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:02:07', '2019-09-16 09:02:07'),
+(2631, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:05:08', '2019-09-16 09:05:08'),
+(2632, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:09', '2019-09-16 09:05:09'),
+(2633, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:09', '2019-09-16 09:05:09'),
+(2634, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:09', '2019-09-16 09:05:09'),
+(2635, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:10', '2019-09-16 09:05:10'),
+(2636, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:05:43', '2019-09-16 09:05:43'),
+(2637, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:44', '2019-09-16 09:05:44'),
+(2638, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:44', '2019-09-16 09:05:44'),
+(2639, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:44', '2019-09-16 09:05:44'),
+(2640, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:44', '2019-09-16 09:05:44'),
+(2641, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:05:51', '2019-09-16 09:05:51'),
+(2642, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:52', '2019-09-16 09:05:52'),
+(2643, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:52', '2019-09-16 09:05:52'),
+(2644, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:52', '2019-09-16 09:05:52'),
+(2645, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:05:53', '2019-09-16 09:05:53'),
+(2646, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:10:44', '2019-09-16 09:10:44'),
+(2647, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:10:49', '2019-09-16 09:10:49'),
+(2648, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:10:51', '2019-09-16 09:10:51'),
+(2649, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:10:51', '2019-09-16 09:10:51'),
+(2650, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:11:21', '2019-09-16 09:11:21'),
+(2651, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:11:23', '2019-09-16 09:11:23'),
+(2652, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:11:23', '2019-09-16 09:11:23'),
+(2653, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:12:13', '2019-09-16 09:12:13'),
+(2654, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:12:15', '2019-09-16 09:12:15'),
+(2655, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:12:15', '2019-09-16 09:12:15'),
+(2656, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:13:15', '2019-09-16 09:13:15'),
+(2657, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:13:17', '2019-09-16 09:13:17'),
+(2658, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:13:18', '2019-09-16 09:13:18'),
+(2659, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:14', '2019-09-16 09:14:14'),
+(2660, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:14:16', '2019-09-16 09:14:16'),
+(2661, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:16', '2019-09-16 09:14:16'),
+(2662, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:37', '2019-09-16 09:14:37'),
+(2663, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:14:39', '2019-09-16 09:14:39'),
+(2664, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:39', '2019-09-16 09:14:39'),
+(2665, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:54', '2019-09-16 09:14:54'),
+(2666, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:14:56', '2019-09-16 09:14:56'),
+(2667, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:14:56', '2019-09-16 09:14:56'),
+(2668, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:16:15', '2019-09-16 09:16:15'),
+(2669, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:16:17', '2019-09-16 09:16:17'),
+(2670, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:17', '2019-09-16 09:16:17'),
+(2671, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:17', '2019-09-16 09:16:17'),
+(2672, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:17', '2019-09-16 09:16:17'),
+(2673, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:18', '2019-09-16 09:16:18'),
+(2674, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:16:27', '2019-09-16 09:16:27'),
+(2675, 1, 'admin/companydatas/38/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:16:28', '2019-09-16 09:16:28'),
+(2676, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-16 09:16:28', '2019-09-16 09:16:28'),
+(2677, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:28', '2019-09-16 09:16:28'),
+(2678, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"10\"}', '2019-09-16 09:16:28', '2019-09-16 09:16:28'),
+(2679, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"114\"}', '2019-09-16 09:16:29', '2019-09-16 09:16:29'),
+(2680, 1, 'admin/companydatas/38/edit', 'GET', '127.0.0.1', '[]', '2019-09-16 09:16:45', '2019-09-16 09:16:45'),
+(2681, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:46', '2019-09-16 09:16:46'),
+(2682, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"10\"}', '2019-09-16 09:16:46', '2019-09-16 09:16:46'),
+(2683, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-16 09:16:46', '2019-09-16 09:16:46'),
+(2684, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"114\"}', '2019-09-16 09:16:46', '2019-09-16 09:16:46'),
+(2685, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:16:47', '2019-09-16 09:16:47'),
+(2686, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:16:50', '2019-09-16 09:16:50'),
+(2687, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:50', '2019-09-16 09:16:50'),
+(2688, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:50', '2019-09-16 09:16:50'),
+(2689, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:50', '2019-09-16 09:16:50'),
+(2690, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:16:51', '2019-09-16 09:16:51'),
+(2691, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:18:07', '2019-09-16 09:18:07'),
+(2692, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:25:24', '2019-09-16 09:25:24'),
+(2693, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '[]', '2019-09-16 09:25:59', '2019-09-16 09:25:59'),
+(2694, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-16 09:26:00', '2019-09-16 09:26:00'),
+(2695, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"10\"}', '2019-09-16 09:26:00', '2019-09-16 09:26:00'),
+(2696, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:26:00', '2019-09-16 09:26:00'),
+(2697, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"114\"}', '2019-09-16 09:26:00', '2019-09-16 09:26:00'),
+(2698, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:26:02', '2019-09-16 09:26:02'),
+(2699, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:26:20', '2019-09-16 09:26:20'),
+(2700, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:26:56', '2019-09-16 09:26:56'),
+(2701, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:27:05', '2019-09-16 09:27:05'),
+(2702, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:27:53', '2019-09-16 09:27:53'),
+(2703, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:27:55', '2019-09-16 09:27:55'),
+(2704, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:28:01', '2019-09-16 09:28:01'),
+(2705, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:29:30', '2019-09-16 09:29:30'),
+(2706, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:29:45', '2019-09-16 09:29:45'),
+(2707, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:20', '2019-09-16 09:33:20'),
+(2708, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:33:20', '2019-09-16 09:33:20'),
+(2709, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:20', '2019-09-16 09:33:20'),
+(2710, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:20', '2019-09-16 09:33:20'),
+(2711, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:20', '2019-09-16 09:33:20'),
+(2712, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:22', '2019-09-16 09:33:22'),
+(2713, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:23', '2019-09-16 09:33:23'),
+(2714, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:23', '2019-09-16 09:33:23'),
+(2715, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:23', '2019-09-16 09:33:23'),
+(2716, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:23', '2019-09-16 09:33:23'),
+(2717, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2718, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2719, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2720, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2721, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2722, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2723, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:34', '2019-09-16 09:33:34'),
+(2724, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:35', '2019-09-16 09:33:35'),
+(2725, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-16 09:33:35', '2019-09-16 09:33:35'),
+(2726, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:36', '2019-09-16 09:33:36'),
+(2727, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:38', '2019-09-16 09:33:38'),
+(2728, 1, 'admin/companydatas/41/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:33:40', '2019-09-16 09:33:40'),
+(2729, 1, 'admin/companydatas/41/edit', 'GET', '127.0.0.1', '[]', '2019-09-16 09:35:11', '2019-09-16 09:35:11'),
+(2730, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:35:13', '2019-09-16 09:35:13'),
+(2731, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:35:15', '2019-09-16 09:35:15'),
+(2732, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:35:15', '2019-09-16 09:35:15'),
+(2733, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:36:15', '2019-09-16 09:36:15'),
+(2734, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:36:17', '2019-09-16 09:36:17'),
+(2735, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:36:17', '2019-09-16 09:36:17'),
+(2736, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:37:11', '2019-09-16 09:37:11'),
+(2737, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-16 09:37:13', '2019-09-16 09:37:13'),
+(2738, 1, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-16 09:37:13', '2019-09-16 09:37:13'),
+(2739, 4, 'admin/companydatas', 'GET', '127.0.0.1', '[]', '2019-09-17 02:02:13', '2019-09-17 02:02:13'),
+(2740, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-17 06:22:00', '2019-09-17 06:22:00'),
+(2741, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:22:04', '2019-09-17 06:22:04'),
+(2742, 1, 'admin/companydatas/41/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:22:08', '2019-09-17 06:22:08'),
+(2743, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-17 06:22:09', '2019-09-17 06:22:09'),
+(2744, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":\"11\"}', '2019-09-17 06:22:09', '2019-09-17 06:22:09'),
+(2745, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-17 06:22:09', '2019-09-17 06:22:09'),
+(2746, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":\"128\"}', '2019-09-17 06:22:09', '2019-09-17 06:22:09'),
+(2747, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:22:52', '2019-09-17 06:22:52'),
+(2748, 1, 'admin/companydatas', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:22:53', '2019-09-17 06:22:53'),
+(2749, 1, 'admin/companydatas/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:33:41', '2019-09-17 06:33:41'),
+(2750, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-17 06:33:42', '2019-09-17 06:33:42'),
+(2751, 1, 'admin/api/city', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-17 06:33:42', '2019-09-17 06:33:42'),
+(2752, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-17 06:33:42', '2019-09-17 06:33:42'),
+(2753, 1, 'admin/api/district', 'GET', '127.0.0.1', '{\"q\":null}', '2019-09-17 06:33:42', '2019-09-17 06:33:42'),
+(2754, 1, 'admin/api/child', 'GET', '127.0.0.1', '{\"q\":\"5\"}', '2019-09-17 06:33:50', '2019-09-17 06:33:50'),
+(2755, 1, 'admin/news', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:36:26', '2019-09-17 06:36:26'),
+(2756, 1, 'admin/news/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 06:36:28', '2019-09-17 06:36:28'),
+(2757, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-17 07:17:51', '2019-09-17 07:17:51'),
+(2758, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-17 07:17:55', '2019-09-17 07:17:55'),
+(2759, 1, 'admin/_handle_form_', 'POST', '127.0.0.1', '{\"title\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e03\",\"slogan\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e032\",\"description\":\"https:\\/\\/github.com\\/imnotdoubi\\/laravel-admin\",\"keyword\":\"\\u4e91\\u6d77\\u5929\\u53d1\\u5e03\",\"copyright\":null,\"icp\":null,\"statistic\":null,\"_form_\":\"App\\\\Admin\\\\Forms\\\\Settings\\\\Basic\",\"_token\":\"vDPIpcgzHYX32sR21h2Ydklsu7jVqb3dbIgdqhzc\"}', '2019-09-17 07:17:59', '2019-09-17 07:17:59'),
+(2760, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-09-17 07:17:59', '2019-09-17 07:17:59'),
+(2761, 1, 'admin/forms/settings', 'GET', '127.0.0.1', '[]', '2019-09-17 07:18:01', '2019-09-17 07:18:01'),
+(2762, 1, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2019-09-17 07:57:51', '2019-09-17 07:57:51'),
+(2763, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-17 07:57:52', '2019-09-17 07:57:52'),
+(2764, 1, 'admin', 'GET', '127.0.0.1', '[]', '2019-09-18 01:54:33', '2019-09-18 01:54:33'),
+(2765, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 01:54:36', '2019-09-18 01:54:36'),
+(2766, 1, 'admin/sells/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 01:54:39', '2019-09-18 01:54:39'),
+(2767, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-09-18 03:22:56', '2019-09-18 03:22:56'),
+(2768, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-09-18 03:40:26', '2019-09-18 03:40:26'),
+(2769, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 05:22:21', '2019-09-18 05:22:21'),
+(2770, 1, 'admin/sells/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 07:28:45', '2019-09-18 07:28:45'),
+(2771, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-09-18 07:30:01', '2019-09-18 07:30:01'),
+(2772, 1, 'admin/sells/create', 'GET', '127.0.0.1', '[]', '2019-09-18 08:20:55', '2019-09-18 08:20:55'),
+(2773, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 09:20:03', '2019-09-18 09:20:03'),
+(2774, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-18 09:20:05', '2019-09-18 09:20:05'),
+(2775, 1, 'admin/sells/2/edit', 'GET', '127.0.0.1', '[]', '2019-09-19 01:27:09', '2019-09-19 01:27:09'),
+(2776, 1, 'admin/sells', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-19 03:16:14', '2019-09-19 03:16:14'),
+(2777, 1, 'admin/sells/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-19 03:16:15', '2019-09-19 03:16:15'),
+(2778, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '[]', '2019-09-19 07:11:40', '2019-09-19 07:11:40'),
+(2779, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-19 07:13:59', '2019-09-19 07:13:59'),
+(2780, 1, 'admin/auth/menu/42/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2019-09-19 07:14:53', '2019-09-19 07:14:53');
 
 -- --------------------------------------------------------
 
@@ -2921,32 +3146,16 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `users`
---
-
-CREATE TABLE `users` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- 表的结构 `wbsdb_areas`
 --
 
 CREATE TABLE `wbsdb_areas` (
   `id` bigint(20) UNSIGNED NOT NULL COMMENT '地区ID',
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级地区ID',
-  `name` char(64) NOT NULL COMMENT '地区标识',
-  `title` char(64) NOT NULL COMMENT '地区中文名',
+  `name` char(64) CHARACTER SET utf8 NOT NULL COMMENT '地区标识',
+  `title` char(64) CHARACTER SET utf8 NOT NULL COMMENT '地区中文名',
   `order` bigint(10) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='地区表' ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='地区表' ROW_FORMAT=COMPACT;
 
 --
 -- 转存表中的数据 `wbsdb_areas`
@@ -6613,22 +6822,22 @@ INSERT INTO `wbsdb_areas` (`id`, `parent_id`, `name`, `title`, `order`) VALUES
 
 CREATE TABLE `wbsdb_articles` (
   `id` int(10) NOT NULL,
-  `title` varchar(256) NOT NULL COMMENT '文章标题',
-  `flag` varchar(30) DEFAULT NULL,
+  `title` varchar(256) CHARACTER SET utf8 NOT NULL COMMENT '文章标题',
+  `flag` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
   `parent_id` int(10) NOT NULL COMMENT '分类ID',
-  `keyword` varchar(255) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `content` text,
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `content` text CHARACTER SET utf8,
   `hits` int(10) DEFAULT '0' COMMENT '点击率',
   `favs` int(10) DEFAULT '0' COMMENT '收藏数',
   `status` tinyint(1) DEFAULT NULL COMMENT '文章状态1：开启|0：关闭',
-  `conver` varchar(255) DEFAULT NULL COMMENT '封面图',
+  `conver` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '封面图',
   `author_id` int(4) DEFAULT '1',
   `created_date` date DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='文章';
 
 --
 -- 转存表中的数据 `wbsdb_articles`
@@ -6653,18 +6862,18 @@ CREATE TABLE `wbsdb_asks` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT '分类id',
   `level` tinyint(1) UNSIGNED DEFAULT '0' COMMENT '级别',
-  `title` varchar(100) NOT NULL DEFAULT '',
-  `thumb` varchar(255) DEFAULT '' COMMENT '缩略图',
+  `title` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `thumb` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '缩略图',
   `hits` int(10) UNSIGNED DEFAULT '35' COMMENT '浏览',
   `comments` int(10) UNSIGNED DEFAULT '0' COMMENT '回复数',
-  `content` mediumtext COMMENT '内容',
+  `content` mediumtext CHARACTER SET utf8 COMMENT '内容',
   `quesid` int(10) UNSIGNED DEFAULT '0' COMMENT '最佳答案',
   `author_id` int(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT '提问者id',
   `hidden` tinyint(1) UNSIGNED DEFAULT '0' COMMENT '是否匿名，0否，1是',
   `status` tinyint(1) DEFAULT '0' COMMENT '状态',
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='提问';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='提问';
 
 --
 -- 转存表中的数据 `wbsdb_asks`
@@ -6684,19 +6893,19 @@ CREATE TABLE `wbsdb_categories` (
   `id` int(10) UNSIGNED NOT NULL,
   `parent_id` int(11) DEFAULT '0',
   `order` int(11) DEFAULT '1',
-  `typename` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
-  `typedir` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `dirposition` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `content` text COLLATE utf8_unicode_ci,
+  `typename` varchar(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `typedir` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `keyword` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `dirposition` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
   `mid` int(4) DEFAULT '1',
   `status` int(4) DEFAULT '1',
   `author_id` bigint(10) DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `deleted_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 转存表中的数据 `wbsdb_categories`
@@ -6737,62 +6946,62 @@ INSERT INTO `wbsdb_categories` (`id`, `parent_id`, `order`, `typename`, `typedir
 
 CREATE TABLE `wbsdb_companys` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `combrand` varchar(255) NOT NULL DEFAULT '' COMMENT '品牌名',
-  `purl` varchar(30) NOT NULL DEFAULT '' COMMENT '品牌url',
-  `comname` varchar(100) NOT NULL DEFAULT '' COMMENT '公司名',
+  `combrand` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '' COMMENT '品牌名',
+  `purl` varchar(30) CHARACTER SET utf8 NOT NULL DEFAULT '' COMMENT '品牌url',
+  `comname` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '' COMMENT '公司名',
   `level` tinyint(1) UNSIGNED DEFAULT '0' COMMENT '等级',
   `status` int(4) DEFAULT '1' COMMENT '查看状态',
   `vip` smallint(2) UNSIGNED DEFAULT '0' COMMENT '级别',
-  `type` varchar(100) DEFAULT '' COMMENT '公司类型',
+  `type` varchar(100) CHARACTER SET utf8 DEFAULT '' COMMENT '公司类型',
   `catid` bigint(11) DEFAULT '0' COMMENT '子栏目ID',
   `parent_id` bigint(20) DEFAULT '0' COMMENT '父栏目',
   `province` int(10) UNSIGNED DEFAULT '0' COMMENT '省份ID',
   `city` bigint(10) DEFAULT NULL,
   `district` bigint(10) DEFAULT NULL,
-  `mode` varchar(100) DEFAULT '' COMMENT '经营模式',
+  `mode` varchar(100) CHARACTER SET utf8 DEFAULT '' COMMENT '经营模式',
   `capital` float UNSIGNED DEFAULT '0' COMMENT '注册资本',
-  `size` varchar(100) DEFAULT '' COMMENT '投资规模',
-  `regyear` varchar(30) DEFAULT '' COMMENT '注册年份',
-  `business` varchar(255) DEFAULT '' COMMENT '主要经营范围',
-  `telephone` varchar(50) DEFAULT '' COMMENT '电话',
-  `fax` varchar(50) DEFAULT '' COMMENT '传真',
-  `mail` varchar(50) DEFAULT '' COMMENT '电子邮件',
-  `address` varchar(255) DEFAULT '' COMMENT '地址',
-  `imagesarr` varchar(255) DEFAULT '' COMMENT '图集',
-  `homepage` varchar(255) DEFAULT '' COMMENT '公司网址',
-  `thumb` varchar(255) DEFAULT '' COMMENT '缩略图',
-  `introduce` varchar(255) DEFAULT '' COMMENT '简介',
+  `size` varchar(100) CHARACTER SET utf8 DEFAULT '' COMMENT '投资规模',
+  `regyear` varchar(30) CHARACTER SET utf8 DEFAULT '' COMMENT '注册年份',
+  `business` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '主要经营范围',
+  `telephone` varchar(50) CHARACTER SET utf8 DEFAULT '' COMMENT '电话',
+  `fax` varchar(50) CHARACTER SET utf8 DEFAULT '' COMMENT '传真',
+  `mail` varchar(50) CHARACTER SET utf8 DEFAULT '' COMMENT '电子邮件',
+  `address` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '地址',
+  `imagesarr` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '图集',
+  `homepage` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '公司网址',
+  `thumb` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '缩略图',
+  `introduce` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '简介',
   `hits` int(10) UNSIGNED DEFAULT '50' COMMENT '点击次数',
   `mdnum` bigint(20) DEFAULT '10' COMMENT '门店数',
   `yxnum` bigint(20) DEFAULT '50' COMMENT '意向加盟',
   `sqnum` bigint(20) DEFAULT '25' COMMENT '申请加盟',
-  `renqun` varchar(199) DEFAULT '自由创业' COMMENT '适合人群',
-  `title` varchar(255) DEFAULT '' COMMENT '标题',
-  `keyword` varchar(255) DEFAULT '' COMMENT '关键词',
-  `description` varchar(255) DEFAULT '' COMMENT '描述',
-  `content` text COMMENT '品牌内容',
+  `renqun` varchar(199) CHARACTER SET utf8 DEFAULT '自由创业' COMMENT '适合人群',
+  `title` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '标题',
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '关键词',
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '描述',
+  `content` text CHARACTER SET utf8 COMMENT '品牌内容',
   `author_id` int(4) DEFAULT '0' COMMENT '添加用户人',
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='公司';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='公司';
 
 --
 -- 转存表中的数据 `wbsdb_companys`
 --
 
 INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `status`, `vip`, `type`, `catid`, `parent_id`, `province`, `city`, `district`, `mode`, `capital`, `size`, `regyear`, `business`, `telephone`, `fax`, `mail`, `address`, `imagesarr`, `homepage`, `thumb`, `introduce`, `hits`, `mdnum`, `yxnum`, `sqnum`, `renqun`, `title`, `keyword`, `description`, `content`, `author_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 1, 1, '个体', 8, 6, 5, NULL, NULL, '张氏大食堂', 100, '3', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, 10, 50, 25, '自由创业', '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-15 09:46:00', NULL),
 (7, '美容美发', 'mrmf', '美容美发', 0, 1, 1, NULL, 8, 6, 4, 49, 671, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, '北京', '[\"images\\/6b90194cae3220bbec83c4ca36c556a9.jpg\",\"images\\/67ce4ae70ceef2a49eefba2d43e2e798.jpg\",\"images\\/ab4c8c226d15e054d0e08e77c257323d.jpg\",\"images\\/90ca1569f0ed3208ad391f5284e8fe78.jpg\"]', NULL, 'images/03acf693d86b141fad58793a5fe9382d.jpg', NULL, 214, 10, 50, 25, '自由创业', '美容美发', '美容美发', '美容美发', NULL, 1, '2019-08-14 16:50:31', '2019-09-05 09:27:56', NULL),
 (8, '大东北烤肉拌饭', 'ddbbf', '大东北烤肉拌饭', 0, 1, 1, '个体', 8, 6, 6, 74, 918, '大东北烤肉拌饭', 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/d5a6be28f7b1b84d652b6f9a9aa5764b.jpg', '大东北烤肉拌饭', 107, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:54:11', '2019-08-15 09:54:11', NULL),
 (9, '流弊的猪脚饭', 'lbdzjf', '流弊的猪脚饭', 0, 1, 1, NULL, 8, 6, 3, 38, 508, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1683ea58ebeec52fd3a2fe32bf71f92f.png', '流弊的猪脚饭', 417, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:55:13', '2019-08-15 09:55:13', NULL),
 (10, '72街排骨饭', 'paiguf', '72街排骨饭', 0, 1, 1, NULL, 8, 6, 5, 61, 801, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/1a6e3a283df68bed8764523b5121a63a.png', '72街排骨饭', 444, 10, 50, 25, '自由创业', '72街排骨饭', NULL, NULL, NULL, 1, '2019-08-15 09:56:07', '2019-08-15 09:56:07', NULL),
-(5, '张氏大食堂', 'zsdst', '张氏大食堂3', 0, 1, 1, '个体', 8, 6, 5, NULL, NULL, '张氏大食堂', 100, '3', '2010', '快餐午餐', '029 1111 4444', '02155556666', '123@qq.com', '北京', '[\"images\\/f319c5fcc64603ddf30e6dcf42e266d1.jpg\",\"images\\/39b566bedb9a8f82e74c20e46b6e850c.png\"]', 'http://www.baidu.com', 'images/dbf572897f147cab366c3ae0f540aef7.jpg', '张氏大食堂', 287, 10, 50, 25, '自由创业', '张氏大食堂', '张氏大食堂', '张氏大食堂', NULL, 1, '2019-08-06 14:20:50', '2019-08-15 09:46:00', NULL),
 (11, '米高林铁板饭', 'mgl', '米高林铁板饭', 0, 1, 1, NULL, 8, 6, 13, NULL, NULL, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/9798c0410648c8dffd172e9ba87f59f4.jpg', '米高林铁板饭', 223, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:56:49', '2019-08-16 10:09:22', NULL),
 (12, '吉米屋快餐', 'jmwkc', '吉米屋快餐', 0, 1, 1, NULL, 8, 6, 22, 307, 2657, NULL, 100, '3', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/420c03843044abe51e4a8f223846b9bd.png', '吉米屋快餐', 279, 10, 50, 25, '自由创业', NULL, NULL, NULL, NULL, 1, '2019-08-15 09:57:46', '2019-08-15 09:57:46', NULL),
 (13, '臭豆腐', 'choudoufu', '臭豆腐', 0, 1, 1, '企业', 14, 5, 4, 49, 671, NULL, 100, '5', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'images/5eae7eea3aaef49cacdc3680da5f206a.png', '臭豆腐', 400, 10, 50, 25, '自由创业', '臭豆腐', '臭豆腐', '臭豆腐', NULL, 1, '2019-08-16 10:34:18', '2019-08-16 10:34:18', NULL),
+(27, '炒饭别走', 'chaofanbz', '炒饭别走', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 0, '4', '2014-09-10', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省徐州市', '[\"images/yht19082716CA9FDE2F3.png\",\"images/yht19082716CA9FDF6E7.png\",\"images/yht19082716CA9FE0C50.png\",\"images/yht19082716CA9FE2AC3.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBD09934E.jpg', '云海天发布', 1143, 58, 886, 605, '自由创业', '炒饭别走加盟店怎么样_炒饭别走多少钱_品牌优势', '炒饭别走加盟店,炒饭别走加盟怎么样,炒饭别走多少钱', '炒饭别走加盟店品牌详情、炒饭别走加盟费用、炒饭别走品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒饭别走。', '', 1, '2019-08-27 05:36:00', '2019-08-27 05:36:00', NULL),
 (28, '16便当', 'shiliubian', '16便当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '5', '2016-07-05', '快餐', '01077777777', '01077777777', '123@qq.com', '辽宁省沈阳市沈北新区辉山聚农路34号', '[\"images/yht19082716C9AAF2C8E.png\",\"images/yht19082716C9AAF4342.png\",\"images/yht19082716C9AAF592E.png\",\"images/yht19082716C9AAF744D.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBCE40442.jpg', '云海天发布', 1225, 100, 916, 430, '自由创业', '16便当加盟店怎么样_16便当多少钱_品牌优势', '16便当加盟店,16便当加盟怎么样,16便当多少钱', '16便当加盟店品牌详情、16便当加盟费用、16便当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选16便当。', '', 1, '2019-08-27 05:36:10', '2019-08-27 05:36:10', NULL),
 (29, '炒民在膳', 'chaominzs', '炒民在膳', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '4', '2017-05-09', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省广州市', '[\"images/yht19082716C95998516.png\",\"images/yht19082716C95999516.png\",\"images/yht19082716C9599AC06.png\",\"images/yht19082716C9599BBB7.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB730C980.jpg', '云海天发布', 1641, 98, 776, 301, '自由创业', '炒民在膳加盟店怎么样_炒民在膳多少钱_品牌优势', '炒民在膳加盟店,炒民在膳加盟怎么样,炒民在膳多少钱', '炒民在膳加盟店品牌详情、炒民在膳加盟费用、炒民在膳品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒民在膳。', '', 1, '2019-08-27 05:36:21', '2019-08-27 05:36:21', NULL),
-(27, '炒饭别走', 'chaofanbz', '炒饭别走', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 0, '4', '2014-09-10', '快餐', '01077777777', '01077777777', '123@qq.com', '江苏省徐州市', '[\"images/yht19082716CA9FDE2F3.png\",\"images/yht19082716CA9FDF6E7.png\",\"images/yht19082716CA9FE0C50.png\",\"images/yht19082716CA9FE2AC3.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CBD09934E.jpg', '云海天发布', 1143, 58, 886, 605, '自由创业', '炒饭别走加盟店怎么样_炒饭别走多少钱_品牌优势', '炒饭别走加盟店,炒饭别走加盟怎么样,炒饭别走多少钱', '炒饭别走加盟店品牌详情、炒饭别走加盟费用、炒饭别走品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选炒饭别走。', '', 1, '2019-08-27 05:36:00', '2019-08-27 05:36:00', NULL),
 (30, '点点当', 'dndndg', '点点当', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '3', '2015-04-20', '快餐', '01077777777', '01077777777', '123@qq.com', '广东省深圳市', '[\"images/yht19082716C95515C13.jpg\",\"images/yht19082716C955169B3.jpg\",\"images/yht19082716C955177CB.jpg\",\"images/yht19082716C9551834B.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB6F02070.jpg', '云海天发布', 1130, 75, 868, 248, '自由创业', '点点当加盟店怎么样_点点当多少钱_品牌优势', '点点当加盟店,点点当加盟怎么样,点点当多少钱', '点点当加盟店品牌详情、点点当加盟费用、点点当品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选点点当。', '', 1, '2019-08-27 05:36:25', '2019-08-27 05:36:25', NULL),
 (31, '九秒拌铁板饭', 'jmbtbf', '九秒拌铁板饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 3, '4', '2010-03-13', '快餐', '01077777777', '01077777777', '123@qq.com', '山东省济南市', '[\"images/yht19082716C84807C6C.jpg\",\"images/yht19082716C84808500.jpg\",\"images/yht19082716C84808C0C.jpg\",\"images/yht19082716C848092E0.jpg\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716CB8494E4F.jpg', '云海天发布', 1797, 45, 908, 501, '自由创业', '九秒拌铁板饭加盟店怎么样_九秒拌铁板饭多少钱_品牌优势', '九秒拌铁板饭加盟店,九秒拌铁板饭加盟怎么样,九秒拌铁板饭多少钱', '九秒拌铁板饭加盟店品牌详情、九秒拌铁板饭加盟费用、九秒拌铁板饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选九秒拌铁板饭。', '', 1, '2019-08-27 05:36:28', '2019-08-27 05:36:28', NULL),
 (32, '东厂烧饭', 'dongchang', '东厂烧饭', 0, 1, 1, '个体', 7, 5, 10, 0, 0, '经销', 4, '3', '2015-12-16', '快餐', '01077777777', '01077777777', '123@qq.com', '浙江省温州市', '[\"images/yht19082716C8E837276.png\",\"images/yht19082716C8E839A52.png\",\"images/yht19082716C8E83B91B.png\",\"images/yht19082716C8E83CD63.png\"]', 'https://github.com/imnotdoubi/laravel-admin', 'images/yht19082716C8E83307F.jpg', '云海天发布', 1636, 90, 738, 545, '自由创业', '东厂烧饭加盟店怎么样_东厂烧饭多少钱_品牌优势', '东厂烧饭加盟店,东厂烧饭加盟怎么样,东厂烧饭多少钱', '东厂烧饭加盟店品牌详情、东厂烧饭加盟费用、东厂烧饭品牌优势、加盟条件等品牌信息，餐饮创业加盟找kuaican品牌，首选东厂烧饭。', '', 1, '2019-08-27 05:36:35', '2019-08-27 05:36:35', NULL),
@@ -6814,16 +7023,16 @@ INSERT INTO `wbsdb_companys` (`id`, `combrand`, `purl`, `comname`, `level`, `sta
 
 CREATE TABLE `wbsdb_company_datas` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `content` text COMMENT '品牌内容'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='公司内容';
+  `content` text CHARACTER SET utf8 COMMENT '品牌内容'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='公司内容';
 
 --
 -- 转存表中的数据 `wbsdb_company_datas`
 --
 
 INSERT INTO `wbsdb_company_datas` (`id`, `content`) VALUES
-(7, '<p>阿萨德发顺丰<br/></p>'),
 (5, '<p>时代大厦</p><p>撒旦法<img src=\"/upload/image/20190806/1565079559.jpg\" title=\"1565079559.jpg\" alt=\"111111.jpg\"/></p><p><br/></p><p>sdf<img src=\"/upload/image/20190806/1565080532.png\" title=\"1565080532.png\" alt=\"QQ截图20190228101344.png\"/>sdf ty<br/></p>'),
+(7, '<p>阿萨德发顺丰<br/></p>'),
 (8, '<p>大东北烤肉拌饭品牌，是隶属于辽宁大东北烤肉拌饭有限公司旗下。 \r\n大东北烤肉拌饭在我国成功运营多年，是深受消费者欢迎的品牌，大东北烤肉拌饭加盟经营不愁没生意可做，是一个靠谱的投资品牌。大东北烤肉拌饭总部提供完善的加盟培训体系，专业团队扶持创业，大东北烤肉拌饭保证客户能掌握开店运营的综合技巧，大东北烤肉拌饭加盟毛利高，收益好。</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834044.png\" title=\"大东北烤肉拌饭\" alt=\"大东北烤肉拌饭\" width=\"600\" height=\"400\"/></p><p>斯蒂芬<br/></p>'),
 (9, '<p>流弊的猪脚饭是通过高度过滤，除去多余油脂，吃多少也不会油腻，猪脚的配方以及制作的精心精准度也是几十年来摸索的结果，关键的是本猪脚整个制作过程到出炉，没有掺半点对人体有害的辣椒精、防腐剂等，一律让您放心食用。烤技独步天下，美味无与伦比，烤猪蹄一推出，便快速风靡全国，受到了广大消费者的强烈追捧，不管男女老少，百姓名流，爱吃者络绎不绝，常常出现排队抢购的火爆场面令人惊叹!</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834110.png\"/></p><p><strong>秘传配方，口味多样</strong></p><p>流弊的猪脚饭秘传配方，遵循健康饮食理念，更加地</p><p><br/></p>'),
 (10, '<p>七十二街排骨饭隶属于广州七十二街餐饮连锁发展有限公司，广州七十二街餐饮连锁发展有限公司2008年在广州创立以来，已经在珠江三角地区开设的直营店有十多家，一跃成为华南地区领先的中式快餐品牌，并先后获得了2009年商业联合会“最具投资潜力品牌”。2010年广东第一商业网推荐“羊城十大美食”，还连续获得2011年、2012年“广州饮食天王人气美食奖”，作为中式快餐的领先品牌，72街也是目前增长速度最快的中式连锁餐饮快餐品牌。</p><p style=\"text-align: center;\"><img src=\"/upload/image/20190815/1565834166.jpg\"/></p><p>中国20大文化符号里</p><p><br/></p>'),
@@ -6883,34 +7092,34 @@ CREATE TABLE `wbsdb_malls` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `level` tinyint(1) UNSIGNED DEFAULT '0',
-  `title` varchar(100) NOT NULL DEFAULT '',
-  `brand` varchar(100) NOT NULL DEFAULT '' COMMENT '商品名',
+  `title` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `brand` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '' COMMENT '商品名',
   `num` bigint(20) DEFAULT '0' COMMENT '数量',
   `price` decimal(10,2) UNSIGNED NOT NULL DEFAULT '0.00',
   `amount` int(10) UNSIGNED DEFAULT '0' COMMENT '库存',
-  `thumb` varchar(255) DEFAULT '' COMMENT '图集',
-  `litpic` varchar(199) DEFAULT NULL,
+  `thumb` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '图集',
+  `litpic` varchar(199) CHARACTER SET utf8 DEFAULT NULL,
   `province` bigint(10) DEFAULT '0',
   `city` bigint(10) DEFAULT '0',
-  `content` text COMMENT '商品详情',
-  `keyword` varchar(255) DEFAULT '',
-  `introduce` varchar(255) NOT NULL DEFAULT '',
+  `content` text CHARACTER SET utf8 COMMENT '商品详情',
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT '',
+  `introduce` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
   `status` tinyint(1) DEFAULT '0',
   `hits` int(10) UNSIGNED DEFAULT '30' COMMENT '浏览',
-  `n1` varchar(100) DEFAULT NULL COMMENT '可选属性1',
-  `n2` varchar(100) DEFAULT NULL COMMENT '可选属性2',
+  `n1` varchar(100) CHARACTER SET utf8 DEFAULT NULL COMMENT '可选属性1',
+  `n2` varchar(100) CHARACTER SET utf8 DEFAULT NULL COMMENT '可选属性2',
   `author_id` bigint(20) DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='商城';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='商城';
 
 --
 -- 转存表中的数据 `wbsdb_malls`
 --
 
 INSERT INTO `wbsdb_malls` (`id`, `parent_id`, `level`, `title`, `brand`, `num`, `price`, `amount`, `thumb`, `litpic`, `province`, `city`, `content`, `keyword`, `introduce`, `status`, `hits`, `n1`, `n2`, `author_id`, `created_at`, `updated_at`) VALUES
-(3, 11, 1, '测试商城111', '测试商城111', 100, '10.00', 100, '[\"images\\/87d81c8301b4bf2afa32067e9c13eb96.jpg\",\"images\\/63751a8e2bade161cb034e5451c6cb9e.jpg\",\"images\\/7fce63e4412f4679aa8182c6b17d26a0.jpg\",\"images\\/f77aa66fe654d372c00da05b2052be63.jpg\"]', 'images/e487e669c4c485634e06914741db3b88.jpg', 2, 36, '<p>撒旦发射点发</p><p>阿道夫</p><p><img src=\"/upload/image/20190904/1567577704.png\" title=\"1567577704.png\" alt=\"01.png\"/></p><p>阿斯蒂芬<br/></p>', '', '', 0, 491, NULL, NULL, 1, '2019-09-04 14:15:15', '2019-09-04 15:52:12'),
-(2, 11, 0, '紧急铝板', 'nick', 10, '20.00', 300, '[\"images\\/c1285e4ea3e3a0e7c329b4d447d55a46.jpg\",\"images\\/56effd71ee53e4a66913fb30ac5c6443.jpg\"]', 'images/0e77072fec2af4bc1250b17c4ed7820b.jpg', 2, 36, '<p>就六角恐龙d<img src=\"/upload/image/20190801/1564648298.png\" title=\"1564648298.png\" alt=\"QQ截图20190228101344.png\"/></p><p>撒旦法<br/></p>', '', '', 1, 603, '手机：13455556666', NULL, 1, '2019-08-01 16:31:48', '2019-09-05 09:55:22');
+(2, 11, 0, '紧急铝板', 'nick', 10, '20.00', 300, '[\"images\\/c1285e4ea3e3a0e7c329b4d447d55a46.jpg\",\"images\\/56effd71ee53e4a66913fb30ac5c6443.jpg\"]', 'images/0e77072fec2af4bc1250b17c4ed7820b.jpg', 2, 36, '<p>就六角恐龙d<img src=\"/upload/image/20190801/1564648298.png\" title=\"1564648298.png\" alt=\"QQ截图20190228101344.png\"/></p><p>撒旦法<br/></p>', '', '', 1, 603, '手机：13455556666', NULL, 1, '2019-08-01 16:31:48', '2019-09-05 09:55:22'),
+(3, 11, 1, '测试商城111', '测试商城111', 100, '10.00', 100, '[\"images\\/87d81c8301b4bf2afa32067e9c13eb96.jpg\",\"images\\/63751a8e2bade161cb034e5451c6cb9e.jpg\",\"images\\/7fce63e4412f4679aa8182c6b17d26a0.jpg\",\"images\\/f77aa66fe654d372c00da05b2052be63.jpg\"]', 'images/e487e669c4c485634e06914741db3b88.jpg', 2, 36, '<p>撒旦发射点发</p><p>阿道夫</p><p><img src=\"/upload/image/20190904/1567577704.png\" title=\"1567577704.png\" alt=\"01.png\"/></p><p>阿斯蒂芬<br/></p>', '', '', 0, 491, NULL, NULL, 1, '2019-09-04 14:15:15', '2019-09-04 15:52:12');
 
 -- --------------------------------------------------------
 
@@ -6937,24 +7146,49 @@ INSERT INTO `wbsdb_migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `wbsdb_modules`
+--
+
+CREATE TABLE `wbsdb_modules` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` bigint(5) DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 转存表中的数据 `wbsdb_modules`
+--
+
+INSERT INTO `wbsdb_modules` (`id`, `name`, `order`) VALUES
+(1, '文章列表', 1),
+(2, '单页面', 2),
+(3, '项目类型', 3),
+(4, '问答', 4),
+(5, '商城', 5),
+(6, '供应', 6),
+(7, '图库', 7);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `wbsdb_news`
 --
 
 CREATE TABLE `wbsdb_news` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `comid` varchar(30) DEFAULT '0',
-  `title` varchar(100) NOT NULL DEFAULT '',
+  `comid` varchar(30) CHARACTER SET utf8 DEFAULT '0',
+  `title` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '',
   `hits` int(10) UNSIGNED DEFAULT '50',
-  `thumb` varchar(255) DEFAULT NULL,
+  `thumb` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
-  `keyword` varchar(255) DEFAULT '',
-  `description` varchar(255) DEFAULT '',
-  `content` text,
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT '',
+  `content` text CHARACTER SET utf8,
   `author_id` int(10) DEFAULT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='公司新闻';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='公司新闻';
 
 --
 -- 转存表中的数据 `wbsdb_news`
@@ -7014,26 +7248,26 @@ INSERT INTO `wbsdb_phonemanages` (`id`, `phoneno`, `name`, `address`, `ip`, `not
 CREATE TABLE `wbsdb_photos` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `title` varchar(100) NOT NULL DEFAULT '',
-  `thumb` varchar(255) NOT NULL DEFAULT '',
-  `conver` varchar(255) DEFAULT '' COMMENT '图集',
-  `introduce` varchar(255) DEFAULT '' COMMENT '简介',
-  `keyword` varchar(255) DEFAULT '' COMMENT '关键词',
-  `description` varchar(255) DEFAULT '' COMMENT '描述',
+  `title` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `thumb` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `conver` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '图集',
+  `introduce` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '简介',
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '关键词',
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '描述',
   `hits` int(10) UNSIGNED DEFAULT '30',
   `status` tinyint(1) DEFAULT '0',
   `author_id` bigint(20) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='图库';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='图库';
 
 --
 -- 转存表中的数据 `wbsdb_photos`
 --
 
 INSERT INTO `wbsdb_photos` (`id`, `parent_id`, `title`, `thumb`, `conver`, `introduce`, `keyword`, `description`, `hits`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
-(3, 24, '风光1', 'images/c7995b46db4632a6d1ea83d32b37f512.jpg', '[\"images\\/daba5522a8cb0a37fbc70d50aacf416a.jpg\",\"images\\/a49b43849f24a19fdc8d9956b3063ee5.jpg\"]', '旅行风光1', NULL, NULL, 162, 1, 1, '2019-09-05 06:07:41', '2019-09-05 06:07:41'),
 (2, 13, '测试图片1', 'images/755281af66f39aca22096e0adc0e05d1.jpg', '[\"images\\/9143b8f559793e7e14fc6980ad74f6fc.jpg\",\"images\\/dc20ee45a50b75632be98c6ad2cbea91.png\"]', '测试图片1测试图片1', NULL, NULL, 443, 1, 1, '2019-08-05 03:20:41', '2019-08-05 03:20:41'),
+(3, 24, '风光1', 'images/c7995b46db4632a6d1ea83d32b37f512.jpg', '[\"images\\/daba5522a8cb0a37fbc70d50aacf416a.jpg\",\"images\\/a49b43849f24a19fdc8d9956b3063ee5.jpg\"]', '旅行风光1', NULL, NULL, 162, 1, 1, '2019-09-05 06:07:41', '2019-09-05 06:07:41'),
 (4, 24, '风光2', 'images/42416784d7c73794aaed441a53c83e41.jpg', '[\"images\\/9446048f723a59d56e57594699908552.jpg\",\"images\\/bde5f85084eba5781b829c39ba794c33.jpg\"]', '旅行风光2', NULL, NULL, 396, 1, 1, '2019-09-05 06:08:09', '2019-09-05 06:08:09');
 
 -- --------------------------------------------------------
@@ -7045,16 +7279,16 @@ INSERT INTO `wbsdb_photos` (`id`, `parent_id`, `title`, `thumb`, `conver`, `intr
 CREATE TABLE `wbsdb_questions` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `askid` bigint(20) UNSIGNED NOT NULL DEFAULT '0' COMMENT '提问id',
-  `content` mediumtext NOT NULL COMMENT '回答内容',
+  `content` mediumtext CHARACTER SET utf8 NOT NULL COMMENT '回答内容',
   `author_id` bigint(20) DEFAULT '0' COMMENT '回答者id',
   `fandui` bigint(20) DEFAULT '0' COMMENT '反对',
   `zhichi` bigint(20) UNSIGNED DEFAULT '0' COMMENT '支持',
   `hidden` tinyint(1) UNSIGNED DEFAULT '0' COMMENT '是否隐藏',
-  `ip` varchar(50) DEFAULT '',
+  `ip` varchar(50) CHARACTER SET utf8 DEFAULT '',
   `status` tinyint(1) DEFAULT '0' COMMENT '状态',
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='回答';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='回答';
 
 --
 -- 转存表中的数据 `wbsdb_questions`
@@ -7062,8 +7296,8 @@ CREATE TABLE `wbsdb_questions` (
 
 INSERT INTO `wbsdb_questions` (`id`, `askid`, `content`, `author_id`, `fandui`, `zhichi`, `hidden`, `ip`, `status`, `created_at`, `updated_at`) VALUES
 (1, 2, '<p>反正比不行快<br/></p>', 1, 13, 43, 0, '', 1, '2019-08-01 14:20:47', '2019-08-01 16:33:42'),
-(4, 2, '<p>绿色环保，可行<br/></p>', 1, 7, 47, 0, '', 1, '2019-08-01 14:35:41', '2019-08-01 14:35:41'),
-(3, 3, '<p>10000 不用谢<br/></p>', 1, 14, 31, 0, '', 1, '2019-08-01 14:31:44', '2019-08-01 14:31:44');
+(3, 3, '<p>10000 不用谢<br/></p>', 1, 14, 31, 0, '', 1, '2019-08-01 14:31:44', '2019-08-01 14:31:44'),
+(4, 2, '<p>绿色环保，可行<br/></p>', 1, 7, 47, 0, '', 1, '2019-08-01 14:35:41', '2019-08-01 14:35:41');
 
 -- --------------------------------------------------------
 
@@ -7077,42 +7311,43 @@ CREATE TABLE `wbsdb_sells` (
   `typeid` smallint(2) UNSIGNED DEFAULT '0' COMMENT '信息类型',
   `areaid` int(10) UNSIGNED DEFAULT '0',
   `level` tinyint(1) UNSIGNED DEFAULT '0',
-  `title` varchar(100) NOT NULL DEFAULT '',
-  `introduce` varchar(255) DEFAULT '',
-  `n1` varchar(100) DEFAULT NULL,
-  `n2` varchar(100) DEFAULT NULL,
-  `v1` varchar(100) DEFAULT NULL,
-  `v2` varchar(100) DEFAULT NULL,
-  `brand` varchar(100) DEFAULT '' COMMENT '产品品牌',
-  `content` mediumtext COMMENT '供应说明',
+  `title` varchar(100) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `introduce` varchar(255) CHARACTER SET utf8 DEFAULT '',
+  `n1` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `n2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `v1` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `v2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `brand` varchar(100) CHARACTER SET utf8 DEFAULT '' COMMENT '产品品牌',
+  `content` mediumtext CHARACTER SET utf8 COMMENT '供应说明',
   `price` decimal(10,2) UNSIGNED DEFAULT '0.00',
   `minamount` float UNSIGNED DEFAULT '0' COMMENT '最小起订量',
   `amount` float UNSIGNED DEFAULT '0' COMMENT '供货总量',
-  `keyword` varchar(255) DEFAULT '',
+  `keyword` varchar(255) CHARACTER SET utf8 DEFAULT '',
   `hits` int(10) UNSIGNED DEFAULT '10',
-  `litpic` varchar(255) DEFAULT NULL,
-  `thumb` varchar(255) DEFAULT '' COMMENT '图片集',
-  `company` varchar(100) DEFAULT '',
-  `telephone` varchar(50) DEFAULT '' COMMENT '电话',
-  `address` varchar(255) DEFAULT '' COMMENT '地址',
-  `email` varchar(50) DEFAULT '',
-  `qq` varchar(20) DEFAULT '',
-  `wx` varchar(50) DEFAULT '',
+  `litpic` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `thumb` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '图片集',
+  `company` varchar(100) CHARACTER SET utf8 DEFAULT '',
+  `telephone` varchar(50) CHARACTER SET utf8 DEFAULT '' COMMENT '电话',
+  `address` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '地址',
+  `email` varchar(50) CHARACTER SET utf8 DEFAULT '',
+  `qq` varchar(20) CHARACTER SET utf8 DEFAULT '',
+  `wx` varchar(50) CHARACTER SET utf8 DEFAULT '',
   `totime` int(10) UNSIGNED DEFAULT '0' COMMENT '过期时间',
   `totimeid` bigint(4) DEFAULT '1' COMMENT '过期时间设置',
   `status` tinyint(1) DEFAULT '0',
   `author_id` bigint(10) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='供应';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='供应';
 
 --
 -- 转存表中的数据 `wbsdb_sells`
 --
 
 INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `title`, `introduce`, `n1`, `n2`, `v1`, `v2`, `brand`, `content`, `price`, `minamount`, `amount`, `keyword`, `hits`, `litpic`, `thumb`, `company`, `telephone`, `address`, `email`, `qq`, `wx`, `totime`, `totimeid`, `status`, `author_id`, `created_at`, `updated_at`) VALUES
-(2, 12, 3, 1, 1, '二手汽车供应', '', '型号', NULL, '奥迪A8', NULL, '奥迪', '<p>阿萨德发生地方<br/></p>', '100.00', 1, 5, '', 500, 'images/d9b95814dc6ac8d0a9fdc457c1b235c3.jpg', '[\"images\\/e0709092ed332350d2ab3adf8957992a.jpg\"]', '奥迪公司', '15688887777', '北京', '123@qq.com', '', NULL, 0, 1, 1, 1, '2019-08-02 03:39:10', '2019-09-05 02:37:12'),
-(3, 12, 6, 1, 1, '大众汽车', '', NULL, NULL, NULL, NULL, '大众', '<p>阿萨德发生</p><p>大众汽车</p><p><img src=\"/upload/image/20190905/1567652612.jpg\" title=\"1567652612.jpg\" alt=\"25898347.jpg\"/></p><p>阿斯蒂芬<br/></p>', '10.00', 10, 100, '', 102, 'images/58405eb798a463e116aee00cec13530e.jpg', '[\"images\\/f55e21a1939b39ddf0908fc2a45e8c60.jpg\",\"images\\/399ed6561c558664f216577a439157ec.jpg\"]', '大众汽车公司', '15688887777', '北京', NULL, '', '123456', 0, 1, 1, 1, '2019-09-05 03:04:21', '2019-09-05 03:05:41');
+(2, 12, 3, 1, 1, '二手汽车供应', '', '型号', NULL, '奥迪A8', NULL, '奥迪', '<p>阿萨德发生地方<br/></p>', '100.00', 1, 5, '', 500, 'images/d9b95814dc6ac8d0a9fdc457c1b235c3.jpg', '[\"images\\/e0709092ed332350d2ab3adf8957992a.jpg\"]', '奥迪公司', '15688887777', '北京', '123@qq.com', '', NULL, 0, 1, 1, 16, '2019-08-02 03:39:10', '2019-09-05 02:37:12'),
+(3, 12, 1, 1, 1, '大众汽车', '', NULL, NULL, NULL, NULL, '大众8', '<p>555的</p><p>撒旦法撒旦发</p><p><img src=\"/upload/image/20190918/1568798458.jpg\" title=\"1568798458.jpg\" alt=\"25898347.jpg\"/>阿斯蒂芬</p>', '10.00', 10, 100, '', 102, 'images/d9b95814dc6ac8d0a9fdc457c1b235c3.jpg', '[\"images\\/f55e21a1939b39ddf0908fc2a45e8c60.jpg\",\"images\\/399ed6561c558664f216577a439157ec.jpg\"]', NULL, '15688887777', '北京', NULL, NULL, NULL, 0, 1, NULL, 16, '2019-09-05 03:04:21', '2019-09-18 09:21:01'),
+(5, 22, 3, 20, 0, '奥迪二手', '', NULL, NULL, NULL, NULL, '奥迪', '', '10.00', 100, 10000, '', 10, '', '', '', '13855554444', '北京天安门广场', NULL, '', '', 0, 1, 0, 16, '2019-09-18 07:11:16', '2019-09-18 07:11:16');
 
 -- --------------------------------------------------------
 
@@ -7122,23 +7357,48 @@ INSERT INTO `wbsdb_sells` (`id`, `parent_id`, `typeid`, `areaid`, `level`, `titl
 
 CREATE TABLE `wbsdb_settings` (
   `id` bigint(2) NOT NULL,
-  `enable` varchar(4) DEFAULT NULL,
-  `title` varchar(256) DEFAULT NULL COMMENT '标题',
-  `keyword` varchar(255) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `slogan` varchar(255) DEFAULT NULL COMMENT '站点标语',
-  `copyright` varchar(255) DEFAULT '' COMMENT '版权',
-  `icp` varchar(255) DEFAULT NULL COMMENT '备案号',
-  `statistic` mediumtext COMMENT '网站统计代码',
-  `logo` varchar(255) DEFAULT NULL COMMENT 'logo图'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='网站设置';
+  `enable` varchar(4) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '标题',
+  `keyword` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slogan` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '站点标语',
+  `copyright` varchar(255) CHARACTER SET utf8 DEFAULT '' COMMENT '版权',
+  `icp` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '备案号',
+  `statistic` mediumtext CHARACTER SET utf8 COMMENT '网站统计代码',
+  `logo` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT 'logo图'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='网站设置';
 
 --
 -- 转存表中的数据 `wbsdb_settings`
 --
 
 INSERT INTO `wbsdb_settings` (`id`, `enable`, `title`, `keyword`, `description`, `slogan`, `copyright`, `icp`, `statistic`, `logo`) VALUES
-(1, 'on', '云海天发布', '云海天发布', 'https://github.com/imnotdoubi/laravel-admin', '云海天发布', NULL, NULL, NULL, NULL);
+(1, 'on', '云海天发布', '云海天发布', 'https://github.com/imnotdoubi/laravel-admin', '云海天发布2', NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `wbsdb_userlog`
+--
+
+CREATE TABLE `wbsdb_userlog` (
+  `user_id` int(11) NOT NULL,
+  `ip` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 转存表中的数据 `wbsdb_userlog`
+--
+
+INSERT INTO `wbsdb_userlog` (`user_id`, `ip`, `created_at`, `updated_at`) VALUES
+(16, '116.231.95.75', '2019-09-17 15:58:06', '2019-09-17 15:58:06'),
+(16, '116.231.95.75', '2019-09-17 16:05:50', '2019-09-17 16:05:50'),
+(16, '127.0.0.1', '2019-09-17 17:29:34', '2019-09-17 17:29:34'),
+(16, '127.0.0.1', '2019-09-17 17:31:41', '2019-09-17 17:31:41'),
+(16, '127.0.0.1', '2019-09-18 09:21:05', '2019-09-18 09:21:05'),
+(16, '127.0.0.1', '2019-09-19 09:37:49', '2019-09-19 09:37:49');
 
 -- --------------------------------------------------------
 
@@ -7149,13 +7409,18 @@ INSERT INTO `wbsdb_settings` (`id`, `enable`, `title`, `keyword`, `description`,
 CREATE TABLE `wbsdb_users` (
   `id` int(10) UNSIGNED NOT NULL,
   `oid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方id',
-  `username` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(190) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(190) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `avatar` mediumtext COLLATE utf8mb4_unicode_ci,
   `autoflg` bigint(4) DEFAULT '0' COMMENT '1：github,2：qq，3：wx',
   `token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '第三方token',
+  `status_at` bigint(4) DEFAULT '1',
+  `tel` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `qq` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `wx` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -7165,8 +7430,10 @@ CREATE TABLE `wbsdb_users` (
 -- 转存表中的数据 `wbsdb_users`
 --
 
-INSERT INTO `wbsdb_users` (`id`, `oid`, `username`, `password`, `name`, `email`, `avatar`, `autoflg`, `token`, `remember_token`, `created_at`, `updated_at`) VALUES
-(14, 'oaEkC5b_orlenbcNg5XE7sA2j0cM', '我不是逗比', '$2y$10$7Mi6L/2I8IOAwJAB7MybVuyLtXZvrTR0EJBPoqfskWOb7l0jqK/ci', '我不是逗比', NULL, 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJKAF1QIXQ3XNiayfSOT6KGdwaYCQPh4s1m4vRTYNiaYV7HCO0JDfmMVAVWYj4cQeql88T3hcteeJQA/132', 3, '+uDXcL6dOjD0Y/veBJ0DSg==', NULL, '2019-08-23 09:29:54', '2019-08-23 09:31:10');
+INSERT INTO `wbsdb_users` (`id`, `oid`, `username`, `password`, `name`, `email`, `avatar`, `autoflg`, `token`, `status_at`, `tel`, `address`, `qq`, `wx`, `remember_token`, `created_at`, `updated_at`) VALUES
+(14, 'oaEkC5b_orlenbcNg5XE7sA2j0cM', '我不是逗比', '$2y$10$7Mi6L/2I8IOAwJAB7MybVuyLtXZvrTR0EJBPoqfskWOb7l0jqK/ci', '我不是逗比', NULL, 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJKAF1QIXQ3XNiayfSOT6KGdwaYCQPh4s1m4vRTYNiaYV7HCO0JDfmMVAVWYj4cQeql88T3hcteeJQA/132', 3, '+uDXcL6dOjD0Y/veBJ0DSg==', 1, NULL, NULL, NULL, NULL, NULL, '2019-08-23 09:29:54', '2019-08-23 09:31:10'),
+(16, NULL, '云海天', '$2y$10$0Mz/We0.lqQV5/pCvECNQ.nnbZdtf4qjsRr4bI/QYGKrgSJKs7Tm2', 'yht', 'yht@qq.com', NULL, 0, NULL, 1, '13400000000', NULL, '123456824e', NULL, 'coi3RcKqflnGx2DTm2ArrqNFp0GA6Td3QufZqy7xCdewx3sGEAP0ejCmiCdQ', '2019-09-17 03:33:12', '2019-09-17 09:34:26'),
+(17, NULL, NULL, '$2y$10$voaZGf/S.iJirPeMvfG79OHGDUdLsWbpjB5scwnxIpk1ILT8lsjsC', 'yht2', 'yht2@qq.com', NULL, 0, NULL, 1, NULL, NULL, NULL, NULL, 'SBA0nlsLhsDIKAumn4Du4XYuXOZ3glw1zYcFcjzZSMJMNgY9dUGV9PmlY2Yp', '2019-09-17 05:55:47', '2019-09-17 05:55:47');
 
 --
 -- 转储表的索引
@@ -7245,13 +7512,6 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- 表的索引 `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`);
-
---
 -- 表的索引 `wbsdb_areas`
 --
 ALTER TABLE `wbsdb_areas`
@@ -7319,6 +7579,14 @@ ALTER TABLE `wbsdb_migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- 表的索引 `wbsdb_modules`
+--
+ALTER TABLE `wbsdb_modules`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `admin_roles_name_unique` (`name`),
+  ADD UNIQUE KEY `admin_roles_slug_unique` (`order`);
+
+--
 -- 表的索引 `wbsdb_news`
 --
 ALTER TABLE `wbsdb_news`
@@ -7375,13 +7643,13 @@ ALTER TABLE `wbsdb_users`
 -- 使用表AUTO_INCREMENT `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- 使用表AUTO_INCREMENT `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2557;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2781;
 
 --
 -- 使用表AUTO_INCREMENT `admin_permissions`
@@ -7406,12 +7674,6 @@ ALTER TABLE `admin_users`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- 使用表AUTO_INCREMENT `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_areas`
@@ -7468,6 +7730,12 @@ ALTER TABLE `wbsdb_migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- 使用表AUTO_INCREMENT `wbsdb_modules`
+--
+ALTER TABLE `wbsdb_modules`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- 使用表AUTO_INCREMENT `wbsdb_news`
 --
 ALTER TABLE `wbsdb_news`
@@ -7495,13 +7763,13 @@ ALTER TABLE `wbsdb_questions`
 -- 使用表AUTO_INCREMENT `wbsdb_sells`
 --
 ALTER TABLE `wbsdb_sells`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- 使用表AUTO_INCREMENT `wbsdb_users`
 --
 ALTER TABLE `wbsdb_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

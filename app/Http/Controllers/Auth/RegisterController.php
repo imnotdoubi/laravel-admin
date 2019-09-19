@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Models\Wuser;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
+
+
 
 class RegisterController extends Controller
 {
@@ -27,7 +31,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/member';
 
     /**
      * Create a new controller instance.
@@ -39,6 +43,11 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    protected function guard()
+    {
+        return \Auth::guard('web');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -48,9 +57,9 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'name' => 'required|between:2,16|unique:wbsdb_users',
+            'email' => 'required|email|max:255|unique:wbsdb_users',
+            'password' => 'required|between:6,16|confirmed',
         ]);
     }
 
@@ -58,14 +67,26 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return User
      */
     protected function create(array $data)
     {
-        return User::create([
+        return Wuser::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'autoflg' => 0,
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        $user = $this->create($request->all());
+        $this->guard()->login($user);
+        event(new \App\Events\UserEvent(auth('web')->user()));
+        return $this->registered($request, $user)
+        ?: redirect($this->redirectPath());
     }
 }

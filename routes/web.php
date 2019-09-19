@@ -16,6 +16,25 @@
 Route::get('oauth/github', 'SocialController@githubLogin');
 Route::get('oauth/github/callback', 'SocialController@githubCallback');
 
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');
+
+
+Route::group(['middleware' => 'auth:web', 'namespace' => 'Web\Member', 'prefix' => '/member/'], function () {
+    Route::get('/', 'IndexController@index');
+    Route::get('/userinfo/', 'IndexController@edit');
+    Route::post('/userupdate/', 'IndexController@userupdate');
+    
+     //供应==  项目-资讯-图片等请参考供应来做就行
+    Route::get('/sell/create', 'SellController@create');
+    Route::post('/sellstore/', 'SellController@store');
+    Route::post('/sell{id}', 'SellController@update');
+    Route::get('/sell/{id}/edit', 'SellController@edit');
+    Route::get('/sell/{status?}', 'SellController@index');
+
+    Route::get('/password/', 'IndexController@password');
+    Route::post('/passwords/', 'IndexController@passwords');
+});
 
 //首页
 Route::get('/', 'Web\IndexController@index');
@@ -87,6 +106,8 @@ Route::group(['prefix' => '/xm/'], function () {
 Route::get('/{ptype}', 'Web\CompanyController@list')->name('xm_list');
 Route::get('/{ptype}/{jine}/{page}', 'Web\CompanyController@list')->name('xm_list_jine');
 Route::get('/{ptype}/{jine}', 'Web\CompanyController@list')->name('xm_list_jine');
+
+
 
 
 

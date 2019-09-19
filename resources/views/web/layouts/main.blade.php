@@ -22,7 +22,7 @@
             @empty
             @endforelse
         </p>
-        <span class="right"><a href="/xm/">找项目</a><a href="/sitemap">网站地图</a></span>
+        <span class="right"><a href="/xm/">找项目</a><a href="/login">登录</a><a href="/register">注册</a></span>
     </div>
 </div>
 <div class="header">
