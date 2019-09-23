@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => '云海天',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>云海天</b> admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -197,6 +197,23 @@ return [
         'role_users_table'       => 'admin_role_users',
         'role_permissions_table' => 'admin_role_permissions',
         'role_menu_table'        => 'admin_role_menu',
+        'wbsdb_areas_table'      => 'wbsdb_areas',
+        'wbsdb_articles_table'   => 'wbsdb_articles',
+        'wbsdb_asks_table'       => 'wbsdb_asks',
+        'wbsdb_categories_table' => 'wbsdb_categories',
+        'wbsdb_companys_table'   => 'wbsdb_companys',
+        'wbsdb_company_datas_table' => 'wbsdb_company_datas',
+        'wbsdb_investments_table'   => 'wbsdb_investments',
+        'wbsdb_malls_table'         => 'wbsdb_malls',
+        'wbsdb_modules_table'       => 'wbsdb_modules',
+        'wbsdb_news_table'          => 'wbsdb_news',
+        'wbsdb_phonemanages_table'  => 'wbsdb_phonemanages',
+        'wbsdb_photos_table'        => 'wbsdb_photos',
+        'wbsdb_questions_table'     => 'wbsdb_questions',
+        'wbsdb_sells_table'         => 'wbsdb_sells',
+        'wbsdb_settings_table'      => 'wbsdb_settings',
+        'wbsdb_userlog_table'       => 'wbsdb_userlog',
+        'wbsdb_users_table'         => 'wbsdb_users',
     ],
 
     /*

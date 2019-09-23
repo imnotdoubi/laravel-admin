@@ -120,7 +120,7 @@ class CategorieController extends AdminController
             $form->number('order', __('排序'))->default(1);
             $form->text('title', __('标题'))->required();
             $form->text('keyword', __('关键词'));
-            $form->text('dirposition', __('描述'));
+            $form->text('description', __('描述'));
 
             $form->radio('mid', '栏目类型')->options(
                 Module::orderBy('order','asc')->pluck('name', 'id')
