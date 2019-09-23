@@ -20,18 +20,22 @@ http://47.98.200.91/data/public.zip<br>
 注意：如果您更新后遇到问题，请直接点击下面的链接下载替换本地目录<br>
 http://47.98.200.91/data/vendor.zip<br>
 
-4、数据导入(文件数据只是最开始版本)<br>
-
-导入根目录下public\data\laradmin文件数据，然后配置项.env文件即可。
+4、php artisan migrate 迁移<br>
 
 
-5、（没问题可忽略这一步）如果前端会员注册有问题：<br>
+5、数据导入(因为数据部分是采集的，因此没做填充)<br>
+
+导入方法：根目录下public\data\laradmin.sql文件数据，然后配置项.env文件,执行php artisan key:generate
+
+
+6、（没问题可忽略这一步）如果前端会员注册有问题：<br>
 可以先执行：php artisan make:auth<br>
 然后替换掉\resources\views\auth 和  \app\Http\Controllers\Auth文件夹 下的内容  跟 \config\auth.php文件
 
 
-#你本地后台登录地址
-http://127.0.0.1/admin/auth/login  默认密码 admin  admin
+#你本地访问地址
+前端：http://127.0.0.1
+后台：http://127.0.0.1/admin/auth/login  默认密码 admin  admin
 
 #部分截图
 ![laravel-admin](https://github.com/imnotdoubi/laravel-admin/blob/master/public/vimg/10.jpg)
